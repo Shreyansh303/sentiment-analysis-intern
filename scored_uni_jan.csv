@@ -1,0 +1,664 @@
+id,scope,source,date,pos_prob,neg_prob,neu_prob,sent,news,pos_count,neg_count
+b6cc26f47b,LT.NS,simplywall.st (via gnews-rss),2026-01-31,0.0652,0.0297,0.9051,0.0354,-1.0,0,2
+9235bfe579,HCLTECH.NS,simplywall.st (via gnews-rss),2026-01-31,0.0201,0.2026,0.7773,-0.1825,-1.0,0,2
+0d039fa9ed,WIPRO.NS,scanx.trade (via gnews-rss),2026-01-31,0.0237,0.0221,0.9542,0.0016,0.0,0,0
+475a85769a,NTPC.NS,simplywall.st (via gnews-rss),2026-01-31,0.1168,0.0171,0.8661,0.0998,0.0,2,2
+f49046dbd3,ICICIBANK.NS,simplywall.st (via gnews-rss),2026-01-30,0.9374,0.012,0.0507,0.9254,0.0,0,0
+5b396d144b,BHARTIARTL.NS,Business Standard (via gnews-rss),2026-01-30,0.0224,0.0831,0.8945,-0.0606,0.0,0,0
+0c2fb7bda7,BAJFINANCE.NS,Upstox (via gnews-rss),2026-01-30,0.0079,0.9363,0.0558,-0.9285,0.0,0,0
+c5b9f850f6,SUNPHARMA.NS,simplywall.st (via gnews-rss),2026-01-30,0.0675,0.0171,0.9154,0.0504,-1.0,0,4
+e592774ad9,NESTLEIND.NS,Upstox (via gnews-rss),2026-01-30,0.9518,0.023,0.0251,0.9288,1.0,2,0
+2b364f40d7,NESTLEIND.NS,Investing.com India (via gnews-rss),2026-01-30,0.0075,0.9664,0.026,-0.9589,0.0,0,0
+9e70ad4d5c,NESTLEIND.NS,The Economic Times (via gnews-rss),2026-01-30,0.7271,0.0476,0.2253,0.6796,1.0,2,0
+2cf7d68ca5,NTPC.NS,India Infoline (via gnews-rss),2026-01-30,0.0232,0.942,0.0348,-0.9188,1.0,2,0
+0f6c4674c3,NTPC.NS,The Economic Times (via gnews-rss),2026-01-30,0.9298,0.0236,0.0466,0.9062,0.0,0,0
+ab423abaed,POWERGRID.NS,scanx.trade (via gnews-rss),2026-01-30,0.936,0.0212,0.0428,0.9148,0.0,0,0
+12c6853fc7,POWERGRID.NS,scanx.trade (via gnews-rss),2026-01-30,0.1262,0.0448,0.8289,0.0814,-1.0,0,4
+371d335c3c,TATASTEEL.NS,Business Standard (via gnews-rss),2026-01-30,0.018,0.9581,0.0239,-0.9402,0.0,0,0
+3d78964602,TATASTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-30,0.0094,0.9582,0.0324,-0.9488,0.0,0,0
+464d806c52,ADANIPORTS.NS,The Economic Times (via gnews-rss),2026-01-30,0.6293,0.0267,0.3439,0.6026,1.0,2,0
+01b25b210d,HINDALCO.NS,Fortune India (via gnews-rss),2026-01-30,0.0069,0.9704,0.0227,-0.9635,-1.0,0,4
+56bd079961,BAJAJ-AUTO.NS,Upstox (via gnews-rss),2026-01-30,0.9463,0.0235,0.0303,0.9228,1.0,4,0
+2508f615b1,BAJAJ-AUTO.NS,CNBC TV18 (via gnews-rss),2026-01-30,0.9359,0.0224,0.0417,0.9135,0.0,0,0
+756b32f031,BAJAJ-AUTO.NS,The Economic Times (via gnews-rss),2026-01-30,0.9386,0.0234,0.038,0.9153,1.0,2,0
+783e2bb4df,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-30,0.0218,0.0238,0.9544,-0.002,0.0,0,0
+dc798c6666,RELIANCE.NS,scanx.trade (via gnews-rss),2026-01-29,0.0256,0.0311,0.9432,-0.0055,0.0,0,0
+4c5ccf9936,TCS.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0092,0.9598,0.031,-0.9505,0.0,0,0
+e3be43de06,TCS.NS,The Hindu (via gnews-rss),2026-01-29,0.0081,0.9661,0.0258,-0.958,-1.0,0,2
+c55510571e,ITC.NS,Upstox (via gnews-rss),2026-01-29,0.0165,0.948,0.0355,-0.9315,1.0,2,0
+3008f8d965,SBIN.NS,Groww (via gnews-rss),2026-01-29,0.1127,0.0092,0.8781,0.1035,0.0,0,0
+85e8d6aaf5,SBIN.NS,Business Standard (via gnews-rss),2026-01-29,0.1419,0.0117,0.8464,0.1302,0.0,0,0
+b4a65a9878,LT.NS,Rediff MoneyWiz (via gnews-rss),2026-01-29,0.6804,0.0587,0.2608,0.6217,0.0,0,0
+7630b3d6cd,LT.NS,Deccan Herald (via gnews-rss),2026-01-29,0.8182,0.0659,0.1159,0.7522,-1.0,0,2
+07672863e5,AXISBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.9096,0.0168,0.0736,0.8929,0.0,0,0
+c6d03c35e7,MARUTI.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0106,0.9651,0.0243,-0.9545,-0.3333,2,4
+3416eaa938,MARUTI.NS,Rediff MoneyWiz (via gnews-rss),2026-01-29,0.0076,0.9617,0.0307,-0.9541,0.0,0,0
+c3cbce85f4,MARUTI.NS,simplywall.st (via gnews-rss),2026-01-29,0.0293,0.0283,0.9424,0.001,-1.0,0,2
+3ce7bf74a4,MARUTI.NS,The Economic Times (via gnews-rss),2026-01-29,0.0161,0.8741,0.1098,-0.8579,-1.0,0,2
+ffe8bed887,SUNPHARMA.NS,scanx.trade (via gnews-rss),2026-01-29,0.0237,0.0397,0.9367,-0.016,1.0,2,0
+bc9a481aa8,WIPRO.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0402,0.0166,0.9432,0.0236,0.0,0,0
+285e0770bd,NESTLEIND.NS,Upstox (via gnews-rss),2026-01-29,0.0468,0.016,0.9372,0.0308,0.0,0,0
+88b82ea744,ONGC.NS,simplywall.st (via gnews-rss),2026-01-29,0.0428,0.0181,0.9392,0.0247,-1.0,0,2
+d312b437e5,NTPC.NS,Business Standard (via gnews-rss),2026-01-29,0.0537,0.013,0.9333,0.0407,0.0,0,0
+25b9281a13,NTPC.NS,NDTV Profit (via gnews-rss),2026-01-29,0.0353,0.0318,0.9329,0.0035,1.0,2,0
+c62775da92,NTPC.NS,CNBC TV18 (via gnews-rss),2026-01-29,0.0065,0.965,0.0285,-0.9585,0.3333,4,2
+9853746761,NTPC.NS,Business Standard (via gnews-rss),2026-01-29,0.9335,0.015,0.0515,0.9185,0.0,0,0
+3d0d7379a6,M&M.NS,scanx.trade (via gnews-rss),2026-01-29,0.0307,0.0234,0.9459,0.0073,0.0,0,0
+0e5eb32b3f,M&M.NS,Business Standard (via gnews-rss),2026-01-29,0.0516,0.5921,0.3563,-0.5405,0.0,0,0
+01c6c855a0,TATAMOTORS.NS,Upstox (via gnews-rss),2026-01-29,0.8103,0.1398,0.0499,0.6705,1.0,2,0
+d2efca3d5f,TATAMOTORS.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0072,0.9696,0.0232,-0.9623,0.0,0,0
+94e34ee53f,TATAMOTORS.NS,Business Standard (via gnews-rss),2026-01-29,0.0358,0.9495,0.0147,-0.9137,1.0,2,0
+77d52978c0,TATASTEEL.NS,Business Standard (via gnews-rss),2026-01-29,0.9255,0.0212,0.0533,0.9043,0.0,0,0
+d8aa01ff00,TATASTEEL.NS,Upstox (via gnews-rss),2026-01-29,0.551,0.2564,0.1926,0.2946,0.0,0,0
+a6e34307e1,ADANIENT.NS,TradingView (via gnews-rss),2026-01-29,0.0262,0.0195,0.9544,0.0067,0.0,0,0
+3c7ba018f1,HINDALCO.NS,Business Standard (via gnews-rss),2026-01-29,0.9349,0.0176,0.0476,0.9173,0.0,0,0
+b1ffaecbc6,HINDALCO.NS,Equitypandit (via gnews-rss),2026-01-29,0.1782,0.0106,0.8111,0.1676,0.0,0,0
+6d7ec4c3b0,DIVISLAB.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0107,0.9152,0.0741,-0.9044,0.0,0,0
+455bda0472,SBILIFE.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.0086,0.9677,0.0238,-0.9591,0.0,0,0
+532a72fe8f,SBILIFE.NS,Business Standard (via gnews-rss),2026-01-29,0.0676,0.8991,0.0333,-0.8315,0.0,0,0
+5712366931,SBILIFE.NS,Moneycontrol.com (via gnews-rss),2026-01-29,0.8824,0.0192,0.0983,0.8632,0.0,0,0
+ecb2435a5f,SBILIFE.NS,Business Standard (via gnews-rss),2026-01-29,0.871,0.0144,0.1147,0.8566,0.0,0,0
+8ca3fed013,BPCL.NS,simplywall.st (via gnews-rss),2026-01-29,0.0546,0.0115,0.9339,0.0432,-1.0,0,2
+91df92a051,MACRO,Moneycontrol.com (via gnews-rss),2026-01-29,0.0162,0.4097,0.5741,-0.3935,0.0,0,0
+e2887997d9,MACRO,J.P. Morgan (via gnews-rss),2026-01-29,0.0685,0.1011,0.8304,-0.0326,-1.0,0,2
+5f689430d3,MACRO,Yahoo Finance (via gnews-rss),2026-01-29,0.077,0.5369,0.3862,-0.4599,-1.0,0,2
+80ecd8da14,MACRO,The Hindu (via gnews-rss),2026-01-29,0.0447,0.1153,0.84,-0.0706,0.0,0,0
+aca99d9fb8,INFY.NS,Equitypandit (via gnews-rss),2026-01-28,0.0071,0.9716,0.0214,-0.9645,1.0,2,0
+43b1eac0b7,ICICIBANK.NS,HDFC Sky (via gnews-rss),2026-01-28,0.0163,0.8933,0.0904,-0.877,-1.0,0,2
+8471f90180,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-28,0.034,0.0274,0.9386,0.0066,0.0,0,0
+66496b2bb0,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-28,0.692,0.0082,0.2999,0.6838,0.0,0,0
+0158fc68f2,LT.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.0162,0.9473,0.0364,-0.9311,0.0,0,0
+1a32a0914b,AXISBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.8962,0.0182,0.0856,0.8779,0.0,0,0
+0e81a1f67a,AXISBANK.NS,scanx.trade (via gnews-rss),2026-01-28,0.0296,0.0169,0.9535,0.0127,0.0,0,0
+de44574df8,BAJFINANCE.NS,India Infoline (via gnews-rss),2026-01-28,0.0961,0.0174,0.8865,0.0787,0.0,0,0
+7a12b808a3,ASIANPAINT.NS,Rediff MoneyWiz (via gnews-rss),2026-01-28,0.0072,0.9618,0.031,-0.9546,-1.0,0,2
+b115f5f49b,ASIANPAINT.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.9281,0.0217,0.0503,0.9064,0.0,0,0
+1d7ec501cd,ASIANPAINT.NS,Business Today (via gnews-rss),2026-01-28,0.0096,0.9682,0.0222,-0.9586,-1.0,0,4
+90ccb0c757,ASIANPAINT.NS,HDFC Sky (via gnews-rss),2026-01-28,0.0078,0.9541,0.0381,-0.9463,0.0,0,0
+f91cd519f1,MARUTI.NS,The Economic Times (via gnews-rss),2026-01-28,0.9385,0.0269,0.0346,0.9116,0.0,0,0
+8f788f4ec7,NESTLEIND.NS,Business Standard (via gnews-rss),2026-01-28,0.898,0.0229,0.0791,0.8752,0.0,2,2
+3390f3b39c,ONGC.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.8989,0.0181,0.083,0.8808,0.0,0,0
+3602f5ca6f,ONGC.NS,Investing.com India (via gnews-rss),2026-01-28,0.9363,0.0215,0.0422,0.9148,0.0,0,0
+b26d54863f,ONGC.NS,Equitypandit (via gnews-rss),2026-01-28,0.4437,0.1535,0.4028,0.2902,0.0,0,0
+d35105ad0b,ONGC.NS,Business Standard (via gnews-rss),2026-01-28,0.5498,0.0127,0.4375,0.5372,0.0,0,0
+0ff9d6becd,ONGC.NS,Investing.com (via gnews-rss),2026-01-28,0.9243,0.0238,0.0519,0.9006,0.0,0,0
+3a8d189327,NTPC.NS,Business Today (via gnews-rss),2026-01-28,0.3666,0.0116,0.6218,0.355,0.0,0,0
+0836e8eedd,POWERGRID.NS,Upstox (via gnews-rss),2026-01-28,0.8971,0.0201,0.0827,0.877,1.0,2,0
+3b44f5bbc7,M&M.NS,Business Standard (via gnews-rss),2026-01-28,0.898,0.0296,0.0724,0.8685,1.0,2,0
+639156ad67,M&M.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.9459,0.0212,0.033,0.9247,-1.0,0,2
+09d218f2ac,TATAMOTORS.NS,simplywall.st (via gnews-rss),2026-01-28,0.0297,0.5646,0.4057,-0.5349,1.0,2,0
+61b9d02265,JSWSTEEL.NS,simplywall.st (via gnews-rss),2026-01-28,0.3986,0.0519,0.5495,0.3466,-1.0,0,2
+fa51a0f9cf,JSWSTEEL.NS,Business Standard (via gnews-rss),2026-01-28,0.9333,0.0202,0.0465,0.913,0.0,0,0
+a139464305,JSWSTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-28,0.0372,0.0168,0.946,0.0204,0.0,0,0
+6293127dc9,CIPLA.NS,scanx.trade (via gnews-rss),2026-01-28,0.0258,0.0187,0.9554,0.0071,0.0,0,0
+fbbebf002c,APOLLOHOSP.NS,simplywall.st (via gnews-rss),2026-01-28,0.8288,0.009,0.1622,0.8198,1.0,2,0
+5bd81847d8,TATACONSUM.NS,Business Standard (via gnews-rss),2026-01-28,0.8256,0.0165,0.1579,0.8092,0.0,0,0
+bf2f06bef6,TATACONSUM.NS,Business Standard (via gnews-rss),2026-01-28,0.4569,0.0325,0.5106,0.4244,0.0,0,0
+d8daf15e96,SBILIFE.NS,simplywall.st (via gnews-rss),2026-01-28,0.0588,0.0135,0.9277,0.0454,0.0,0,0
+c7a3f5f8d9,MACRO,Business Standard (via gnews-rss),2026-01-28,0.468,0.0281,0.504,0.4399,0.0,0,0
+3fedeaaeb2,MACRO,India Infoline (via gnews-rss),2026-01-28,0.0534,0.443,0.5036,-0.3896,-1.0,0,2
+98f303b5ad,MACRO,CNBC (via gnews-rss),2026-01-28,0.2005,0.0424,0.7571,0.1582,1.0,2,0
+d9ff0c7d97,MACRO,Bloomberg (via gnews-rss),2026-01-28,0.0636,0.035,0.9014,0.0286,0.0,0,0
+823a098575,MACRO,BBC (via gnews-rss),2026-01-28,0.0579,0.0135,0.9286,0.0444,-1.0,0,2
+315b2c6a26,MACRO,CNBC (via gnews-rss),2026-01-28,0.0239,0.0445,0.9315,-0.0206,0.0,0,0
+fbe614f367,TCS.NS,scanx.trade (via gnews-rss),2026-01-27,0.6413,0.0252,0.3335,0.6161,0.0,0,0
+2cb04b6516,INFY.NS,scanx.trade (via gnews-rss),2026-01-27,0.0261,0.0504,0.9236,-0.0243,0.0,0,0
+a04459b0f1,HINDUNILVR.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.0317,0.0192,0.9492,0.0125,0.0,0,0
+35340c71c1,HINDUNILVR.NS,Business Standard (via gnews-rss),2026-01-27,0.0674,0.0991,0.8335,-0.0317,0.0,0,0
+cb1120213a,ITC.NS,simplywall.st (via gnews-rss),2026-01-27,0.0309,0.0414,0.9276,-0.0105,-1.0,0,2
+8ea4183dd6,SBIN.NS,BusinessLine (via gnews-rss),2026-01-27,0.9162,0.0253,0.0585,0.8909,0.0,0,0
+2f65323225,BHARTIARTL.NS,simplywall.st (via gnews-rss),2026-01-27,0.1392,0.0108,0.85,0.1283,-1.0,0,2
+25ba8b0306,KOTAKBANK.NS,Business Today (via gnews-rss),2026-01-27,0.0094,0.9723,0.0183,-0.9628,0.0,0,0
+b35aa04b0d,KOTAKBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.8927,0.0181,0.0892,0.8746,0.0,0,0
+06bdbba4ee,LT.NS,scanx.trade (via gnews-rss),2026-01-27,0.0253,0.0204,0.9543,0.0049,0.0,0,0
+695cf9cca9,LT.NS,Upstox (via gnews-rss),2026-01-27,0.9443,0.019,0.0368,0.9253,1.0,2,0
+72c61f7c76,AXISBANK.NS,Rediff MoneyWiz (via gnews-rss),2026-01-27,0.7961,0.0813,0.1226,0.7148,0.0,0,0
+ff89634da9,AXISBANK.NS,Business Standard (via gnews-rss),2026-01-27,0.946,0.0245,0.0295,0.9215,0.0,0,0
+16d76030db,AXISBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.0447,0.017,0.9383,0.0277,0.0,0,0
+d1fe205b54,ASIANPAINT.NS,simplywall.st (via gnews-rss),2026-01-27,0.8409,0.0084,0.1507,0.8326,0.0,0,0
+958cf2c469,ASIANPAINT.NS,scanx.trade (via gnews-rss),2026-01-27,0.6589,0.0118,0.3293,0.6472,1.0,2,0
+74c9f2daef,ASIANPAINT.NS,Upstox (via gnews-rss),2026-01-27,0.0148,0.9655,0.0197,-0.9507,0.0,2,2
+8042bfe53b,MARUTI.NS,The Times of India (via gnews-rss),2026-01-27,0.0271,0.2904,0.6825,-0.2633,0.0,0,0
+c75a405b1d,TITAN.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.0125,0.9367,0.0509,-0.9242,0.0,0,0
+c35cbb41e5,ULTRACEMCO.NS,ET Infra (via gnews-rss),2026-01-27,0.9365,0.0212,0.0423,0.9153,0.0,0,0
+6aa0ef9f70,ULTRACEMCO.NS,Business Today (via gnews-rss),2026-01-27,0.9435,0.0195,0.037,0.9239,0.0,0,0
+c1b4809b0b,ULTRACEMCO.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.9161,0.0179,0.066,0.8981,0.0,0,0
+7659ee6163,TATAMOTORS.NS,The Economic Times (via gnews-rss),2026-01-27,0.5688,0.0304,0.4008,0.5384,0.0,0,0
+2eb0d9a329,JSWSTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.859,0.0238,0.1172,0.8352,0.0,0,0
+eb2daf1c35,JSWSTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.9285,0.0212,0.0503,0.9073,0.0,0,0
+f5ca791c2f,ADANIENT.NS,NDTV (via gnews-rss),2026-01-27,0.0226,0.0419,0.9355,-0.0193,-1.0,0,2
+c5341190e5,ADANIENT.NS,NDTV (via gnews-rss),2026-01-27,0.7888,0.1534,0.0578,0.6354,-1.0,0,2
+a45c4ef5a7,ADANIPORTS.NS,The Economic Times (via gnews-rss),2026-01-27,0.0264,0.7833,0.1903,-0.7569,-1.0,0,2
+81741a9cc5,GRASIM.NS,CNBC TV18 (via gnews-rss),2026-01-27,0.8575,0.0292,0.1133,0.8284,-1.0,0,2
+9aa69b901e,HINDALCO.NS,simplywall.st (via gnews-rss),2026-01-27,0.0378,0.0135,0.9487,0.0243,-1.0,0,2
+e45b4ac498,HINDALCO.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.892,0.0232,0.0848,0.8688,0.0,0,0
+d628dda840,CIPLA.NS,Business Standard (via gnews-rss),2026-01-27,0.0094,0.9634,0.0272,-0.954,-1.0,0,2
+707adbeb08,CIPLA.NS,Moneymunch (via gnews-rss),2026-01-27,0.0284,0.0264,0.9452,0.002,0.0,0,0
+50c844f4fc,EICHERMOT.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.7908,0.0297,0.1795,0.7611,0.0,0,0
+3271bd81de,HEROMOTOCO.NS,The Economic Times (via gnews-rss),2026-01-27,0.0627,0.0181,0.9192,0.0446,0.0,0,0
+d4b5ff3222,TECHM.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.735,0.0167,0.2483,0.7184,0.0,0,0
+eb098cefaf,INDUSINDBK.NS,Business Today (via gnews-rss),2026-01-27,0.5363,0.1074,0.3563,0.4289,1.0,2,0
+99bd59c0da,TATACONSUM.NS,Upstox (via gnews-rss),2026-01-27,0.0142,0.952,0.0337,-0.9378,1.0,4,0
+4400ecd968,TATACONSUM.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.9478,0.0245,0.0277,0.9234,1.0,2,0
+719f10f48c,TATACONSUM.NS,BusinessLine (via gnews-rss),2026-01-27,0.1228,0.7384,0.1388,-0.6155,1.0,4,0
+6aa09b070e,TATACONSUM.NS,Upstox (via gnews-rss),2026-01-27,0.9464,0.0243,0.0293,0.9222,1.0,4,0
+f95e87ea34,SBILIFE.NS,simplywall.st (via gnews-rss),2026-01-27,0.1867,0.0118,0.8015,0.1748,-1.0,0,2
+d967b686df,SHRIRAMFIN.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.9282,0.0211,0.0507,0.9071,0.0,0,0
+496ce1c65e,BPCL.NS,Moneycontrol.com (via gnews-rss),2026-01-27,0.9342,0.0209,0.0449,0.9133,0.0,0,0
+428017df42,MACRO,PBS (via gnews-rss),2026-01-27,0.0325,0.03,0.9375,0.0024,0.0,0,0
+2090ec88ba,MACRO,CNBC (via gnews-rss),2026-01-27,0.0198,0.0478,0.9324,-0.028,0.0,0,0
+e800138fae,MACRO,Investopedia (via gnews-rss),2026-01-27,0.0266,0.0659,0.9075,-0.0393,0.0,0,0
+53ee50f9a5,TCS.NS,simplywall.st (via gnews-rss),2026-01-26,0.0089,0.9733,0.0178,-0.9644,-1.0,0,4
+e6ee942cd9,AXISBANK.NS,Upstox (via gnews-rss),2026-01-26,0.8823,0.0362,0.0815,0.8461,0.0,0,0
+59a31619ea,BAJFINANCE.NS,scanx.trade (via gnews-rss),2026-01-26,0.0276,0.0345,0.9379,-0.0069,0.0,0,0
+73a131be63,MARUTI.NS,NDTV Profit (via gnews-rss),2026-01-26,0.0361,0.0424,0.9215,-0.0063,1.0,2,0
+1d8e69e6bb,MARUTI.NS,Upstox (via gnews-rss),2026-01-26,0.0559,0.1137,0.8303,-0.0578,0.0,0,0
+32173d8aea,POWERGRID.NS,simplywall.st (via gnews-rss),2026-01-26,0.925,0.0088,0.0662,0.9163,1.0,2,0
+c3cd2f8b94,M&M.NS,Upstox (via gnews-rss),2026-01-26,0.0093,0.9543,0.0364,-0.945,0.0,0,0
+2c81f4db0a,MACRO,Mint (via gnews-rss),2026-01-26,0.6418,0.0145,0.3437,0.6273,-1.0,0,2
+ceef18df81,MACRO,Investopedia (via gnews-rss),2026-01-26,0.0214,0.0293,0.9492,-0.0079,0.0,0,0
+0acea97fb8,HINDUNILVR.NS,Moneycontrol.com (via gnews-rss),2026-01-25,0.1109,0.1805,0.7086,-0.0697,0.0,0,0
+17c4e3a26c,SBILIFE.NS,India.Com (via gnews-rss),2026-01-25,0.0588,0.0135,0.9277,0.0453,0.0,0,0
+75b666dd48,MACRO,Investopedia (via gnews-rss),2026-01-25,0.0249,0.0323,0.9428,-0.0073,0.0,0,0
+66c743e897,ADANIENT.NS,Moneycontrol.com (via gnews-rss),2026-01-24,0.03,0.0249,0.9451,0.0051,0.0,0,0
+7c5e530e4d,ADANIENT.NS,Hindustan Times (via gnews-rss),2026-01-24,0.015,0.9416,0.0434,-0.9266,-1.0,0,4
+f563f9d22e,ADANIENT.NS,Mint (via gnews-rss),2026-01-24,0.0234,0.0322,0.9443,-0.0088,0.0,0,0
+2a43838878,TCS.NS,Business Standard (via gnews-rss),2026-01-23,0.9219,0.0257,0.0524,0.8962,0.0,0,0
+a01a509ae3,KOTAKBANK.NS,NDTV Profit (via gnews-rss),2026-01-23,0.0274,0.0387,0.9339,-0.0113,1.0,2,0
+b54cd43ef8,KOTAKBANK.NS,The Economic Times (via gnews-rss),2026-01-23,0.7282,0.0164,0.2554,0.7118,0.0,0,0
+04c7f52a78,LT.NS,Moneycontrol.com (via gnews-rss),2026-01-23,0.0071,0.9703,0.0227,-0.9632,0.0,0,0
+e4ee766a29,AXISBANK.NS,scanx.trade (via gnews-rss),2026-01-23,0.0225,0.0587,0.9188,-0.0362,0.0,0,0
+9b4025e645,WIPRO.NS,simplywall.st (via gnews-rss),2026-01-23,0.0434,0.0144,0.9422,0.029,0.0,0,0
+784176d241,WIPRO.NS,Business Standard (via gnews-rss),2026-01-23,0.0304,0.0189,0.9508,0.0115,-1.0,0,2
+93e2f59150,NESTLEIND.NS,The Economic Times (via gnews-rss),2026-01-23,0.0748,0.0197,0.9056,0.0551,0.0,0,0
+ed4f61abcd,POWERGRID.NS,simplywall.st (via gnews-rss),2026-01-23,0.1059,0.0096,0.8845,0.0963,0.0,0,0
+7e6d1e399e,POWERGRID.NS,scanx.trade (via gnews-rss),2026-01-23,0.022,0.0255,0.9525,-0.0036,0.0,0,0
+ccd203b25a,JSWSTEEL.NS,Business Standard (via gnews-rss),2026-01-23,0.0599,0.0137,0.9264,0.0463,0.0,0,0
+bfc63fadbc,JSWSTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-23,0.9286,0.0266,0.0448,0.9021,1.0,2,0
+3d6eae5845,ADANIENT.NS,Business Standard (via gnews-rss),2026-01-23,0.0823,0.8585,0.0592,-0.7762,0.0,0,0
+c28104efb4,ADANIPORTS.NS,scanx.trade (via gnews-rss),2026-01-23,0.0426,0.017,0.9404,0.0256,-1.0,0,2
+f3e2de77ed,ADANIPORTS.NS,The Economic Times (via gnews-rss),2026-01-23,0.6149,0.0271,0.358,0.5878,1.0,2,0
+c0bebc4f4f,DRREDDY.NS,The Economic Times (via gnews-rss),2026-01-23,0.6736,0.0155,0.311,0.6581,0.0,0,0
+6c6bedf250,CIPLA.NS,The Economic Times (via gnews-rss),2026-01-23,0.0075,0.9709,0.0216,-0.9634,0.0,2,2
+66476e7b94,CIPLA.NS,Moneycontrol.com (via gnews-rss),2026-01-23,0.0078,0.9651,0.0271,-0.9572,-1.0,0,2
+ad1b721ced,CIPLA.NS,Upstox (via gnews-rss),2026-01-23,0.0075,0.9735,0.0189,-0.966,-0.3333,2,4
+8d5943c168,CIPLA.NS,The Economic Times (via gnews-rss),2026-01-23,0.0107,0.9377,0.0517,-0.927,1.0,2,0
+8d609c478d,BRITANNIA.NS,Business Standard (via gnews-rss),2026-01-23,0.7395,0.0154,0.2451,0.7241,1.0,2,0
+c4f1d92e6e,BAJAJ-AUTO.NS,simplywall.st (via gnews-rss),2026-01-23,0.1129,0.0118,0.8753,0.101,-1.0,0,2
+e73e3813ca,BAJAJ-AUTO.NS,The Economic Times (via gnews-rss),2026-01-23,0.0805,0.0175,0.902,0.063,0.0,0,0
+52702b823a,TECHM.NS,Business Standard (via gnews-rss),2026-01-23,0.9351,0.0277,0.0372,0.9075,0.0,0,0
+b0cdc6bac0,INDUSINDBK.NS,CNBC TV18 (via gnews-rss),2026-01-23,0.9055,0.0334,0.0611,0.8721,1.0,2,0
+7923a0b7b2,SBILIFE.NS,Moneycontrol.com (via gnews-rss),2026-01-23,0.027,0.7144,0.2587,-0.6874,0.0,0,0
+7e7184605c,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-23,0.0074,0.9739,0.0187,-0.9665,0.0,2,2
+e4b264f8eb,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-23,0.0626,0.0132,0.9242,0.0494,0.0,0,0
+450f09c84d,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-23,0.0226,0.0284,0.9491,-0.0058,0.0,0,0
+1f67a2d0f7,BPCL.NS,The Economic Times (via gnews-rss),2026-01-23,0.9436,0.0192,0.0372,0.9244,0.0,0,0
+daea61bde3,BPCL.NS,Mint (via gnews-rss),2026-01-23,0.9108,0.0315,0.0577,0.8793,1.0,2,0
+a96047aa38,MACRO,Upstox (via gnews-rss),2026-01-23,0.0696,0.0193,0.9111,0.0503,0.0,0,0
+8dbea070d6,MACRO,ING Think (via gnews-rss),2026-01-23,0.6124,0.0282,0.3594,0.5842,0.0,0,0
+1df8d7073f,MACRO,WSJ (via gnews-rss),2026-01-23,0.0285,0.0267,0.9448,0.0018,0.0,0,0
+5971119af3,HINDUNILVR.NS,The Times of India (via gnews-rss),2026-01-22,0.0214,0.3012,0.6775,-0.2798,0.0,0,0
+e8f936b807,HINDUNILVR.NS,ETV Bharat (via gnews-rss),2026-01-22,0.896,0.0716,0.0324,0.8244,0.0,2,2
+020403cf81,WIPRO.NS,simplywall.st (via gnews-rss),2026-01-22,0.0617,0.0128,0.9255,0.0489,0.0,0,0
+1aa90da0d1,NESTLEIND.NS,India Infoline (via gnews-rss),2026-01-22,0.7123,0.043,0.2447,0.6693,-1.0,0,2
+6215e96999,TATAMOTORS.NS,Moneycontrol.com (via gnews-rss),2026-01-22,0.8951,0.0147,0.0902,0.8804,1.0,2,0
+1369e3d568,ADANIENT.NS,simplywall.st (via gnews-rss),2026-01-22,0.0279,0.0265,0.9457,0.0014,-1.0,0,2
+963d5b7f71,ADANIPORTS.NS,simplywall.st (via gnews-rss),2026-01-22,0.0098,0.9644,0.0258,-0.9546,-1.0,0,4
+2a741b9ba7,DRREDDY.NS,Business Standard (via gnews-rss),2026-01-22,0.9325,0.0173,0.0502,0.9153,0.0,0,0
+3b60b151c5,DRREDDY.NS,Moneycontrol.com (via gnews-rss),2026-01-22,0.8333,0.0362,0.1305,0.797,0.0,0,0
+cd6a54b87c,DRREDDY.NS,NDTV Profit (via gnews-rss),2026-01-22,0.7603,0.1767,0.063,0.5835,0.5,6,2
+5b324f6907,DRREDDY.NS,Mint (via gnews-rss),2026-01-22,0.0569,0.0151,0.928,0.0418,0.0,0,0
+f970671672,DRREDDY.NS,Moneycontrol.com (via gnews-rss),2026-01-22,0.0364,0.017,0.9467,0.0194,0.0,0,0
+9dbc878daa,DRREDDY.NS,Business Standard (via gnews-rss),2026-01-22,0.9239,0.02,0.0561,0.9039,1.0,2,0
+35aa0930c0,DRREDDY.NS,Business Standard (via gnews-rss),2026-01-22,0.0409,0.0154,0.9437,0.0256,-1.0,0,2
+ba75144411,EICHERMOT.NS,simplywall.st (via gnews-rss),2026-01-22,0.0691,0.0274,0.9035,0.0416,-1.0,0,2
+d0f6795856,TECHM.NS,Moneycontrol.com (via gnews-rss),2026-01-22,0.0376,0.0162,0.9463,0.0214,0.0,0,0
+377ab8daaf,APOLLOHOSP.NS,Business Standard (via gnews-rss),2026-01-22,0.0781,0.0128,0.9091,0.0653,0.0,0,0
+068266bad7,HDFCLIFE.NS,The Economic Times (via gnews-rss),2026-01-22,0.2206,0.0114,0.768,0.2092,-1.0,0,2
+68bf23c4ee,LTIM.NS,simplywall.st (via gnews-rss),2026-01-22,0.0718,0.0236,0.9047,0.0482,-1.0,0,2
+d46c5900e5,BPCL.NS,NDTV Profit (via gnews-rss),2026-01-22,0.0317,0.0315,0.9369,0.0002,1.0,2,0
+1bd65e1d8a,BPCL.NS,scanx.trade (via gnews-rss),2026-01-22,0.0346,0.0214,0.944,0.0131,0.0,0,0
+2742cd63d6,HCLTECH.NS,BusinessLine (via gnews-rss),2026-01-21,0.0148,0.9446,0.0405,-0.9298,1.0,2,0
+57ec43611e,HCLTECH.NS,Moneycontrol.com (via gnews-rss),2026-01-21,0.0334,0.0198,0.9467,0.0136,0.0,0,0
+39e9e15cd2,ULTRACEMCO.NS,The Times of India (via gnews-rss),2026-01-21,0.0228,0.2945,0.6826,-0.2717,0.0,0,0
+d9fbf9e1df,M&M.NS,scanx.trade (via gnews-rss),2026-01-21,0.0338,0.041,0.9252,-0.0072,0.0,0,0
+9d34bd5772,M&M.NS,scanx.trade (via gnews-rss),2026-01-21,0.0295,0.0219,0.9485,0.0076,0.0,0,0
+72ffa1de2e,TATAMOTORS.NS,Upstox (via gnews-rss),2026-01-21,0.0078,0.9401,0.0521,-0.9323,0.0,0,0
+b3cb5f98ea,TATAMOTORS.NS,The Economic Times (via gnews-rss),2026-01-21,0.9277,0.0228,0.0495,0.905,0.0,0,0
+02f2a93899,JSWSTEEL.NS,simplywall.st (via gnews-rss),2026-01-21,0.7416,0.0099,0.2486,0.7317,0.0,0,0
+f20be6495f,ADANIPORTS.NS,The Economic Times (via gnews-rss),2026-01-21,0.0257,0.8278,0.1465,-0.8021,-1.0,0,2
+8b5f91f997,GRASIM.NS,Moneycontrol.com (via gnews-rss),2026-01-21,0.9032,0.0351,0.0617,0.8681,0.0,0,0
+ebe5d9d601,DRREDDY.NS,Upstox (via gnews-rss),2026-01-21,0.9213,0.0232,0.0555,0.8981,0.0,0,0
+b93a27ac0a,DRREDDY.NS,Business Today (via gnews-rss),2026-01-21,0.0477,0.0136,0.9387,0.034,0.0,0,0
+042c062eab,DRREDDY.NS,The Economic Times (via gnews-rss),2026-01-21,0.829,0.1424,0.0286,0.6867,1.0,2,0
+e4c5c715f3,TECHM.NS,simplywall.st (via gnews-rss),2026-01-21,0.0754,0.0288,0.8958,0.0465,-1.0,0,2
+9a3598c2c1,MACRO,BusinessLine (via gnews-rss),2026-01-21,0.08,0.0143,0.9057,0.0656,0.0,0,0
+f2b90287f7,ICICIBANK.NS,scanx.trade (via gnews-rss),2026-01-20,0.0238,0.0448,0.9313,-0.021,0.0,0,0
+63c24e09db,SBIN.NS,Investing.com (via gnews-rss),2026-01-20,0.0501,0.0385,0.9115,0.0116,1.0,2,0
+ecc575fc3d,BAJFINANCE.NS,Upstox (via gnews-rss),2026-01-20,0.0179,0.9428,0.0393,-0.9249,0.0,0,0
+2f7d7bef4f,BAJFINANCE.NS,The Times of India (via gnews-rss),2026-01-20,0.0275,0.284,0.6885,-0.2566,0.0,0,0
+343826627f,ASIANPAINT.NS,The Hindu (via gnews-rss),2026-01-20,0.0075,0.9712,0.0213,-0.9637,-1.0,0,2
+b92b28425d,WIPRO.NS,The Economic Times (via gnews-rss),2026-01-20,0.5264,0.0688,0.4048,0.4576,0.0,0,0
+740147b07e,TATASTEEL.NS,scanx.trade (via gnews-rss),2026-01-20,0.0397,0.0374,0.9229,0.0023,0.0,0,0
+e713128b15,ADANIENT.NS,Moneycontrol.com (via gnews-rss),2026-01-20,0.0404,0.0171,0.9424,0.0233,0.0,0,0
+6259a5721d,BAJAJFINSV.NS,The New Indian Express (via gnews-rss),2026-01-20,0.0074,0.9716,0.021,-0.9642,-1.0,0,2
+fc6c9baf79,DRREDDY.NS,Upstox (via gnews-rss),2026-01-20,0.0114,0.9588,0.0298,-0.9474,-0.3333,2,4
+c0a4a9d7ba,DIVISLAB.NS,simplywall.st (via gnews-rss),2026-01-20,0.1867,0.0571,0.7562,0.1296,-1.0,0,6
+88554f7f51,TECHM.NS,Moneycontrol.com (via gnews-rss),2026-01-20,0.926,0.0192,0.0549,0.9068,0.0,0,0
+2ee5301e94,INDUSINDBK.NS,Equitymaster (via gnews-rss),2026-01-20,0.0068,0.9646,0.0285,-0.9578,0.0,0,0
+15043b61be,INDUSINDBK.NS,Moneycontrol.com (via gnews-rss),2026-01-20,0.0153,0.9227,0.062,-0.9073,-1.0,0,2
+7831bc5371,APOLLOHOSP.NS,scanx.trade (via gnews-rss),2026-01-20,0.6485,0.0133,0.3382,0.6353,0.0,0,0
+8d0873c3d2,TATACONSUM.NS,scanx.trade (via gnews-rss),2026-01-20,0.0178,0.0463,0.9359,-0.0284,0.0,0,0
+7f38fc33f1,SBILIFE.NS,Goodreturns (via gnews-rss),2026-01-20,0.9394,0.0148,0.0457,0.9246,1.0,2,0
+1aad521b76,HDFCLIFE.NS,Upstox (via gnews-rss),2026-01-20,0.0335,0.0548,0.9117,-0.0213,-1.0,0,2
+c2f673f9e3,LTIM.NS,Business Standard (via gnews-rss),2026-01-20,0.0599,0.0138,0.9263,0.0461,0.0,0,0
+2b3892f0db,LTIM.NS,Moneycontrol.com (via gnews-rss),2026-01-20,0.9286,0.0189,0.0525,0.9097,0.0,0,0
+421e3d6493,LTIM.NS,Business Standard (via gnews-rss),2026-01-20,0.9129,0.0218,0.0653,0.891,0.0,0,0
+1620b5ec2d,RELIANCE.NS,theweek.in (via gnews-rss),2026-01-19,0.0229,0.8304,0.1467,-0.8075,0.0,0,0
+f4020e10f6,RELIANCE.NS,The Hindu (via gnews-rss),2026-01-19,0.0064,0.9684,0.0252,-0.962,0.0,0,0
+8efdf5e74e,RELIANCE.NS,Business Standard (via gnews-rss),2026-01-19,0.016,0.8907,0.0933,-0.8747,0.0,0,0
+ae89fd56dd,TCS.NS,scanx.trade (via gnews-rss),2026-01-19,0.0291,0.0433,0.9276,-0.0143,0.0,0,0
+6e86b81e75,TCS.NS,scanx.trade (via gnews-rss),2026-01-19,0.0295,0.042,0.9285,-0.0125,0.0,0,0
+a8e0c80a0e,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-19,0.032,0.0345,0.9335,-0.0025,0.0,0,0
+0e88e7de40,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-19,0.0256,0.0474,0.927,-0.0217,0.0,0,0
+c2986b9a6c,ICICIBANK.NS,Rediff MoneyWiz (via gnews-rss),2026-01-19,0.0071,0.9608,0.0321,-0.9537,-1.0,0,2
+3f7af5bfe5,ICICIBANK.NS,The Hindu (via gnews-rss),2026-01-19,0.0086,0.9711,0.0203,-0.9625,-1.0,0,4
+7247c27507,ICICIBANK.NS,Fortune India (via gnews-rss),2026-01-19,0.0089,0.9686,0.0225,-0.9597,1.0,2,0
+c129ac9546,ICICIBANK.NS,theweek.in (via gnews-rss),2026-01-19,0.0141,0.9494,0.0365,-0.9353,0.0,0,0
+d9a871755f,ICICIBANK.NS,The Hindu (via gnews-rss),2026-01-19,0.0778,0.0623,0.8599,0.0155,0.0,0,0
+cc36958bc5,ICICIBANK.NS,BusinessLine (via gnews-rss),2026-01-19,0.0118,0.903,0.0852,-0.8913,0.0,0,0
+fdaa1bf51b,ICICIBANK.NS,Rediff MoneyWiz (via gnews-rss),2026-01-19,0.0167,0.8189,0.1643,-0.8022,-1.0,0,4
+c07f6e4079,HINDUNILVR.NS,HDFC Sky (via gnews-rss),2026-01-19,0.9551,0.0197,0.0252,0.9354,0.0,0,0
+3e8839fa75,HINDUNILVR.NS,Business Standard (via gnews-rss),2026-01-19,0.9013,0.0168,0.0819,0.8845,0.0,0,0
+9ab2132c25,HINDUNILVR.NS,scanx.trade (via gnews-rss),2026-01-19,0.9408,0.0201,0.0391,0.9207,0.0,0,0
+ddd5c84c46,HINDUNILVR.NS,Bloomberg (via gnews-rss),2026-01-19,0.0223,0.0401,0.9376,-0.0179,1.0,2,0
+34f44f4501,HINDUNILVR.NS,The New Indian Express (via gnews-rss),2026-01-19,0.0086,0.9722,0.0193,-0.9636,-1.0,0,4
+ec3e971843,SBIN.NS,simplywall.st (via gnews-rss),2026-01-19,0.9103,0.0533,0.0365,0.857,0.0,0,0
+a46a82c4b4,SBIN.NS,scanx.trade (via gnews-rss),2026-01-19,0.8909,0.0179,0.0913,0.873,-1.0,0,2
+d1ba77bbf4,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-19,0.034,0.0246,0.9415,0.0094,0.0,0,0
+fe60331d13,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-19,0.0133,0.9457,0.0411,-0.9324,-1.0,0,4
+4ec9b58da8,AXISBANK.NS,scanx.trade (via gnews-rss),2026-01-19,0.0273,0.0434,0.9294,-0.0161,0.0,0,0
+8b021f9bab,MARUTI.NS,Equitypandit (via gnews-rss),2026-01-19,0.8996,0.0182,0.0822,0.8814,0.0,0,0
+dd5ab5ac12,SUNPHARMA.NS,scanx.trade (via gnews-rss),2026-01-19,0.0331,0.0213,0.9456,0.0118,0.0,0,0
+92cd2263d7,SUNPHARMA.NS,HDFC Sky (via gnews-rss),2026-01-19,0.0592,0.0145,0.9263,0.0447,0.0,0,0
+6289c7d160,WIPRO.NS,Rediff MoneyWiz (via gnews-rss),2026-01-19,0.0084,0.9574,0.0343,-0.949,0.0,0,0
+84c8a5028a,WIPRO.NS,Business Today (via gnews-rss),2026-01-19,0.0223,0.1696,0.8082,-0.1473,-1.0,0,2
+6d0731907a,WIPRO.NS,Business Standard (via gnews-rss),2026-01-19,0.0077,0.9698,0.0225,-0.962,1.0,2,0
+7d5095d8c3,WIPRO.NS,Upstox (via gnews-rss),2026-01-19,0.0751,0.8911,0.0339,-0.816,0.0,0,0
+8840abfff2,COALINDIA.NS,The New Indian Express (via gnews-rss),2026-01-19,0.3055,0.0138,0.6806,0.2917,0.0,0,0
+6f358d6a35,COALINDIA.NS,BusinessLine (via gnews-rss),2026-01-19,0.0472,0.0142,0.9387,0.033,0.0,0,0
+cad3c552ee,COALINDIA.NS,Business Standard (via gnews-rss),2026-01-19,0.0471,0.0134,0.9395,0.0336,0.0,0,0
+e864709dcc,COALINDIA.NS,Upstox (via gnews-rss),2026-01-19,0.0415,0.0163,0.9422,0.0253,0.0,0,0
+c85bce36d3,GRASIM.NS,The Economic Times (via gnews-rss),2026-01-19,0.1639,0.0161,0.82,0.1479,0.0,0,0
+86114c2847,CIPLA.NS,Business Standard (via gnews-rss),2026-01-19,0.0103,0.9684,0.0213,-0.9581,0.0,0,0
+f39a944446,BRITANNIA.NS,Business Today (via gnews-rss),2026-01-19,0.7336,0.0203,0.2461,0.7132,1.0,2,0
+658cf79ad0,HEROMOTOCO.NS,simplywall.st (via gnews-rss),2026-01-19,0.7606,0.0093,0.2301,0.7513,0.0,0,0
+9d4ed01b1b,DIVISLAB.NS,Business Standard (via gnews-rss),2026-01-19,0.0087,0.9538,0.0375,-0.9451,-1.0,0,2
+2c84a05761,DIVISLAB.NS,The Economic Times (via gnews-rss),2026-01-19,0.0294,0.7306,0.2401,-0.7012,-1.0,0,2
+51ac826755,TECHM.NS,Upstox (via gnews-rss),2026-01-19,0.9439,0.0213,0.0348,0.9226,1.0,2,0
+5791d33332,TECHM.NS,scanx.trade (via gnews-rss),2026-01-19,0.033,0.0159,0.9511,0.0171,0.0,0,0
+58ffd84c93,LTIM.NS,CNBC TV18 (via gnews-rss),2026-01-19,0.0341,0.885,0.0808,-0.8509,1.0,2,0
+be2e74f7f1,LTIM.NS,Equitymaster (via gnews-rss),2026-01-19,0.0382,0.0151,0.9467,0.023,0.0,0,0
+05f1bc9e7a,LTIM.NS,Upstox (via gnews-rss),2026-01-19,0.0167,0.898,0.0853,-0.8814,0.0,0,0
+6cf95339c0,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-19,0.0279,0.0225,0.9495,0.0054,0.0,0,0
+51583e0282,MACRO,Business Standard (via gnews-rss),2026-01-19,0.0461,0.0127,0.9412,0.0334,0.0,0,0
+67268629d5,MACRO,The Economic Times (via gnews-rss),2026-01-19,0.0383,0.8376,0.1241,-0.7993,-1.0,0,2
+4a408df5f3,HDFCBANK.NS,TradingView (via gnews-rss),2026-01-18,0.0081,0.9688,0.023,-0.9607,1.0,2,0
+88d13f4ea1,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-18,0.0249,0.0469,0.9282,-0.022,0.0,0,0
+ae871caf7c,ICICIBANK.NS,TradingView (via gnews-rss),2026-01-18,0.7443,0.1625,0.0932,0.5818,0.0,0,0
+a0a91a580d,ICICIBANK.NS,Upstox (via gnews-rss),2026-01-18,0.0313,0.7518,0.2168,-0.7205,0.0,0,0
+3f0aa877c0,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-18,0.1534,0.011,0.8356,0.1425,0.0,0,0
+3454be0129,MARUTI.NS,scanx.trade (via gnews-rss),2026-01-18,0.0261,0.0456,0.9283,-0.0196,0.0,0,0
+b999b74fb7,HCLTECH.NS,Moneycontrol.com (via gnews-rss),2026-01-18,0.0525,0.0133,0.9343,0.0392,0.0,0,0
+785ea55f05,ULTRACEMCO.NS,scanx.trade (via gnews-rss),2026-01-18,0.0422,0.0345,0.9232,0.0077,0.0,0,0
+1eb0e1ffe5,POWERGRID.NS,The Economic Times (via gnews-rss),2026-01-18,0.0637,0.0156,0.9206,0.0481,0.0,0,0
+249d6819c9,JSWSTEEL.NS,simplywall.st (via gnews-rss),2026-01-18,0.125,0.0102,0.8649,0.1148,0.0,0,0
+1e1ee3cf25,ADANIPORTS.NS,simplywall.st (via gnews-rss),2026-01-18,0.082,0.0423,0.8757,0.0397,-0.3333,2,4
+55367392fc,ADANIPORTS.NS,The Economic Times (via gnews-rss),2026-01-18,0.0662,0.0161,0.9177,0.0501,0.0,0,0
+8241f6a66d,COALINDIA.NS,The Economic Times (via gnews-rss),2026-01-18,0.9217,0.0122,0.0662,0.9095,1.0,4,0
+2755ae857a,TECHM.NS,scanx.trade (via gnews-rss),2026-01-18,0.9355,0.0306,0.0339,0.9049,0.0,0,0
+919edc3383,INDUSINDBK.NS,scanx.trade (via gnews-rss),2026-01-18,0.0231,0.045,0.9319,-0.0219,0.0,0,0
+6d0796d237,HDFCLIFE.NS,scanx.trade (via gnews-rss),2026-01-18,0.0317,0.0212,0.9471,0.0104,0.0,0,0
+2a699e2f96,MACRO,IBTimes India (via gnews-rss),2026-01-18,0.0447,0.0184,0.9369,0.0263,1.0,2,0
+fc295874f5,HDFCBANK.NS,simplywall.st (via gnews-rss),2026-01-17,0.0778,0.0109,0.9113,0.0669,0.0,0,0
+1b14dbafcd,ICICIBANK.NS,Upstox (via gnews-rss),2026-01-17,0.021,0.9489,0.0301,-0.9279,1.0,2,0
+d633d48a6f,WIPRO.NS,simplywall.st (via gnews-rss),2026-01-17,0.086,0.0115,0.9025,0.0745,0.0,2,2
+c39b7f234f,TATASTEEL.NS,simplywall.st (via gnews-rss),2026-01-17,0.0562,0.0118,0.932,0.0444,-1.0,0,2
+e2fa4a92ab,CIPLA.NS,simplywall.st (via gnews-rss),2026-01-17,0.0221,0.2219,0.756,-0.1998,-1.0,0,2
+a113dbdf31,TATACONSUM.NS,simplywall.st (via gnews-rss),2026-01-17,0.6473,0.0091,0.3437,0.6382,0.0,0,0
+e7420a302e,SHRIRAMFIN.NS,simplywall.st (via gnews-rss),2026-01-17,0.5837,0.0103,0.4059,0.5734,0.0,2,2
+fca869f86d,BPCL.NS,simplywall.st (via gnews-rss),2026-01-17,0.0269,0.0331,0.9401,-0.0062,0.0,2,2
+9218cfc6a1,BPCL.NS,Mint (via gnews-rss),2026-01-17,0.0419,0.0206,0.9374,0.0213,0.0,0,0
+7929872377,RELIANCE.NS,Upstox (via gnews-rss),2026-01-16,0.9385,0.0274,0.0341,0.9111,1.0,4,0
+ec3b1fbc41,INFY.NS,The Times of India (via gnews-rss),2026-01-16,0.6851,0.0223,0.2926,0.6628,0.0,0,0
+1581882b93,INFY.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.9192,0.0305,0.0503,0.8887,1.0,2,0
+e851f281c9,INFY.NS,India Today (via gnews-rss),2026-01-16,0.5782,0.0184,0.4034,0.5597,0.0,0,0
+c74c375fa9,INFY.NS,Finshots (via gnews-rss),2026-01-16,0.085,0.0109,0.9041,0.0741,-1.0,0,2
+8ad3ad065c,INFY.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.9356,0.021,0.0433,0.9146,0.0,0,0
+9c204050ed,INFY.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.3865,0.0447,0.5688,0.3417,0.0,0,0
+9defc998cf,ITC.NS,scanx.trade (via gnews-rss),2026-01-16,0.0299,0.0176,0.9525,0.0123,-1.0,0,2
+4072b156ed,KOTAKBANK.NS,scanx.trade (via gnews-rss),2026-01-16,0.3785,0.0267,0.5948,0.3519,0.0,0,0
+d2af317fce,LT.NS,simplywall.st (via gnews-rss),2026-01-16,0.0235,0.9503,0.0262,-0.9268,-0.3333,2,4
+ea786b2e8e,LT.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.8692,0.0169,0.1139,0.8523,1.0,2,0
+fb9334110d,LT.NS,Business Standard (via gnews-rss),2026-01-16,0.7559,0.0119,0.2322,0.744,0.0,0,0
+9c64fa040c,AXISBANK.NS,The Economic Times (via gnews-rss),2026-01-16,0.0761,0.0189,0.905,0.0572,0.0,0,0
+868e67dd1d,AXISBANK.NS,The Economic Times (via gnews-rss),2026-01-16,0.882,0.018,0.0999,0.864,0.0,0,0
+072c3ee9fd,HCLTECH.NS,Business Standard (via gnews-rss),2026-01-16,0.0406,0.0161,0.9434,0.0245,0.0,0,0
+ccda6fb91a,WIPRO.NS,Business Standard (via gnews-rss),2026-01-16,0.9284,0.0155,0.056,0.9129,0.0,0,0
+95b5944ffe,WIPRO.NS,Upstox (via gnews-rss),2026-01-16,0.6899,0.0672,0.2429,0.6227,0.0,0,0
+100954ea8d,ULTRACEMCO.NS,scanx.trade (via gnews-rss),2026-01-16,0.0183,0.054,0.9277,-0.0357,-1.0,0,2
+2acc76dd98,NTPC.NS,Equitypandit (via gnews-rss),2026-01-16,0.0392,0.0199,0.9409,0.0193,0.0,0,0
+4c51568f54,NTPC.NS,India Infoline (via gnews-rss),2026-01-16,0.1139,0.013,0.8731,0.1008,0.0,0,0
+da10890488,TATAMOTORS.NS,Business Standard (via gnews-rss),2026-01-16,0.5514,0.0111,0.4375,0.5402,1.0,2,0
+33a511a476,GRASIM.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.0547,0.0174,0.9279,0.0374,0.0,0,0
+7d829a1f53,GRASIM.NS,Upstox (via gnews-rss),2026-01-16,0.0368,0.0306,0.9327,0.0062,0.0,0,0
+77268a63d3,TECHM.NS,Business Standard (via gnews-rss),2026-01-16,0.9511,0.0228,0.026,0.9283,1.0,2,0
+362871e382,TECHM.NS,Upstox (via gnews-rss),2026-01-16,0.9172,0.0252,0.0576,0.8919,1.0,2,0
+e16d94a16d,APOLLOHOSP.NS,scanx.trade (via gnews-rss),2026-01-16,0.0238,0.0303,0.9459,-0.0065,0.0,0,0
+d5af15bd7c,HDFCLIFE.NS,Business Standard (via gnews-rss),2026-01-16,0.0519,0.0132,0.9349,0.0387,-1.0,0,2
+6852104ae6,LTIM.NS,India Infoline (via gnews-rss),2026-01-16,0.8814,0.0132,0.1054,0.8682,1.0,2,0
+36d2e3603d,LTIM.NS,Equitypandit (via gnews-rss),2026-01-16,0.9367,0.029,0.0342,0.9077,0.0,0,0
+ce2f876e43,LTIM.NS,Business Standard (via gnews-rss),2026-01-16,0.6458,0.0315,0.3226,0.6143,0.0,0,0
+57d1162f13,LTIM.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.8504,0.0385,0.1111,0.812,1.0,2,0
+8cd0f6215d,LTIM.NS,Business Standard (via gnews-rss),2026-01-16,0.8863,0.0189,0.0948,0.8675,1.0,2,0
+c4a8014191,SHRIRAMFIN.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.0375,0.0181,0.9444,0.0194,0.0,0,0
+5ff36b2ff2,BPCL.NS,Moneycontrol.com (via gnews-rss),2026-01-16,0.9265,0.0231,0.0504,0.9034,-1.0,0,4
+b0b5f659d7,RELIANCE.NS,scanx.trade (via gnews-rss),2026-01-15,0.0315,0.024,0.9445,0.0075,0.0,0,0
+e8b2f0d786,TCS.NS,Business Today (via gnews-rss),2026-01-15,0.0581,0.0205,0.9214,0.0375,0.0,0,0
+9407adeb67,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-15,0.0279,0.0436,0.9285,-0.0157,0.0,0,0
+712163a9b1,INFY.NS,scanx.trade (via gnews-rss),2026-01-15,0.0249,0.0448,0.9303,-0.02,0.0,0,0
+6791f9b801,INFY.NS,Business Standard (via gnews-rss),2026-01-15,0.9162,0.0177,0.0661,0.8986,0.0,0,0
+434d194dac,INFY.NS,The Economic Times (via gnews-rss),2026-01-15,0.5878,0.0151,0.3971,0.5727,0.0,0,0
+320ba26ee7,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-15,0.0326,0.0292,0.9382,0.0035,0.0,0,0
+717c1e87e4,LT.NS,Upstox (via gnews-rss),2026-01-15,0.0308,0.023,0.9462,0.0078,0.0,0,0
+90673472ec,BAJFINANCE.NS,The Morning Context (via gnews-rss),2026-01-15,0.0567,0.0238,0.9195,0.0329,-1.0,0,2
+661d4a6f7b,GRASIM.NS,scanx.trade (via gnews-rss),2026-01-15,0.0414,0.0249,0.9337,0.0165,0.0,0,0
+f592346620,CIPLA.NS,scanx.trade (via gnews-rss),2026-01-15,0.0077,0.9714,0.0209,-0.9638,-1.0,0,2
+d3a3df7156,INDUSINDBK.NS,Moneycontrol.com (via gnews-rss),2026-01-15,0.0358,0.0214,0.9428,0.0144,0.0,0,0
+2687dcf838,HDFCLIFE.NS,Upstox (via gnews-rss),2026-01-15,0.924,0.0542,0.0217,0.8698,1.0,2,0
+b0e3d84925,HDFCLIFE.NS,Business Standard (via gnews-rss),2026-01-15,0.0532,0.0162,0.9306,0.037,0.0,0,0
+d268ff31f0,SHRIRAMFIN.NS,scanx.trade (via gnews-rss),2026-01-15,0.0174,0.0441,0.9385,-0.0268,0.0,0,0
+fccc5ed08a,MACRO,IBEF (via gnews-rss),2026-01-15,0.4315,0.0096,0.5589,0.4219,0.0,0,0
+5b62d6b6b6,TCS.NS,The New Indian Express (via gnews-rss),2026-01-14,0.0256,0.8428,0.1316,-0.8172,-1.0,0,2
+cdae78dce8,HINDUNILVR.NS,HDFC Sky (via gnews-rss),2026-01-14,0.0062,0.9657,0.0281,-0.9595,0.0,0,0
+944a8dc868,KOTAKBANK.NS,Business Standard (via gnews-rss),2026-01-14,0.0595,0.0115,0.929,0.0479,0.0,0,0
+3201ffe90c,KOTAKBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-14,0.0323,0.0212,0.9465,0.0111,0.0,0,0
+71f5745d41,KOTAKBANK.NS,scanx.trade (via gnews-rss),2026-01-14,0.0073,0.9701,0.0226,-0.9628,0.0,0,0
+9249cf0af5,AXISBANK.NS,Business Standard (via gnews-rss),2026-01-14,0.9029,0.03,0.0671,0.8729,0.0,0,0
+aacf38db64,AXISBANK.NS,The Economic Times (via gnews-rss),2026-01-14,0.9366,0.0202,0.0432,0.9164,0.0,0,0
+417201e0c4,ASIANPAINT.NS,Upstox (via gnews-rss),2026-01-14,0.8561,0.0825,0.0614,0.7736,0.0,0,0
+0ec9f6cf64,HCLTECH.NS,Moneycontrol.com (via gnews-rss),2026-01-14,0.9351,0.0184,0.0465,0.9167,0.0,0,0
+675e5d3303,SUNPHARMA.NS,scanx.trade (via gnews-rss),2026-01-14,0.9374,0.0202,0.0424,0.9172,0.0,0,0
+ffc59bc80c,ULTRACEMCO.NS,simplywall.st (via gnews-rss),2026-01-14,0.0694,0.0178,0.9128,0.0515,-1.0,0,2
+ac445ed00c,NESTLEIND.NS,Business Standard (via gnews-rss),2026-01-14,0.0584,0.0226,0.919,0.0358,0.0,0,0
+907432faa1,ONGC.NS,Business Standard (via gnews-rss),2026-01-14,0.9246,0.0183,0.0571,0.9064,0.0,0,0
+0ae3e0ef68,ONGC.NS,The Economic Times (via gnews-rss),2026-01-14,0.7643,0.0198,0.2159,0.7445,1.0,2,0
+8b029df344,TATASTEEL.NS,HDFC Sky (via gnews-rss),2026-01-14,0.9367,0.0169,0.0464,0.9198,0.0,0,0
+2ce6ec947c,COALINDIA.NS,Groww (via gnews-rss),2026-01-14,0.0546,0.0142,0.9312,0.0404,0.0,0,0
+2c79f30153,COALINDIA.NS,Upstox (via gnews-rss),2026-01-14,0.0427,0.0147,0.9426,0.0279,0.0,0,0
+482ad769ba,GRASIM.NS,The Economic Times (via gnews-rss),2026-01-14,0.1577,0.011,0.8313,0.1466,0.0,0,0
+07bbc54189,HINDALCO.NS,Business Standard (via gnews-rss),2026-01-14,0.9292,0.0259,0.0449,0.9032,0.0,0,0
+8dd928acb0,DRREDDY.NS,Stock Titan (via gnews-rss),2026-01-14,0.0779,0.0124,0.9097,0.0656,-1.0,0,2
+9f33c63733,EICHERMOT.NS,Business Standard (via gnews-rss),2026-01-14,0.0112,0.9665,0.0223,-0.9553,0.0,0,0
+dd8a121f21,TECHM.NS,Business Standard (via gnews-rss),2026-01-14,0.9436,0.0156,0.0409,0.928,1.0,4,0
+ad6532a0db,INDUSINDBK.NS,Business Standard (via gnews-rss),2026-01-14,0.9329,0.0229,0.0441,0.91,0.0,0,0
+950312113a,INDUSINDBK.NS,Business Today (via gnews-rss),2026-01-14,0.0452,0.0148,0.9399,0.0304,0.0,0,0
+555db07dc0,BPCL.NS,HDFC Sky (via gnews-rss),2026-01-14,0.9466,0.0161,0.0373,0.9305,0.0,0,0
+906c3038a2,MACRO,GETMONEYRICH (via gnews-rss),2026-01-14,0.0455,0.2364,0.7181,-0.191,-1.0,0,2
+9782e7b84c,TCS.NS,Moneycontrol.com (via gnews-rss),2026-01-13,0.0156,0.9224,0.0619,-0.9068,-1.0,0,2
+fdbf61c609,TCS.NS,Moneycontrol.com (via gnews-rss),2026-01-13,0.3153,0.0483,0.6364,0.2669,-1.0,0,2
+c42ee368cf,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-13,0.0239,0.0472,0.9289,-0.0233,0.0,0,0
+ee0582c558,INFY.NS,Business Standard (via gnews-rss),2026-01-13,0.9417,0.0157,0.0426,0.926,0.0,0,0
+03532b09e0,SBIN.NS,Moneycontrol.com (via gnews-rss),2026-01-13,0.0382,0.0162,0.9456,0.022,0.0,0,0
+70692736dd,KOTAKBANK.NS,Upstox (via gnews-rss),2026-01-13,0.0308,0.0228,0.9465,0.008,0.0,0,0
+af2baa969c,KOTAKBANK.NS,scanx.trade (via gnews-rss),2026-01-13,0.0301,0.0514,0.9185,-0.0213,0.0,0,0
+c84ad1959e,LT.NS,scanx.trade (via gnews-rss),2026-01-13,0.035,0.0376,0.9274,-0.0025,0.0,0,0
+6383c121b2,BAJFINANCE.NS,The Morning Context (via gnews-rss),2026-01-13,0.0431,0.016,0.9409,0.0271,0.0,0,0
+d09ac15996,HCLTECH.NS,Business Standard (via gnews-rss),2026-01-13,0.84,0.023,0.1369,0.817,0.0,0,0
+419c3f687e,HCLTECH.NS,Fortune India (via gnews-rss),2026-01-13,0.0073,0.9672,0.0256,-0.9599,0.0,2,2
+6c6671b1ab,HCLTECH.NS,Moneycontrol.com (via gnews-rss),2026-01-13,0.0383,0.0188,0.9429,0.0196,0.0,0,0
+fdfcc50565,TITAN.NS,The Economic Times (via gnews-rss),2026-01-13,0.0703,0.013,0.9167,0.0574,0.0,0,0
+8a8635c41d,NTPC.NS,simplywall.st (via gnews-rss),2026-01-13,0.0299,0.1181,0.852,-0.0882,0.0,0,0
+3dfe947dcc,COALINDIA.NS,Upstox (via gnews-rss),2026-01-13,0.9496,0.0209,0.0296,0.9287,0.0,0,0
+1d61a72951,GRASIM.NS,Business Standard (via gnews-rss),2026-01-13,0.7943,0.0128,0.1928,0.7815,0.0,0,0
+f800266ac3,GRASIM.NS,Business Standard (via gnews-rss),2026-01-13,0.0085,0.9477,0.0437,-0.9392,0.0,0,0
+5dbf0131c4,BRITANNIA.NS,simplywall.st (via gnews-rss),2026-01-13,0.6951,0.0109,0.294,0.6841,0.0,0,0
+ff357b70cb,EICHERMOT.NS,Moneycontrol.com (via gnews-rss),2026-01-13,0.0124,0.9589,0.0287,-0.9466,0.0,2,2
+5aa00ec1f6,APOLLOHOSP.NS,simplywall.st (via gnews-rss),2026-01-13,0.8291,0.0083,0.1627,0.8208,-1.0,0,2
+0f1306a27c,TATACONSUM.NS,The Economic Times (via gnews-rss),2026-01-13,0.0634,0.0136,0.923,0.0498,0.0,0,0
+e01064a6f3,SBILIFE.NS,The Economic Times (via gnews-rss),2026-01-13,0.0707,0.0128,0.9165,0.0579,0.0,0,0
+5db486e38f,HDFCLIFE.NS,The Economic Times (via gnews-rss),2026-01-13,0.075,0.0118,0.9132,0.0631,0.0,0,0
+1cad641466,BPCL.NS,BusinessLine (via gnews-rss),2026-01-13,0.8341,0.0091,0.1568,0.825,0.0,0,0
+4395f973a3,BPCL.NS,Equitypandit (via gnews-rss),2026-01-13,0.9284,0.0226,0.049,0.9058,0.0,0,0
+bc580802fb,MACRO,DT Next (via gnews-rss),2026-01-13,0.0185,0.9517,0.0298,-0.9332,0.0,0,0
+ee35035b67,MACRO,Forbes (via gnews-rss),2026-01-13,0.0299,0.6658,0.3043,-0.6359,0.0,0,0
+fa5b81b2c6,TCS.NS,Upstox (via gnews-rss),2026-01-12,0.2582,0.0178,0.7241,0.2404,1.0,2,0
+0c9210f9d4,TCS.NS,Upstox (via gnews-rss),2026-01-12,0.7233,0.0339,0.2428,0.6894,0.0,0,0
+e241ae2548,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-12,0.0278,0.0439,0.9284,-0.0161,0.0,0,0
+0a54d9fcf4,ITC.NS,scanx.trade (via gnews-rss),2026-01-12,0.0256,0.0357,0.9387,-0.0101,0.0,0,0
+3fbdf377fd,SBIN.NS,Upstox (via gnews-rss),2026-01-12,0.8842,0.0232,0.0926,0.861,0.0,0,0
+007fdbcc4d,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-12,0.0377,0.0216,0.9406,0.0161,0.0,0,0
+ff65cf977f,LT.NS,simplywall.st (via gnews-rss),2026-01-12,0.0091,0.9623,0.0286,-0.9532,-1.0,0,6
+a6b46d9784,ASIANPAINT.NS,The Times of India (via gnews-rss),2026-01-12,0.0229,0.2846,0.6925,-0.2617,0.0,0,0
+5ef257ffcd,HCLTECH.NS,Upstox (via gnews-rss),2026-01-12,0.4628,0.501,0.0362,-0.0381,1.0,2,0
+4c82b6247a,NESTLEIND.NS,simplywall.st (via gnews-rss),2026-01-12,0.0995,0.0113,0.8892,0.0881,-1.0,0,2
+d2a4f42c4f,NTPC.NS,Moneycontrol.com (via gnews-rss),2026-01-12,0.0321,0.0187,0.9492,0.0134,0.0,0,0
+d2071643bc,M&M.NS,simplywall.st (via gnews-rss),2026-01-12,0.6664,0.015,0.3185,0.6514,-1.0,0,4
+4f9a0b4208,TATAMOTORS.NS,Upstox (via gnews-rss),2026-01-12,0.0115,0.9431,0.0454,-0.9316,0.0,0,0
+265f512f1e,HINDALCO.NS,simplywall.st (via gnews-rss),2026-01-12,0.738,0.0082,0.2538,0.7298,0.0,0,0
+a4ee9b9db5,INDUSINDBK.NS,Moneycontrol.com (via gnews-rss),2026-01-12,0.0344,0.4772,0.4884,-0.4427,0.0,0,0
+3b2caa3807,APOLLOHOSP.NS,simplywall.st (via gnews-rss),2026-01-12,0.4709,0.0104,0.5187,0.4605,0.0,0,0
+008b839101,MACRO,Moneycontrol.com (via gnews-rss),2026-01-12,0.0247,0.902,0.0733,-0.8772,-1.0,0,4
+c62a634e96,MACRO,Business Standard (via gnews-rss),2026-01-12,0.2821,0.0827,0.6353,0.1994,-1.0,0,2
+1158622c05,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-11,0.0226,0.0496,0.9277,-0.027,0.0,0,0
+b1d6c2ea8c,ITC.NS,simplywall.st (via gnews-rss),2026-01-11,0.0553,0.5879,0.3568,-0.5326,-1.0,0,4
+07d2b3b4ac,SBIN.NS,scanx.trade (via gnews-rss),2026-01-11,0.8839,0.0218,0.0943,0.8621,1.0,2,0
+1a269db8e6,KOTAKBANK.NS,Upstox (via gnews-rss),2026-01-11,0.0696,0.0208,0.9095,0.0488,0.0,0,0
+a18e1a4579,MARUTI.NS,simplywall.st (via gnews-rss),2026-01-11,0.0591,0.0131,0.9279,0.046,0.0,0,0
+d5f0d4f432,HCLTECH.NS,Upstox (via gnews-rss),2026-01-11,0.903,0.0194,0.0775,0.8836,1.0,2,0
+f00e2eabe9,M&M.NS,simplywall.st (via gnews-rss),2026-01-11,0.0246,0.9436,0.0318,-0.919,-0.3333,2,4
+e3245b3b48,CIPLA.NS,scanx.trade (via gnews-rss),2026-01-11,0.0238,0.043,0.9332,-0.0193,0.0,0,0
+53bded7b92,DIVISLAB.NS,scanx.trade (via gnews-rss),2026-01-11,0.0262,0.0371,0.9367,-0.0109,0.0,0,0
+9df5ff15d2,HDFCLIFE.NS,Upstox (via gnews-rss),2026-01-11,0.4177,0.0278,0.5546,0.3899,0.0,0,0
+0538d6bb20,MACRO,TradingView (via gnews-rss),2026-01-11,0.021,0.0322,0.9468,-0.0111,0.0,0,0
+e1fc6a3f01,MACRO,The Economic Times (via gnews-rss),2026-01-11,0.0219,0.0692,0.9089,-0.0473,0.0,0,0
+8cdf5e0a26,HINDUNILVR.NS,Mint (via gnews-rss),2026-01-10,0.1623,0.0095,0.8282,0.1528,-1.0,0,2
+445e9e7737,KOTAKBANK.NS,The Economic Times (via gnews-rss),2026-01-10,0.0366,0.0174,0.946,0.0192,0.0,0,0
+6e5a8a208c,POWERGRID.NS,BusinessLine (via gnews-rss),2026-01-10,0.0269,0.0223,0.9508,0.0045,0.0,0,0
+2930396d30,GRASIM.NS,simplywall.st (via gnews-rss),2026-01-10,0.0161,0.9096,0.0743,-0.8934,-1.0,0,2
+24ada8b02c,BRITANNIA.NS,The Economic Times (via gnews-rss),2026-01-10,0.0415,0.016,0.9424,0.0255,0.0,0,0
+d78d2326e8,HDFCLIFE.NS,Business Today (via gnews-rss),2026-01-10,0.0731,0.0202,0.9067,0.0529,0.0,0,0
+a63d403e07,MACRO,Mint (via gnews-rss),2026-01-10,0.8731,0.0148,0.1122,0.8583,0.0,2,2
+89990855cc,HINDUNILVR.NS,Equitypandit (via gnews-rss),2026-01-09,0.0083,0.9734,0.0183,-0.9651,0.0,0,0
+5572c54894,BAJFINANCE.NS,Business Standard (via gnews-rss),2026-01-09,0.0603,0.0141,0.9256,0.0462,0.0,0,0
+1c3b0135cf,ASIANPAINT.NS,simplywall.st (via gnews-rss),2026-01-09,0.043,0.0131,0.9439,0.0299,-1.0,0,2
+3f4f83f813,SUNPHARMA.NS,simplywall.st (via gnews-rss),2026-01-09,0.9391,0.0141,0.0468,0.925,0.0,0,0
+be5a11f5f5,TITAN.NS,The Economic Times (via gnews-rss),2026-01-09,0.1695,0.0135,0.817,0.156,0.0,0,0
+9c2df562b4,POWERGRID.NS,Moneycontrol.com (via gnews-rss),2026-01-09,0.0298,0.0217,0.9484,0.0081,0.0,0,0
+18d98be299,POWERGRID.NS,Business Standard (via gnews-rss),2026-01-09,0.9285,0.0167,0.0548,0.9118,0.0,0,0
+285a32ec43,ADANIENT.NS,Upstox (via gnews-rss),2026-01-09,0.0108,0.9294,0.0598,-0.9186,-1.0,0,2
+21bbcba8aa,BRITANNIA.NS,The Economic Times (via gnews-rss),2026-01-09,0.5369,0.0187,0.4444,0.5182,1.0,2,0
+363f3190b5,INDUSINDBK.NS,The Economic Times (via gnews-rss),2026-01-09,0.0343,0.0181,0.9477,0.0162,0.0,0,0
+23614ef609,SBILIFE.NS,Business Today (via gnews-rss),2026-01-09,0.043,0.0151,0.9418,0.0279,0.0,0,0
+378ad39c45,MACRO,Business Standard (via gnews-rss),2026-01-09,0.0196,0.8938,0.0866,-0.8741,0.0,0,0
+0c4dfba2bb,RELIANCE.NS,Business Standard (via gnews-rss),2026-01-08,0.0862,0.8652,0.0486,-0.7791,-1.0,0,2
+48582c8e55,RELIANCE.NS,Rediff MoneyWiz (via gnews-rss),2026-01-08,0.0097,0.875,0.1152,-0.8653,-1.0,0,2
+eb4283e4d2,TCS.NS,Moneycontrol.com (via gnews-rss),2026-01-08,0.0073,0.9705,0.0221,-0.9632,0.0,0,0
+da65d59864,HCLTECH.NS,simplywall.st (via gnews-rss),2026-01-08,0.7725,0.0095,0.2179,0.763,0.0,0,0
+332f9a2148,ULTRACEMCO.NS,The New Indian Express (via gnews-rss),2026-01-08,0.0159,0.9627,0.0214,-0.9467,-1.0,0,2
+42badf7aca,ONGC.NS,simplywall.st (via gnews-rss),2026-01-08,0.0326,0.0391,0.9283,-0.0064,-1.0,0,2
+da47c8bfb0,TATASTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-08,0.0357,0.019,0.9452,0.0167,0.0,0,0
+38a6cb7d3d,COALINDIA.NS,Samco (via gnews-rss),2026-01-08,0.0247,0.0201,0.9552,0.0045,0.0,0,0
+0aa0a818c1,BAJAJFINSV.NS,Upstox (via gnews-rss),2026-01-08,0.2651,0.0136,0.7212,0.2515,0.0,0,0
+3d8a22e36f,HINDALCO.NS,HDFC Sky (via gnews-rss),2026-01-08,0.0062,0.9683,0.0255,-0.9621,1.0,2,0
+aeb4fed101,DRREDDY.NS,scanx.trade (via gnews-rss),2026-01-08,0.0315,0.0244,0.944,0.0071,0.0,0,0
+f7c316cc9c,CIPLA.NS,Business Standard (via gnews-rss),2026-01-08,0.0552,0.0153,0.9295,0.04,0.0,0,0
+77b598db06,BRITANNIA.NS,Business Standard (via gnews-rss),2026-01-08,0.0069,0.9694,0.0237,-0.9625,0.0,0,0
+41d7769784,BAJAJ-AUTO.NS,simplywall.st (via gnews-rss),2026-01-08,0.1622,0.0099,0.8278,0.1523,0.0,0,0
+bae0e6c7fb,BAJAJ-AUTO.NS,Mint (via gnews-rss),2026-01-08,0.0263,0.0236,0.9501,0.0027,0.0,0,0
+0a2974eba2,INDUSINDBK.NS,simplywall.st (via gnews-rss),2026-01-08,0.0068,0.9718,0.0213,-0.965,0.0,0,0
+602c32d1da,SHRIRAMFIN.NS,Business Standard (via gnews-rss),2026-01-08,0.7929,0.1508,0.0563,0.6421,-1.0,0,2
+ca5cb911f5,MACRO,CNBC TV18 (via gnews-rss),2026-01-08,0.0253,0.6098,0.3649,-0.5845,0.0,0,0
+d70af821ed,MACRO,Moneycontrol.com (via gnews-rss),2026-01-08,0.7427,0.0264,0.2309,0.7163,1.0,2,0
+d615ecbf34,RELIANCE.NS,Hindustan Times (via gnews-rss),2026-01-07,0.0196,0.8435,0.1369,-0.824,0.0,0,0
+1b07241dae,HDFCBANK.NS,Upstox (via gnews-rss),2026-01-07,0.0065,0.9704,0.023,-0.9639,0.0,0,0
+983ba78f5a,HDFCBANK.NS,scanx.trade (via gnews-rss),2026-01-07,0.027,0.0462,0.9268,-0.0192,0.0,0,0
+d5be258b6b,ITC.NS,scanx.trade (via gnews-rss),2026-01-07,0.0249,0.0523,0.9228,-0.0275,0.0,0,0
+c7a49b3ae6,ITC.NS,Business Standard (via gnews-rss),2026-01-07,0.01,0.9701,0.0199,-0.96,0.0,0,0
+65edf919dc,SBIN.NS,Moneycontrol.com (via gnews-rss),2026-01-07,0.9268,0.0222,0.051,0.9046,0.0,2,2
+42f8f40d56,BHARTIARTL.NS,scanx.trade (via gnews-rss),2026-01-07,0.0424,0.0307,0.9269,0.0117,0.0,0,0
+a22cfd1cd8,TITAN.NS,Business Standard (via gnews-rss),2026-01-07,0.6649,0.0154,0.3198,0.6495,0.0,0,0
+531aac0cf2,TITAN.NS,Rediff MoneyWiz (via gnews-rss),2026-01-07,0.9516,0.0179,0.0305,0.9336,0.0,0,0
+3b30c3268a,TITAN.NS,BusinessLine (via gnews-rss),2026-01-07,0.8568,0.0141,0.1291,0.8427,0.0,0,0
+7cb5a5aebb,TITAN.NS,Investing.com (via gnews-rss),2026-01-07,0.0087,0.9621,0.0291,-0.9534,0.0,0,0
+6ae34670db,TITAN.NS,Goodreturns (via gnews-rss),2026-01-07,0.9173,0.0145,0.0682,0.9028,0.0,0,0
+0d0ff8e801,TITAN.NS,Rediff MoneyWiz (via gnews-rss),2026-01-07,0.8982,0.0457,0.0561,0.8525,0.0,0,0
+f37b536329,NESTLEIND.NS,The Economic Times (via gnews-rss),2026-01-07,0.9258,0.0172,0.057,0.9086,0.0,0,0
+b792ce5c60,POWERGRID.NS,India Today (via gnews-rss),2026-01-07,0.0275,0.8508,0.1217,-0.8233,0.0,2,2
+42c7e358fd,TATASTEEL.NS,Upstox (via gnews-rss),2026-01-07,0.0248,0.8855,0.0897,-0.8608,0.0,0,0
+43c7e1b93b,TATASTEEL.NS,Upstox (via gnews-rss),2026-01-07,0.0087,0.9636,0.0277,-0.9549,-1.0,0,2
+82e0756d6b,HINDALCO.NS,scanx.trade (via gnews-rss),2026-01-07,0.8554,0.0125,0.1321,0.8429,-1.0,0,2
+0792c823d7,CIPLA.NS,Equitypandit (via gnews-rss),2026-01-07,0.0109,0.9713,0.0178,-0.9604,0.0,0,0
+55064d68c7,CIPLA.NS,Moneymunch (via gnews-rss),2026-01-07,0.2152,0.0189,0.7658,0.1963,0.0,0,0
+446a112ac7,EICHERMOT.NS,simplywall.st (via gnews-rss),2026-01-07,0.1302,0.0095,0.8603,0.1207,0.0,0,0
+f1be63640d,EICHERMOT.NS,Mint (via gnews-rss),2026-01-07,0.4034,0.4039,0.1927,-0.0006,1.0,2,0
+c22a4007ca,BAJAJ-AUTO.NS,scanx.trade (via gnews-rss),2026-01-07,0.0397,0.0362,0.9241,0.0034,0.0,0,0
+fc70e0a437,BAJAJ-AUTO.NS,scanx.trade (via gnews-rss),2026-01-07,0.0214,0.03,0.9486,-0.0087,0.0,0,0
+8e1049861d,BAJAJ-AUTO.NS,Mint (via gnews-rss),2026-01-07,0.0503,0.0138,0.9359,0.0365,0.0,0,0
+52d9e46035,DIVISLAB.NS,Business Standard (via gnews-rss),2026-01-07,0.1147,0.0126,0.8727,0.1021,0.0,0,0
+d6632f190d,DIVISLAB.NS,Business Standard (via gnews-rss),2026-01-07,0.9232,0.028,0.0488,0.8951,0.0,0,0
+26f991ac1e,DIVISLAB.NS,Business Standard (via gnews-rss),2026-01-07,0.0937,0.4887,0.4176,-0.3949,-1.0,0,2
+77fc297f35,DIVISLAB.NS,Business Standard (via gnews-rss),2026-01-07,0.9216,0.0304,0.048,0.8912,0.0,0,0
+1be294f441,APOLLOHOSP.NS,scanx.trade (via gnews-rss),2026-01-07,0.0284,0.0249,0.9468,0.0035,0.0,0,0
+c9b3cf4aee,APOLLOHOSP.NS,The Economic Times (via gnews-rss),2026-01-07,0.1544,0.0689,0.7767,0.0855,0.0,0,0
+230011bfd0,TATACONSUM.NS,The Economic Times (via gnews-rss),2026-01-07,0.9227,0.0175,0.0598,0.9051,0.0,0,0
+991f6deda8,HDFCLIFE.NS,The Economic Times (via gnews-rss),2026-01-07,0.1378,0.0111,0.8511,0.1268,0.0,0,0
+22a53b0232,BPCL.NS,Business Standard (via gnews-rss),2026-01-07,0.0096,0.942,0.0483,-0.9324,-1.0,0,2
+56e5440a00,RELIANCE.NS,simplywall.st (via gnews-rss),2026-01-06,0.0454,0.1283,0.8263,-0.0829,-1.0,0,2
+f6dd1324dc,RELIANCE.NS,Upstox (via gnews-rss),2026-01-06,0.0534,0.1023,0.8443,-0.0489,0.0,0,0
+d0222a73e5,RELIANCE.NS,The Hindu (via gnews-rss),2026-01-06,0.0076,0.9645,0.0279,-0.9569,0.0,0,0
+1841c8e5a3,RELIANCE.NS,The Times of India (via gnews-rss),2026-01-06,0.0102,0.9108,0.079,-0.9007,-1.0,0,2
+a79a040e6d,RELIANCE.NS,BusinessLine (via gnews-rss),2026-01-06,0.0088,0.9402,0.051,-0.9314,0.0,0,0
+5eab8debc9,RELIANCE.NS,HDFC Sky (via gnews-rss),2026-01-06,0.0063,0.9705,0.0231,-0.9642,0.0,0,0
+bcfd234a91,HDFCBANK.NS,The Hindu (via gnews-rss),2026-01-06,0.0105,0.9702,0.0193,-0.9597,0.0,0,0
+329e2ff175,ICICIBANK.NS,Business Standard (via gnews-rss),2026-01-06,0.9303,0.0245,0.0452,0.9059,0.0,0,0
+ad76bdd861,HINDUNILVR.NS,BusinessLine (via gnews-rss),2026-01-06,0.0245,0.8534,0.1221,-0.8289,0.0,0,0
+378a4d7f5f,ITC.NS,scanx.trade (via gnews-rss),2026-01-06,0.0352,0.0305,0.9342,0.0047,0.0,0,0
+49a4492eeb,SBIN.NS,Business Standard (via gnews-rss),2026-01-06,0.8086,0.0134,0.178,0.7952,-1.0,0,2
+ea6198bb49,KOTAKBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-06,0.0373,0.0192,0.9434,0.0181,0.0,0,0
+449241ca19,BAJFINANCE.NS,scanx.trade (via gnews-rss),2026-01-06,0.0283,0.0292,0.9424,-0.0009,0.0,0,0
+3c4c973c72,TITAN.NS,Upstox (via gnews-rss),2026-01-06,0.7538,0.0158,0.2305,0.738,0.0,0,0
+419fda5de2,TITAN.NS,Upstox (via gnews-rss),2026-01-06,0.8739,0.0203,0.1058,0.8536,0.0,0,0
+1bd980fe84,ONGC.NS,Upstox (via gnews-rss),2026-01-06,0.0095,0.9672,0.0232,-0.9577,-1.0,0,2
+0e1f4b9017,TATAMOTORS.NS,Moneycontrol.com (via gnews-rss),2026-01-06,0.0073,0.9694,0.0233,-0.9621,-1.0,0,4
+a82026f518,JSWSTEEL.NS,India Today (via gnews-rss),2026-01-06,0.0245,0.3704,0.6051,-0.3459,-1.0,0,4
+c1ec0a7d83,ADANIENT.NS,Upstox (via gnews-rss),2026-01-06,0.0627,0.8251,0.1122,-0.7624,0.0,0,0
+184c345501,ADANIPORTS.NS,Business Today (via gnews-rss),2026-01-06,0.2288,0.0179,0.7533,0.2109,0.0,0,0
+0f000b7123,BAJAJFINSV.NS,simplywall.st (via gnews-rss),2026-01-06,0.1283,0.3188,0.5529,-0.1905,-1.0,0,2
+2fc967c3ae,BAJAJFINSV.NS,scanx.trade (via gnews-rss),2026-01-06,0.1361,0.0106,0.8533,0.1255,-1.0,0,2
+47b5cd9a62,HINDALCO.NS,Moneycontrol.com (via gnews-rss),2026-01-06,0.9206,0.023,0.0564,0.8976,0.0,0,0
+e1c9e7eed8,HINDALCO.NS,Business Standard (via gnews-rss),2026-01-06,0.0872,0.0155,0.8973,0.0717,0.0,0,0
+9ff3e73ddc,DRREDDY.NS,simplywall.st (via gnews-rss),2026-01-06,0.487,0.0097,0.5033,0.4773,0.0,0,0
+a742649de3,BRITANNIA.NS,financialexpress.com (via gnews-rss),2026-01-06,0.0342,0.8277,0.1381,-0.7935,-1.0,0,2
+21a610f3c0,BAJAJ-AUTO.NS,Mint (via gnews-rss),2026-01-06,0.808,0.0164,0.1756,0.7917,0.0,0,0
+5b08b7ff9e,DIVISLAB.NS,Moneycontrol.com (via gnews-rss),2026-01-06,0.8971,0.0153,0.0876,0.8818,0.0,0,0
+911d777a94,DIVISLAB.NS,Zee Business (via gnews-rss),2026-01-06,0.9299,0.0167,0.0534,0.9132,0.0,0,0
+5178feb044,INDUSINDBK.NS,Business Standard (via gnews-rss),2026-01-06,0.0637,0.0146,0.9218,0.0491,0.0,0,0
+e4dcb7c8a5,APOLLOHOSP.NS,Moneycontrol.com (via gnews-rss),2026-01-06,0.0086,0.9582,0.0332,-0.9496,-1.0,0,2
+6ad2b756be,TATACONSUM.NS,The Economic Times (via gnews-rss),2026-01-06,0.0676,0.023,0.9094,0.0446,0.0,0,0
+840cfbedea,SBILIFE.NS,scanx.trade (via gnews-rss),2026-01-06,0.0351,0.0879,0.877,-0.0528,0.0,0,0
+e5a88ad092,HDFCLIFE.NS,Moneymunch (via gnews-rss),2026-01-06,0.0372,0.0159,0.9469,0.0213,0.0,0,0
+12d56ca3f6,HDFCLIFE.NS,Business Standard (via gnews-rss),2026-01-06,0.2529,0.0113,0.7358,0.2416,0.0,0,0
+40a2414874,BPCL.NS,Business Standard (via gnews-rss),2026-01-06,0.0079,0.9583,0.0337,-0.9504,-1.0,0,2
+84e16a1276,HDFCBANK.NS,Moneycontrol.com (via gnews-rss),2026-01-05,0.0103,0.9661,0.0236,-0.9558,0.0,0,0
+4091887934,HDFCBANK.NS,Samco (via gnews-rss),2026-01-05,0.0148,0.9445,0.0406,-0.9297,1.0,2,0
+08bcf478b4,INFY.NS,TradingView (via gnews-rss),2026-01-05,0.0274,0.0185,0.9542,0.0089,0.0,0,0
+ba68ba9ba5,INFY.NS,Rediff MoneyWiz (via gnews-rss),2026-01-05,0.0102,0.9468,0.0429,-0.9366,-1.0,0,4
+4dfc8c16ad,INFY.NS,Upstox (via gnews-rss),2026-01-05,0.0202,0.9406,0.0392,-0.9204,-1.0,0,2
+cc9a88198b,ICICIBANK.NS,scanx.trade (via gnews-rss),2026-01-05,0.0259,0.0506,0.9235,-0.0247,0.0,0,0
+5a99186843,ITC.NS,Business Standard (via gnews-rss),2026-01-05,0.0788,0.1398,0.7814,-0.061,-1.0,0,2
+521969b638,BHARTIARTL.NS,simplywall.st (via gnews-rss),2026-01-05,0.1057,0.0104,0.8839,0.0953,0.0,2,2
+0637aee1b0,KOTAKBANK.NS,scanx.trade (via gnews-rss),2026-01-05,0.0248,0.0414,0.9338,-0.0166,0.0,0,0
+a95b8b75b2,KOTAKBANK.NS,Upstox (via gnews-rss),2026-01-05,0.8805,0.016,0.1035,0.8645,0.0,0,0
+5592eb3d8b,AXISBANK.NS,scanx.trade (via gnews-rss),2026-01-05,0.9443,0.0253,0.0304,0.919,1.0,2,0
+7916e3047f,BAJFINANCE.NS,scanx.trade (via gnews-rss),2026-01-05,0.0302,0.0249,0.9449,0.0054,0.0,0,0
+80391a6c27,BAJFINANCE.NS,Moneycontrol.com (via gnews-rss),2026-01-05,0.0336,0.0211,0.9453,0.0126,0.0,0,0
+9c69766690,BAJFINANCE.NS,BusinessLine (via gnews-rss),2026-01-05,0.0067,0.9671,0.0262,-0.9604,1.0,2,0
+0bb80f614f,BAJFINANCE.NS,scanx.trade (via gnews-rss),2026-01-05,0.033,0.0195,0.9476,0.0135,0.0,0,0
+f89cd96657,MARUTI.NS,Business Standard (via gnews-rss),2026-01-05,0.9455,0.0194,0.0351,0.9261,0.0,0,0
+400e664332,MARUTI.NS,The Economic Times (via gnews-rss),2026-01-05,0.3636,0.0245,0.6119,0.3391,0.0,0,0
+4e470b35f0,ULTRACEMCO.NS,The Hindu (via gnews-rss),2026-01-05,0.0077,0.9668,0.0255,-0.9591,-1.0,0,4
+85cf1cd2ce,NESTLEIND.NS,Investing.com India (via gnews-rss),2026-01-05,0.0077,0.9658,0.0265,-0.958,0.0,0,0
+f138651173,ONGC.NS,Upstox (via gnews-rss),2026-01-05,0.1722,0.0779,0.75,0.0943,1.0,2,0
+c3a4730f2f,ONGC.NS,CNBC TV18 (via gnews-rss),2026-01-05,0.0075,0.955,0.0375,-0.9475,0.0,0,0
+f9788bd2b9,ONGC.NS,Moneycontrol.com (via gnews-rss),2026-01-05,0.7716,0.0157,0.2128,0.7559,0.0,0,0
+920fdf026f,ONGC.NS,scanx.trade (via gnews-rss),2026-01-05,0.0064,0.9645,0.0292,-0.9581,-1.0,0,2
+58f143656a,POWERGRID.NS,simplywall.st (via gnews-rss),2026-01-05,0.3379,0.0089,0.6533,0.329,0.0,0,0
+bfdbda3546,POWERGRID.NS,The Economic Times (via gnews-rss),2026-01-05,0.3108,0.0147,0.6745,0.2961,0.0,0,0
+43f0a700fb,TATAMOTORS.NS,Moneycontrol.com (via gnews-rss),2026-01-05,0.1137,0.1113,0.775,0.0024,0.0,0,0
+7dbe6bfb86,TATAMOTORS.NS,Business Standard (via gnews-rss),2026-01-05,0.8838,0.0121,0.1041,0.8717,0.0,0,0
+d0fac7ff34,TATASTEEL.NS,Moneycontrol.com (via gnews-rss),2026-01-05,0.9476,0.0222,0.0302,0.9254,0.0,0,0
+588e73f08d,ADANIENT.NS,Business Standard (via gnews-rss),2026-01-05,0.92,0.0239,0.0561,0.8961,0.0,0,0
+ad3fd0b7a4,COALINDIA.NS,The Economic Times (via gnews-rss),2026-01-05,0.1248,0.0361,0.8391,0.0887,0.0,0,0
+12311e5d0e,GRASIM.NS,The Economic Times (via gnews-rss),2026-01-05,0.5338,0.0149,0.4513,0.5189,0.0,0,0
+80eeb7ce33,BRITANNIA.NS,financialexpress.com (via gnews-rss),2026-01-05,0.015,0.8368,0.1482,-0.8217,0.0,0,0
+2398d2e2f9,EICHERMOT.NS,HDFC Sky (via gnews-rss),2026-01-05,0.9465,0.0191,0.0344,0.9275,0.0,0,0
+a0e2e61b79,EICHERMOT.NS,The Economic Times (via gnews-rss),2026-01-05,0.3761,0.0163,0.6076,0.3598,0.0,0,0
+f39e465951,EICHERMOT.NS,The Economic Times (via gnews-rss),2026-01-05,0.9342,0.0199,0.0459,0.9143,0.0,0,0
+ef346f0c7d,INDUSINDBK.NS,Upstox (via gnews-rss),2026-01-05,0.8522,0.0166,0.1312,0.8356,0.0,0,0
+2fc06196e4,INDUSINDBK.NS,Business Standard (via gnews-rss),2026-01-05,0.8683,0.017,0.1147,0.8513,0.0,0,0
+d4f172cd97,TATACONSUM.NS,HDFC Sky (via gnews-rss),2026-01-05,0.9461,0.0152,0.0387,0.9308,0.0,0,0
+9bd4bf8e38,BPCL.NS,Upstox (via gnews-rss),2026-01-05,0.7288,0.0168,0.2544,0.7121,0.0,0,0
+435c666c1d,BAJFINANCE.NS,scanx.trade (via gnews-rss),2026-01-04,0.0304,0.024,0.9456,0.0064,0.0,0,0
+7ddeec9b9b,ASIANPAINT.NS,scanx.trade (via gnews-rss),2026-01-04,0.0189,0.8539,0.1273,-0.835,-1.0,0,4
+cb58830cbb,HEROMOTOCO.NS,scanx.trade (via gnews-rss),2026-01-04,0.0383,0.0373,0.9244,0.0011,0.0,0,0
+3dccf487c6,APOLLOHOSP.NS,The Economic Times (via gnews-rss),2026-01-04,0.8816,0.0156,0.1029,0.866,0.0,0,0
+77f86c65f2,APOLLOHOSP.NS,simplywall.st (via gnews-rss),2026-01-04,0.0277,0.822,0.1503,-0.7943,-1.0,0,6
+96063ed209,SBILIFE.NS,scanx.trade (via gnews-rss),2026-01-04,0.0319,0.0398,0.9283,-0.0079,0.0,0,0
+3b60d0e3fb,POWERGRID.NS,Elets BFSI (via gnews-rss),2026-01-03,0.1035,0.0124,0.8841,0.0912,0.0,0,0
+e6c602d46c,MACRO,The Times of India (via gnews-rss),2026-01-03,0.7214,0.0748,0.2038,0.6466,0.0,0,0
+28038ff580,MACRO,Mint (via gnews-rss),2026-01-03,0.1775,0.0134,0.8091,0.1641,0.0,0,0
+6601a4c3f0,ITC.NS,Samco (via gnews-rss),2026-01-02,0.0155,0.85,0.1344,-0.8345,-1.0,0,2
+07324b8335,ITC.NS,Investing.com India (via gnews-rss),2026-01-02,0.0519,0.4836,0.4645,-0.4317,-1.0,0,2
+e0df0ee22d,BHARTIARTL.NS,Mint (via gnews-rss),2026-01-02,0.1267,0.0287,0.8446,0.098,0.0,0,0
+0b9574cebd,LT.NS,Samco (via gnews-rss),2026-01-02,0.8402,0.0275,0.1323,0.8127,0.0,0,0
+51c76172d6,HCLTECH.NS,Investing.com (via gnews-rss),2026-01-02,0.0305,0.3661,0.6034,-0.3356,0.0,2,2
+e940795a2b,ULTRACEMCO.NS,Business Standard (via gnews-rss),2026-01-02,0.9245,0.0278,0.0476,0.8967,0.0,0,0
+8ad932a268,NTPC.NS,Moneycontrol.com (via gnews-rss),2026-01-02,0.9408,0.0224,0.0368,0.9185,1.0,2,0
+fd9021e602,TATAMOTORS.NS,simplywall.st (via gnews-rss),2026-01-02,0.2589,0.0083,0.7328,0.2506,0.0,2,2
+9d7c5c3d31,ADANIENT.NS,CNBC TV18 (via gnews-rss),2026-01-02,0.0757,0.0136,0.9107,0.062,0.0,0,0
+14053742c2,COALINDIA.NS,Upstox (via gnews-rss),2026-01-02,0.9326,0.0205,0.0469,0.9121,0.0,0,0
+037382f7d6,COALINDIA.NS,Business Standard (via gnews-rss),2026-01-02,0.7402,0.014,0.2458,0.7261,0.0,0,0
+2ab45b680a,HINDALCO.NS,The Economic Times (via gnews-rss),2026-01-02,0.7411,0.0211,0.2378,0.7199,0.0,0,0
+3214103543,BRITANNIA.NS,BusinessLine (via gnews-rss),2026-01-02,0.0414,0.0178,0.9408,0.0237,0.0,0,0
+bcc89f6a1e,BRITANNIA.NS,financialexpress.com (via gnews-rss),2026-01-02,0.0284,0.0234,0.9482,0.005,0.0,0,0
+d5a460e875,BRITANNIA.NS,financialexpress.com (via gnews-rss),2026-01-02,0.0595,0.2574,0.683,-0.1979,-1.0,0,4
+7ae3a5a542,HEROMOTOCO.NS,Moneycontrol.com (via gnews-rss),2026-01-02,0.0362,0.0188,0.945,0.0173,0.0,0,0
+c18b5adfe1,HEROMOTOCO.NS,Business Standard (via gnews-rss),2026-01-02,0.0655,0.0125,0.922,0.0531,0.0,0,0
+7c97934264,HEROMOTOCO.NS,Business Standard (via gnews-rss),2026-01-02,0.5843,0.0126,0.403,0.5717,1.0,2,0
+fad4d95e31,HEROMOTOCO.NS,Business Standard (via gnews-rss),2026-01-02,0.8216,0.0139,0.1645,0.8077,0.0,0,0
+d8221640c6,HEROMOTOCO.NS,Business Standard (via gnews-rss),2026-01-02,0.9383,0.0167,0.045,0.9215,0.0,0,0
+656125e0ca,SHRIRAMFIN.NS,The Economic Times (via gnews-rss),2026-01-02,0.6992,0.0199,0.2809,0.6793,0.0,0,0
+c465938770,MACRO,Outlook Money (via gnews-rss),2026-01-02,0.043,0.0248,0.9322,0.0182,0.0,0,0
+b96b004b27,TCS.NS,AD HOC NEWS (via gnews-rss),2026-01-01,0.1858,0.0173,0.7969,0.1685,1.0,2,0
+0590c7d327,ITC.NS,scanx.trade (via gnews-rss),2026-01-01,0.0259,0.0535,0.9206,-0.0276,0.0,0,0
+8e959278a2,ITC.NS,HDFC Sky (via gnews-rss),2026-01-01,0.0063,0.9719,0.0218,-0.9656,0.0,0,0
+0fb58245ad,ITC.NS,Upstox (via gnews-rss),2026-01-01,0.0109,0.9552,0.0339,-0.9443,-1.0,0,2
+613490a4ab,ITC.NS,Moneycontrol.com (via gnews-rss),2026-01-01,0.3011,0.0418,0.6572,0.2593,1.0,2,0
+93127c5278,LT.NS,Business Standard (via gnews-rss),2026-01-01,0.8167,0.0121,0.1712,0.8046,0.0,0,0
+829bdded0a,BAJFINANCE.NS,Business Standard (via gnews-rss),2026-01-01,0.0096,0.9707,0.0197,-0.9612,0.0,0,0
+458c32d394,HCLTECH.NS,Moneycontrol.com (via gnews-rss),2026-01-01,0.172,0.1998,0.6282,-0.0277,-1.0,0,2
+da7860d163,TITAN.NS,simplywall.st (via gnews-rss),2026-01-01,0.9115,0.0587,0.0297,0.8528,0.0,0,0
+710e4da45f,NTPC.NS,Upstox (via gnews-rss),2026-01-01,0.1044,0.0129,0.8827,0.0915,1.0,2,0
+2dfe2e39e9,M&M.NS,Moneycontrol.com (via gnews-rss),2026-01-01,0.0381,0.016,0.9459,0.0221,0.0,0,0
+8d6d1fb26b,TATASTEEL.NS,simplywall.st (via gnews-rss),2026-01-01,0.0483,0.5139,0.4378,-0.4655,0.0,0,0
+5185fd8202,JSWSTEEL.NS,ET Manufacturing (via gnews-rss),2026-01-01,0.8977,0.0244,0.0779,0.8733,0.0,0,0
+c21201333d,ADANIENT.NS,Moneycontrol.com (via gnews-rss),2026-01-01,0.0334,0.019,0.9476,0.0144,0.0,0,0
+48c89eb742,COALINDIA.NS,simplywall.st (via gnews-rss),2026-01-01,0.0426,0.0138,0.9435,0.0288,0.0,0,0
+079bc74d41,COALINDIA.NS,Upstox (via gnews-rss),2026-01-01,0.8596,0.0196,0.1208,0.8401,0.0,0,0
+b5f07bd80b,HINDALCO.NS,Upstox (via gnews-rss),2026-01-01,0.8864,0.0252,0.0884,0.8612,0.0,0,0
+2ef063a7f6,BRITANNIA.NS,Moneycontrol.com (via gnews-rss),2026-01-01,0.0119,0.9659,0.0222,-0.954,0.0,0,0
+b887928b65,BAJAJ-AUTO.NS,AD HOC NEWS (via gnews-rss),2026-01-01,0.0344,0.0205,0.9451,0.0139,0.0,0,0
+0761c5a5f0,SHRIRAMFIN.NS,The Economic Times (via gnews-rss),2026-01-01,0.0864,0.0124,0.9012,0.0741,0.0,0,0
+7c47895b34,SHRIRAMFIN.NS,Business Standard (via gnews-rss),2026-01-01,0.9343,0.0217,0.0441,0.9126,0.0,0,0
+ec86070c1b,MACRO,Business Standard (via gnews-rss),2026-01-01,0.0226,0.0219,0.9554,0.0007,0.0,0,0

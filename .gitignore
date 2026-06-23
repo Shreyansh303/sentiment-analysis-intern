@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.claude/
+
+# Heavy / regenerable data artifacts (the scripts recreate these)
+articles_*.json
+db/sentiment.db
+db/*-sentiment_dump.sql
+
+# Local backups & logs
+.snap_backup_*.csv
+window_sweep/*.log
+
+# Dated internal demo artifacts
+*-demo-runbook.html

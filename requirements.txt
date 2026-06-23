@@ -1,0 +1,14 @@
+# Core numerics / data
+numpy
+pandas
+scipy
+
+# NLP sentiment models (FinBERT)
+transformers
+torch
+
+# Market data + news ingestion
+yfinance
+feedparser
+beautifulsoup4
+pypdf

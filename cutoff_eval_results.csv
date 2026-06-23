@@ -1,0 +1,5 @@
+ticker,agg_sent,agg_news,combined,label,prediction,n_sent,n_news,low_n,entry_date,exit_date,entry_px,exit_px,actual_ret,actual_dir
+RELIANCE.NS,0.7464,0.1112,0.4288,SPECULATIVE HYPE (Retail Bullish / Fundamental Neutral),UP,12,4,True,2026-06-18,2026-06-23,1328.1,1309.5,-0.014004951380058195,DOWN
+TCS.NS,-0.2061,-0.2107,-0.2084,NEUTRAL,DOWN,14,12,False,2026-06-18,2026-06-23,2203.3,2059.6,-0.06522032768451358,DOWN
+INFY.NS,-0.8613,-0.1814,-0.5213,OVERREACTION (Fundamental Stable / Retail Panic),DOWN,11,6,False,2026-06-18,2026-06-23,1127.5,1029.3,-0.08709530037416846,DOWN
+HDFCBANK.NS,0.6114,0.1477,0.3796,SPECULATIVE HYPE (Retail Bullish / Fundamental Neutral),UP,11,9,False,2026-06-18,2026-06-23,786.0,774.65,-0.014440172501192783,DOWN
