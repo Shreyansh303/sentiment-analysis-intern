@@ -36,18 +36,15 @@ MIN_TRANSCRIPT_LENGTH = 1500   # chars; shorter = press release summary, not tra
 RATE_SLEEP = 1.5               # seconds between network calls
 
 QUARTER_WINDOWS = {
-    "Q3FY26": {
-        "quarter_end": "2025-12-31",
-        "after": "2026-01-01",
-        "before": "2026-02-28",
-        "label": "Q3",
-    },
-    "Q4FY26": {
-        "quarter_end": "2026-03-31",
-        "after": "2026-04-01",
-        "before": "2026-05-31",
-        "label": "Q4",
-    },
+    # Indian fiscal year is Apr->Mar. Each concall lands ~1 month after quarter end.
+    "Q1FY25": {"quarter_end": "2024-06-30", "after": "2024-07-01", "before": "2024-08-31", "label": "Q1"},
+    "Q2FY25": {"quarter_end": "2024-09-30", "after": "2024-10-01", "before": "2024-11-30", "label": "Q2"},
+    "Q3FY25": {"quarter_end": "2024-12-31", "after": "2025-01-01", "before": "2025-02-28", "label": "Q3"},
+    "Q4FY25": {"quarter_end": "2025-03-31", "after": "2025-04-01", "before": "2025-05-31", "label": "Q4"},
+    "Q1FY26": {"quarter_end": "2025-06-30", "after": "2025-07-01", "before": "2025-08-31", "label": "Q1"},
+    "Q2FY26": {"quarter_end": "2025-09-30", "after": "2025-10-01", "before": "2025-11-30", "label": "Q2"},
+    "Q3FY26": {"quarter_end": "2025-12-31", "after": "2026-01-01", "before": "2026-02-28", "label": "Q3"},
+    "Q4FY26": {"quarter_end": "2026-03-31", "after": "2026-04-01", "before": "2026-05-31", "label": "Q4"},
 }
 
 _SCORED_COLS = ["ticker", "quarter", "quarter_end", "transcript_date",
