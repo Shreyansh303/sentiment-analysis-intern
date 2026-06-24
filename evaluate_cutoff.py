@@ -31,8 +31,9 @@ import numpy as np
 import pandas as pd
 
 from sentiment_core import (
-    Config, TICKERS, load_models, score_articles, apply_weights, aggregate,
+    Config, load_models, score_articles, apply_weights, aggregate,
 )
+from universe import TICKERS   # full Nifty 50, consistent with run_universe_all
 
 ARTICLES_FILE = "articles_fetched.json"
 

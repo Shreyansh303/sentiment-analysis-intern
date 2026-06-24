@@ -14,12 +14,9 @@ import yfinance as yf
 import feedparser
 
 # ---------------- config ----------------
-TICKERS = {
-    "RELIANCE.NS": ["Reliance Industries NSE", "Reliance Jio"],
-    "TCS.NS":      ["Tata Consultancy Services share"],
-    "INFY.NS":     ["Infosys share NSE"],
-    "HDFCBANK.NS": ["HDFC Bank share"],
-}
+from universe import NIFTY_50   # full Nifty 50, consistent with run_universe_all
+# One Google News query per name; yfinance is also queried per ticker symbol below.
+TICKERS = {tk: [f"{name} share NSE"] for tk, name in NIFTY_50.items()}
 SECTOR_QUERIES = {"SECTOR_IT": ["Nifty IT index", "Indian IT stocks"]}
 MACRO_QUERIES  = {"MACRO": ["Nifty Sensex RBI", "FII flows Indian markets", "Fed rate decision"]}
 MAX_AGE_DAYS   = 14          # hard recency cutoff at fetch time

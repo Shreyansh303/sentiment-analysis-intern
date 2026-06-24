@@ -1,5 +1,5 @@
 """
-Sentiment vs News Analyst — Nifty 50 test (RELIANCE / TCS / INFY / HDFCBANK)
+Sentiment vs News Analyst — full Nifty 50 universe.
 Scopes: ticker-specific, SECTOR_IT (propagates to TCS+INFY), MACRO (propagates to all).
 
 All tunable numbers now live in sentiment_core.Config; this script just runs the
@@ -13,9 +13,10 @@ import numpy as np
 import pandas as pd
 
 from sentiment_core import (
-    Config, TICKERS, SECTOR_OF, load_models, score_articles, apply_weights, aggregate,
+    Config, SECTOR_OF, load_models, score_articles, apply_weights, aggregate,
     save_scored_history,
 )
+from universe import TICKERS   # full Nifty 50, consistent with run_universe_all
 
 TODAY = date.today()   # dynamic, so future-dated articles can't get recency weight > 1.0
 CFG = Config()
