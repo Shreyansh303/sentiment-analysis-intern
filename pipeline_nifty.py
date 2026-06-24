@@ -77,8 +77,7 @@ for r in snapshot_rows:
     print(
         f"{r['ticker']:<13} "
         f"sentiment={r['agg_sent']:+.2f} [{r['sent_lo']:+.2f},{r['sent_hi']:+.2f}] (n={r['n_sent']:<2}) | "
-        f"news={r['agg_news']:+.2f} [{r['news_lo']:+.2f},{r['news_hi']:+.2f}] (n={r['n_news']:<2}) | "
-        f"divergence={r['divergence']:.2f} -> view: {r['label']}{warn}"
+        f"news={r['agg_news']:+.2f} [{r['news_lo']:+.2f},{r['news_hi']:+.2f}] (n={r['n_news']:<2}){warn}"
     )
 
 # 4. Append today's aggregates to the daily panel (idempotent per date).

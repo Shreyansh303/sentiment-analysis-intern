@@ -14,7 +14,7 @@ window -> no same-day leakage.
 
 Usage:
     python backtest.py                       # all signals, default 10 bps cost
-    python backtest.py --signal divergence   # which column to test
+    python backtest.py --signal agg_sent     # which column to test
     python backtest.py --cost-bps 15         # round-trip cost in basis points
 """
 import argparse
@@ -222,7 +222,7 @@ def report_signal(df, label, signal, kind, cost_bps):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--signal", default="agg_sent",
-                    help="panel column to test: agg_sent | agg_news | divergence")
+                    help="panel column to test: agg_sent | agg_news | combined")
     ap.add_argument("--cost-bps", type=float, default=10.0,
                     help="round-trip transaction cost in basis points")
     ap.add_argument("--snapshots", default=SNAPSHOT_FILE)

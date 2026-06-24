@@ -75,10 +75,6 @@ class Config:
     cut_threshold: float = 0.05        # drop article if final weight below this
     default_trust: float = 0.5
 
-    # labelling thresholds
-    divergence_thr: float = 0.20       # |sent-news| below this == "confirmed/agree"
-    label_cutoff: float = 0.25         # +/- band that separates bullish/bearish/neutral
-
     # statistical honesty
     bootstrap_n: int = 1000            # resamples for the CI band (0 disables)
     low_n_threshold: int = 5           # cells with fewer contributing articles are flagged
@@ -373,26 +369,9 @@ def _bootstrap_ci(vals, w, rng, n_boot, lo=2.5, hi=97.5):
     return float(np.percentile(means, lo)), float(np.percentile(means, hi))
 
 
-def label_for(agg_sent, agg_news, cfg: Config):
-    divergence = abs(agg_sent - agg_news)
-    if divergence <= cfg.divergence_thr:
-        if agg_news > cfg.label_cutoff:
-            return "BULLISH (Confirmed)"
-        if agg_news < -cfg.label_cutoff:
-            return "BEARISH (Confirmed)"
-        return "NEUTRAL"
-    if agg_sent > agg_news and agg_sent > cfg.label_cutoff:
-        return "SPECULATIVE HYPE (Retail Bullish / Fundamental Neutral)"
-    if agg_news > agg_sent and agg_news > cfg.label_cutoff:
-        return "UNDER-THE-RADAR VALUE (Fundamental Bullish / Retail Neutral)"
-    if agg_sent < agg_news and agg_sent < -cfg.label_cutoff:
-        return "OVERREACTION (Fundamental Stable / Retail Panic)"
-    return f"DIVERGENT (sent={agg_sent:+.2f}, news={agg_news:+.2f})"
-
-
 def aggregate(df: pd.DataFrame, cfg: Config, today: date,
               tickers=TICKERS, rng=None) -> list[dict]:
-    """Per-ticker aggregates with bootstrap CI bands + low-n flags + label.
+    """Per-ticker aggregates with bootstrap CI bands + low-n flags.
     `df` must already be scored AND weighted (apply_weights)."""
     if rng is None:
         rng = np.random.default_rng(0)   # deterministic CI bands across runs
@@ -406,13 +385,10 @@ def aggregate(df: pd.DataFrame, cfg: Config, today: date,
         agg_news, n_news = _weighted_mean(nv, nw), len(nv)
         s_lo, s_hi = _bootstrap_ci(sv, sw, rng, cfg.bootstrap_n)
         n_lo, n_hi = _bootstrap_ci(nv, nw, rng, cfg.bootstrap_n)
-        divergence = abs(agg_sent - agg_news)
         low_n = (n_sent < cfg.low_n_threshold) or (n_news < cfg.low_n_threshold)
         rows.append({
             "date": today.isoformat(), "ticker": tk,
             "agg_sent": round(agg_sent, 4), "agg_news": round(agg_news, 4),
-            "divergence": round(divergence, 4),
-            "label": label_for(agg_sent, agg_news, cfg),
             "n_sent": n_sent, "n_news": n_news,
             "sent_lo": round(s_lo, 4), "sent_hi": round(s_hi, 4),
             "news_lo": round(n_lo, 4), "news_hi": round(n_hi, 4),

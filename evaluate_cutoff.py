@@ -119,9 +119,7 @@ def generate_predictions(visible: pd.DataFrame, cfg: Config, cutoff: date,
 
     The directional signal is the equal-weight blend of the two analysts
     (agg_sent = FinBERT mood, agg_news = LM fundamental tone). A small dead-band
-    abstains (NEUTRAL) when the blended conviction is near zero. The richer
-    qualitative `label` is carried along for context but the DIRECTION is what
-    the accuracy test grades.
+    abstains (NEUTRAL) when the blended conviction is near zero.
     """
     print("\n=== STEP 2: MODEL PREDICTION (as of cutoff) ===")
     scored = score_articles(visible, models=models if models is not None else load_models())
@@ -139,7 +137,6 @@ def generate_predictions(visible: pd.DataFrame, cfg: Config, cutoff: date,
             "agg_sent": r["agg_sent"],
             "agg_news": r["agg_news"],
             "combined": round(combined, 4),
-            "label": r["label"],
             "prediction": direction_from_signal(combined, deadband),
             "n_sent": r["n_sent"],
             "n_news": r["n_news"],
@@ -152,7 +149,6 @@ def generate_predictions(visible: pd.DataFrame, cfg: Config, cutoff: date,
         print(f"  {r['ticker']:<13} combined={r['combined']:+.3f} "
               f"(sent={r['agg_sent']:+.2f}, news={r['agg_news']:+.2f}) "
               f"-> PREDICT {r['prediction']:<7}{warn}")
-        print(f"       view: {r['label']}")
     print(f"  (dead-band = +/-{deadband}: |combined| below this abstains as NEUTRAL)")
     return pred
 

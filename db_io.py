@@ -40,9 +40,9 @@ DB_PATH = os.environ.get("SENTIMENT_DB", os.path.join(_HERE, "db", "sentiment.db
 _ARTICLE_COLS = ["id", "ticker", "source", "published_date", "url", "text", "source_batch"]
 _SCORED_COLS = ["id", "scope", "source", "date", "pos_prob", "neg_prob",
                 "neu_prob", "sent", "news", "pos_count", "neg_count"]
-_SNAP_COLS = ["date", "ticker", "agg_sent", "agg_news", "divergence", "label",
+_SNAP_COLS = ["date", "ticker", "agg_sent", "agg_news",
               "n_sent", "n_news", "sent_lo", "sent_hi", "news_lo", "news_hi", "low_n"]
-_UNIVERSE_COLS = ["date", "ticker", "agg_sent", "agg_news", "divergence", "label",
+_UNIVERSE_COLS = ["date", "ticker", "agg_sent", "agg_news",
                   "n_sent", "n_news", "sent_lo", "sent_hi", "news_lo", "news_hi",
                   "low_n", "combined", "actual_ret", "momentum", "window",
                   "ret_resid", "sig_resid", "agg_earnings"]
@@ -52,7 +52,7 @@ _EARNINGS_COLS = ["ticker", "quarter", "quarter_end", "transcript_date",
 _UNI_WIN_COLS = ["window", "n", "ic_sent", "ic_mom", "ls_sent", "ls_mom"]
 _PNL_RUN_COLS = ["signal", "horizon", "date", "ret", "cum"]
 _CUTOFF_COLS = ["cutoff", "eval_end", "ticker", "agg_sent", "agg_news", "combined",
-                "label", "prediction", "n_sent", "n_news", "low_n", "entry_date",
+                "prediction", "n_sent", "n_news", "low_n", "entry_date",
                 "exit_date", "entry_px", "exit_px", "actual_ret", "actual_dir"]
 
 
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS backtest_pnl_runs (
 );
 CREATE TABLE IF NOT EXISTS cutoff_eval (
     cutoff DATE NOT NULL, eval_end DATE NOT NULL, ticker TEXT NOT NULL,
-    agg_sent NUMERIC, agg_news NUMERIC, combined NUMERIC, label TEXT,
+    agg_sent NUMERIC, agg_news NUMERIC, combined NUMERIC,
     prediction TEXT, n_sent INTEGER, n_news INTEGER, low_n BOOLEAN,
     entry_date DATE, exit_date DATE, entry_px NUMERIC, exit_px NUMERIC,
     actual_ret NUMERIC, actual_dir TEXT,
@@ -242,12 +242,11 @@ def upsert_snapshots(df: pd.DataFrame) -> bool:
         con = get_conn()
         con.executemany(
             """INSERT INTO snapshots
-                 (date, ticker, agg_sent, agg_news, divergence, label, n_sent,
+                 (date, ticker, agg_sent, agg_news, n_sent,
                   n_news, sent_lo, sent_hi, news_lo, news_hi, low_n)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(date, ticker) DO UPDATE SET
                  agg_sent=excluded.agg_sent, agg_news=excluded.agg_news,
-                 divergence=excluded.divergence, label=excluded.label,
                  n_sent=excluded.n_sent, n_news=excluded.n_news,
                  sent_lo=excluded.sent_lo, sent_hi=excluded.sent_hi,
                  news_lo=excluded.news_lo, news_hi=excluded.news_hi,
