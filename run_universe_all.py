@@ -146,7 +146,10 @@ def main():
             continue
         w = apply_weights(df, cfg, today=cutoff)
         agg = pd.DataFrame(aggregate(w, cfg, today=cutoff, tickers=TICKERS))
-        agg["combined"] = 0.5 * agg["agg_sent"] + 0.5 * agg["agg_news"]
+        # combined == agg_sent: the LM news leg has negative cross-sectional IC and
+        # dilutes the signal (signal_search.py); a FinBERT news leg just duplicates
+        # agg_sent (news_leg_experiment.py). So the predictive signal is FinBERT alone.
+        agg["combined"] = agg["agg_sent"]
 
         if _HAS_EARNINGS:
             earnings_map = get_earnings_for_window(cutoff, cfg)

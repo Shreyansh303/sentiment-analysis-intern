@@ -117,9 +117,9 @@ def generate_predictions(visible: pd.DataFrame, cfg: Config, cutoff: date,
     cutoff (so recency is anchored to June 5, not today), aggregate per ticker,
     and turn each aggregate into a directional call.
 
-    The directional signal is the equal-weight blend of the two analysts
-    (agg_sent = FinBERT mood, agg_news = LM fundamental tone). A small dead-band
-    abstains (NEUTRAL) when the blended conviction is near zero.
+    The directional signal is agg_sent (FinBERT mood) alone: the LM news leg has
+    negative cross-sectional IC and only dilutes it (signal_search.py /
+    news_leg_experiment.py). A small dead-band abstains (NEUTRAL) near zero.
     """
     print("\n=== STEP 2: MODEL PREDICTION (as of cutoff) ===")
     scored = score_articles(visible, models=models if models is not None else load_models())
@@ -131,7 +131,9 @@ def generate_predictions(visible: pd.DataFrame, cfg: Config, cutoff: date,
 
     out = []
     for r in rows:
-        combined = 0.5 * r["agg_sent"] + 0.5 * r["agg_news"]
+        # combined == agg_sent: the LM news leg has negative IC and dilutes the
+        # signal (see signal_search.py / news_leg_experiment.py). FinBERT alone.
+        combined = r["agg_sent"]
         out.append({
             "ticker": r["ticker"],
             "agg_sent": r["agg_sent"],
