@@ -31,7 +31,7 @@ from pypdf import PdfReader
 from universe import NIFTY_50
 from sentiment_core import Config, load_models, score_transcript
 
-SCORED_EARNINGS_FILE = "scored_earnings.csv"
+SCORED_EARNINGS_FILE = "results/scored_earnings.csv"
 MIN_TRANSCRIPT_LENGTH = 1500   # chars; shorter = press release summary, not transcript
 RATE_SLEEP = 1.5               # seconds between network calls
 

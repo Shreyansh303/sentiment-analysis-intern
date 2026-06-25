@@ -20,6 +20,9 @@ Three per-ticker variants, all from the SAME articles:
 Run:  python3 news_leg_experiment.py
 """
 import warnings
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 import pandas as pd
@@ -35,7 +38,7 @@ TARGET = "ret_resid"   # market-excess forward return, cached in universe_calls.
 cfg = Config()
 
 # cached forward returns / reference aggregates from the last universe sweep
-calls = pd.read_csv("universe_calls.csv")
+calls = pd.read_csv("../results/universe_calls.csv")
 
 
 def agg_variant(wdf, tk, wcol, score_col, cut_col, sec, mac):
@@ -45,7 +48,7 @@ def agg_variant(wdf, tk, wcol, score_col, cut_col, sec, mac):
 
 rows = []
 for label, mon, start, cutoff, eval_end in build_windows():
-    path = f"scored_uni_{mon}.csv"
+    path = f"../results/scored_uni_{mon}.csv"
     try:
         df = pd.read_csv(path)
     except FileNotFoundError:
@@ -115,5 +118,5 @@ corr_lm = panel[["news_lm", "sent"]].dropna().corr().iloc[0, 1]
 print(f"\ncorr(news_fb, sent) = {corr:+.3f}   corr(news_lm, sent) = {corr_lm:+.3f}")
 print("  (high corr => FinBERT news leg is largely a duplicate of agg_sent)")
 
-panel.to_csv("news_leg_experiment_panel.csv", index=False)
+panel.to_csv("../results/news_leg_experiment_panel.csv", index=False)
 print("\nDetail -> news_leg_experiment_panel.csv")

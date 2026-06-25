@@ -89,14 +89,15 @@ python grade_ledger.py          # grade logged picks against realized returns
 | Path | Purpose |
 |------|---------|
 | `sentiment_core.py` | FinBERT + Loughran–McDonald scoring, `Config`, aggregation |
+| `universe.py`, `db_io.py` | Universe definition, SQLite I/O layer |
 | `pipeline_nifty.py` | Daily end-to-end scoring run |
-| `backtest.py` | Forward-return validation harness |
-| `evaluate_cutoff.py` | Leakage-free as-of-date experiment |
 | `run_universe_all.py` | Nifty-50 cross-sectional biweekly IC / long-short sweep |
+| `backtest.py` | Forward-return validation harness (IC, hit-rate, P&L) |
+| `evaluate_cutoff.py` | Leakage-free as-of-date experiment |
 | `earnings_surprise.py`, `oos_earnings_surprise.py` | Earnings-tone QoQ surprise test + out-of-sample gate |
 | `pick_top.py`, `grade_ledger.py`, `pick_backtest.py` | Long-only pick list, reason cards, outcome grading + OOS pick gate |
-| `export_jan_from_db.py` | Re-export historical monthly articles from the DB for replay |
-| `sensitivity.py` | Parameter sweep over the scoring `Config` |
-| `fetch_*.py`, `universe.py` | News / earnings / universe ingestion |
-| `db/`, `db_io.py` | Versioned SQLite schema, migrations, I/O |
-| `*.csv` | Committed result/output snapshots |
+| `fetch_*.py` | News, earnings, universe ingestion |
+| `export_jan_from_db.py`, `check_setup.py` | Utilities: DB article export, environment check |
+| `research/` | Exploratory scripts: sensitivity sweep, signal search, earnings drift, news-leg experiment, combined book |
+| `results/` | Committed output CSVs (scored article caches, backtest results, decision ledger) |
+| `db/`, | Versioned SQLite schema and migrations |

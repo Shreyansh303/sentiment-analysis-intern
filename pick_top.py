@@ -37,7 +37,7 @@ from sentiment_core import Config, SECTOR_OF, apply_weights
 from universe import TICKERS, NIFTY_50
 
 SNAPSHOT_FILE = "snapshots.csv"
-LEDGER_FILE = "decision_ledger.csv"
+LEDGER_FILE = "results/decision_ledger.csv"
 ARTICLES_FILE = "articles_fetched.json"
 # Reconstruct from the CSV, not load_scored_history() — the DB copy has drifted out of
 # sync with snapshots.csv, and we need the EXACT article set that produced each score so

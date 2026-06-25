@@ -21,8 +21,8 @@ import pandas as pd
 
 from backtest import fetch_prices, forward_return
 
-LEDGER_FILE = "decision_ledger.csv"
-GRADED_FILE = "ledger_graded.csv"
+LEDGER_FILE = "results/decision_ledger.csv"
+GRADED_FILE = "results/ledger_graded.csv"
 
 
 def unique_picks(path=LEDGER_FILE):

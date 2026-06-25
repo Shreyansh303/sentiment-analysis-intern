@@ -23,7 +23,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import ttest_1samp, spearmanr
 
-CALLS = "universe_calls.csv"
+CALLS = "../results/universe_calls.csv"
 COST_BPS = 10.0          # per-window round-trip cost on gross (assumes full turnover)
 
 WINDOW_ORDER = ["jan-A", "jan-B", "feb-A", "feb-B", "mar-A", "mar-B",
@@ -164,10 +164,10 @@ def main():
 
     # per-window combined return series for inspection
     bc = book_returns(df, "a_combined")
-    bc.to_csv("combined_book_pnl.csv", index=False)
+    bc.to_csv("../results/combined_book_pnl.csv", index=False)
     if has_earnings:
         b3 = book_returns(df, "a_3factor")
-        b3.to_csv("threefactor_book_pnl.csv", index=False)
+        b3.to_csv("../results/threefactor_book_pnl.csv", index=False)
     # Dual-write: replace the database copy (backtest_pnl table).
     try:
         import db_io

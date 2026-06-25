@@ -43,7 +43,7 @@ CACHE_COLS = ["id", "scope", "source", "date", "pos_prob", "neg_prob",
 
 # ---------- step 1: score each month once, cache ----------
 def scored_month(mon, models):
-    cache = f"scored_uni_{mon}.csv"
+    cache = f"results/scored_uni_{mon}.csv"
     if os.path.exists(cache):
         return pd.read_csv(cache)
     src = f"articles_uni_{mon}.json"
@@ -182,8 +182,8 @@ def main():
 
     df_all = pd.concat(rows, ignore_index=True)
     pw = pd.DataFrame(per_window)
-    df_all.to_csv("universe_calls.csv", index=False)
-    pw.to_csv("universe_windows.csv", index=False)
+    df_all.to_csv("results/universe_calls.csv", index=False)
+    pw.to_csv("results/universe_windows.csv", index=False)
     # Dual-write: replace the database copies of both tables for this full run.
     try:
         import db_io
@@ -238,7 +238,7 @@ def main():
         print(f"  Positive but not significant (mean IC {sig_ic.mean():+.3f}, p={p:.3f}).")
     else:
         print(f"  No edge (mean IC {sig_ic.mean():+.3f}, p={p:.3f}).")
-    print("\n  Detail -> universe_calls.csv, universe_windows.csv")
+    print("\n  Detail -> results/universe_calls.csv, results/universe_windows.csv")
 
 
 if __name__ == "__main__":

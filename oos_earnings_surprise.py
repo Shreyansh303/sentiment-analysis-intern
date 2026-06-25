@@ -50,7 +50,7 @@ def cohort_stats(df):
 
 
 def main():
-    d = pd.read_csv("earnings_surprise_results.csv")
+    d = pd.read_csv("results/earnings_surprise_results.csv")
     d = d.dropna(subset=[SIGNAL, HORIZON])
     d["is_test"] = d["quarter"].isin(TEST_COHORTS)
 

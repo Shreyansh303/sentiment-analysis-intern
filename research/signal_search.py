@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import spearmanr, ttest_1samp
 
-PANEL = "universe_calls.csv"
+PANEL = "../results/universe_calls.csv"
 K = 5  # names per long/short leg
 
 df = pd.read_csv(PANEL)
@@ -110,7 +110,7 @@ if {"combined", "momentum"}.issubset(df.columns):
         results.append(report(f"blend {w:.1f}*sent+{1-w:.1f}*mom", d, "blend"))
 
 res = pd.DataFrame(results)
-res.to_csv("signal_search_results.csv", index=False)
+res.to_csv("../results/signal_search_results.csv", index=False)
 
 print("\n" + "=" * 72)
 n_tests = len(res)

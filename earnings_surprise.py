@@ -25,7 +25,7 @@ import pandas as pd
 import yfinance as yf
 from scipy.stats import spearmanr, ttest_1samp
 
-OUT_FILE = "earnings_surprise_results.csv"
+OUT_FILE = "results/earnings_surprise_results.csv"
 HORIZONS = [1, 5, 20]
 LEVELS = {"finbert_sent": "surprise_finbert", "agg_earnings": "surprise_agg"}
 
@@ -60,7 +60,7 @@ def fwd_return(open_s, t_date, h):
 
 
 def main():
-    ev = pd.read_csv("scored_earnings.csv")
+    ev = pd.read_csv("results/scored_earnings.csv")
     ev["t_date"] = pd.to_datetime(ev["transcript_date"]).dt.date
     ev["qkey"] = ev["quarter"].map(q_sortkey)
 
@@ -124,7 +124,7 @@ def main():
     print(f"\n  [caveat] {surp['quarter'].nunique()} surprise cohorts. p(q) is the "
           "honest read (t-test of per-quarter ICs);\n  pooledIC ignores cross-"
           "sectional clustering and overstates significance.")
-    print(f"\n  Per-event detail -> {OUT_FILE}")
+    print(f"\n  Per-event detail -> {OUT_FILE}")  # results/earnings_surprise_results.csv
 
 
 if __name__ == "__main__":

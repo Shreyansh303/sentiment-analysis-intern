@@ -23,7 +23,7 @@ import pandas as pd
 import yfinance as yf
 from scipy.stats import spearmanr, ttest_1samp
 
-EARN_FILE = "earnings_drift_results.csv"
+EARN_FILE = "../results/earnings_drift_results.csv"
 HORIZONS = [1, 5, 20]
 SIGNALS = ["finbert_sent", "agg_earnings"]
 
@@ -56,7 +56,7 @@ def fwd_return(open_s, t_date, h):
 
 
 def main():
-    ev = pd.read_csv("scored_earnings.csv")
+    ev = pd.read_csv("../results/scored_earnings.csv")
     ev["t_date"] = pd.to_datetime(ev["transcript_date"]).dt.date
     tickers = sorted(ev["ticker"].unique())
     start = (min(ev["t_date"])).isoformat()
