@@ -44,14 +44,22 @@ Data persists to a SQLite store with a versioned schema (`db/`, `db_io.py`).
 
 ## Results
 
-Out-of-sample, the signal does **not** beat a naive baseline. On the held-out
-cutoff evaluation the directional hit-rate is roughly coin-flip (~58% on a tiny
-sample), and a constant "always DOWN" baseline matches or beats it over the
-tested window (`cutoff_eval_results.csv`). The accumulating forward-return panel
-(`snapshots.csv` → `backtest.py`) shows no reliable Information Coefficient.
+Across the validated experiments, no signal clears the bar for a tradeable edge.
+Reporting this honestly is the point: the value here is a falsification harness
+that can kill a bad signal cleanly, not a claim of alpha.
 
-Reporting this honestly is deliberate: the value here is a falsification harness
-that can kill a bad signal cleanly, not a claim of edge.
+- **Cross-sectional news sentiment** (`run_universe_all.py` — 11 biweekly windows
+  over the Nifty 50, Jan–Jun 2026): mean rank-IC **+0.05** (p≈0.13, ~54%
+  directional accuracy). Positive but not significant, and it does **not** beat a
+  price-momentum baseline (+0.08).
+- **Earnings-tone surprise** (QoQ delta — `earnings_surprise.py`,
+  `oos_earnings_surprise.py`): the strongest in-sample candidate at the 20-day
+  horizon (mean IC **+0.17**, p≈0.02), but it **fails the out-of-sample gate** —
+  IC decays ~**70%** train→test and the long-short spread flips negative on the
+  held-out quarters. Classic in-sample inflation.
+
+The honest read: earnings-tone surprise is the best remaining candidate, but it
+needs live forward quarters — not more historical slicing — to resolve.
 
 ## Setup
 
@@ -66,6 +74,10 @@ python check_setup.py        # verifies deps + data are in place
 python pipeline_nifty.py     # score today's news -> snapshot
 python backtest.py           # forward-return validation (IC, hit-rate, P&L)
 python evaluate_cutoff.py    # leakage-free as-of-date experiment
+python run_universe_all.py   # Nifty-50 cross-sectional biweekly sweep
+python earnings_surprise.py && python oos_earnings_surprise.py  # earnings-tone surprise + OOS gate
+python pick_top.py --markdown   # long-only pick list + reason cards -> decision ledger
+python grade_ledger.py          # grade logged picks against realized returns
 ```
 
 > Note: the raw article JSON dumps and the binary SQLite DB are gitignored
@@ -80,6 +92,10 @@ python evaluate_cutoff.py    # leakage-free as-of-date experiment
 | `pipeline_nifty.py` | Daily end-to-end scoring run |
 | `backtest.py` | Forward-return validation harness |
 | `evaluate_cutoff.py` | Leakage-free as-of-date experiment |
+| `run_universe_all.py` | Nifty-50 cross-sectional biweekly IC / long-short sweep |
+| `earnings_surprise.py`, `oos_earnings_surprise.py` | Earnings-tone QoQ surprise test + out-of-sample gate |
+| `pick_top.py`, `grade_ledger.py`, `pick_backtest.py` | Long-only pick list, reason cards, outcome grading + OOS pick gate |
+| `export_jan_from_db.py` | Re-export historical monthly articles from the DB for replay |
 | `sensitivity.py` | Parameter sweep over the scoring `Config` |
 | `fetch_*.py`, `universe.py` | News / earnings / universe ingestion |
 | `db/`, `db_io.py` | Versioned SQLite schema, migrations, I/O |

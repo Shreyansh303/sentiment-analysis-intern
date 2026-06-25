@@ -21,3 +21,4 @@ window_sweep/*.log
 
 # Dated internal demo artifacts
 *-demo-runbook.html
+decision_cards_*.md

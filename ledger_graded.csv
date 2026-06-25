@@ -1,0 +1,6 @@
+date,ticker,name,rank,agg_sent,n_sent,low_n,n_articles,horizon,realized_return,was_right,status
+2026-06-24,NTPC.NS,NTPC Limited,1,0.8273,17,False,17,5,,,pending
+2026-06-24,ADANIENT.NS,Adani Enterprises,2,0.8131,19,False,19,5,,,pending
+2026-06-24,CIPLA.NS,Cipla,3,0.8044,15,False,15,5,,,pending
+2026-06-24,ICICIBANK.NS,ICICI Bank,4,0.8039,16,False,16,5,,,pending
+2026-06-24,KOTAKBANK.NS,Kotak Mahindra Bank,5,0.7803,16,False,16,5,,,pending
