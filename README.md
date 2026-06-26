@@ -1,12 +1,13 @@
 # Nifty News-Sentiment Signal Research
 
-A research pipeline that scores financial news for Indian large-cap stocks
-(Nifty constituents) and tests, **without lookahead leakage**, whether the
-resulting sentiment signal has any predictive power over forward stock returns.
+A research pipeline that scores financial news and earnings transcripts for
+Indian large-cap stocks (Nifty 50) and tests, **without lookahead leakage**,
+whether the resulting sentiment signal has any predictive power over forward
+stock returns.
 
 The headline finding is honest and negative — see [Results](#results). The point
-of this repo is the *methodology*: a leakage-disciplined way to build, score, and
-falsify a sentiment alpha signal end to end.
+of this repo is the *methodology*: a leakage-disciplined way to build, score,
+falsify, and then forward-track a sentiment alpha signal end to end.
 
 ## What it does
 
@@ -17,7 +18,7 @@ falsify a sentiment alpha signal end to end.
    probabilities (`sentiment_core.py`). This expensive pass runs **once**.
 3. **Aggregate** — cheaply re-weight those raw probabilities into per-ticker
    sentiment/news aggregates and labels for any given parameter set, which makes
-   the parameter sensitivity sweep tractable (`sensitivity.py`).
+   the parameter sensitivity sweep tractable (`research/sensitivity.py`).
 4. **Validate** — two independent, leakage-free evaluation harnesses:
    - `backtest.py` — joins each `(date, ticker)` signal to its **forward**
      return (acted at the *next* session's open), and reports Information
@@ -27,8 +28,14 @@ falsify a sentiment alpha signal end to end.
      information barrier: the model sees only articles dated on/before a hard
      cutoff, predicts UP/DOWN/NEUTRAL, then is scored against the actual price
      path after the cutoff.
+5. **Forward-track** — `run_daily.sh` runs the live pipeline on a schedule
+   (fetch → score → snapshot → backtest), accumulating a real out-of-sample
+   record one trading day at a time rather than re-slicing history.
 
-Data persists to a SQLite store with a versioned schema (`db/`, `db_io.py`).
+Data persists to a versioned SQLite store (`db/`, `db_io.py`), which is the
+source of truth. Every scoring and snapshot step **dual-writes** to both the DB
+and committed CSVs (`snapshots.csv`, `scored_history.csv`), so the analysis
+panel survives even if the CSVs are regenerated.
 
 ## Design notes worth a look
 
@@ -39,6 +46,9 @@ Data persists to a SQLite store with a versioned schema (`db/`, `db_io.py`).
   through `D`; returns are measured open-to-open starting the *next* session, so
   the signal date never touches its own return window. `evaluate_cutoff.py` adds
   hard assertions that no post-cutoff byte reaches the model.
+- **DB is the source of truth; CSVs are a mirror.** The daily run upserts by
+  `(date, ticker)` so re-runs overwrite rather than duplicate, and the committed
+  CSVs can be rebuilt from the DB at any time.
 - **Every magic number is a swept-able `Config` default** (`sentiment_core.py`),
   so robustness can be tested rather than hand-tuned.
 
@@ -59,38 +69,17 @@ that can kill a bad signal cleanly, not a claim of alpha.
   held-out quarters. Classic in-sample inflation.
 
 The honest read: earnings-tone surprise is the best remaining candidate, but it
-needs live forward quarters — not more historical slicing — to resolve.
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-python check_setup.py        # verifies deps + data are in place
-```
-
-## Reproduce
-
-```bash
-python pipeline_nifty.py     # score today's news -> snapshot
-python backtest.py           # forward-return validation (IC, hit-rate, P&L)
-python evaluate_cutoff.py    # leakage-free as-of-date experiment
-python run_universe_all.py   # Nifty-50 cross-sectional biweekly sweep
-python earnings_surprise.py && python oos_earnings_surprise.py  # earnings-tone surprise + OOS gate
-python pick_top.py --markdown   # long-only pick list + reason cards -> decision ledger
-python grade_ledger.py          # grade logged picks against realized returns
-```
-
-> Note: the raw article JSON dumps and the binary SQLite DB are gitignored
-> (heavy and regenerable). The fetch scripts recreate them; small result CSVs
-> are committed so the analysis output is visible without a full re-run.
+needs live forward quarters — not more historical slicing — to resolve. The
+daily harness (`run_daily.sh`) now accumulates exactly that forward record.
 
 ## Layout
 
 | Path | Purpose |
 |------|---------|
 | `sentiment_core.py` | FinBERT + Loughran–McDonald scoring, `Config`, aggregation |
-| `universe.py`, `db_io.py` | Universe definition, SQLite I/O layer |
-| `pipeline_nifty.py` | Daily end-to-end scoring run |
+| `universe.py`, `db_io.py` | Universe definition, SQLite I/O layer (source of truth) |
+| `pipeline_nifty.py` | Daily end-to-end scoring run (dual-writes DB + CSV) |
+| `run_daily.sh` | Cron-friendly daily driver: fetch → score → snapshot → backtest |
 | `run_universe_all.py` | Nifty-50 cross-sectional biweekly IC / long-short sweep |
 | `backtest.py` | Forward-return validation harness (IC, hit-rate, P&L) |
 | `evaluate_cutoff.py` | Leakage-free as-of-date experiment |
@@ -98,6 +87,7 @@ python grade_ledger.py          # grade logged picks against realized returns
 | `pick_top.py`, `grade_ledger.py`, `pick_backtest.py` | Long-only pick list, reason cards, outcome grading + OOS pick gate |
 | `fetch_*.py` | News, earnings, universe ingestion |
 | `export_jan_from_db.py`, `check_setup.py` | Utilities: DB article export, environment check |
+| `snapshots.csv`, `scored_history.csv` | Accumulating daily panel + raw scores (mirror of DB) |
 | `research/` | Exploratory scripts: sensitivity sweep, signal search, earnings drift, news-leg experiment, combined book |
 | `results/` | Committed output CSVs (scored article caches, backtest results, decision ledger) |
-| `db/`, | Versioned SQLite schema and migrations |
+| `db/` | Versioned SQLite schema and migrations |
