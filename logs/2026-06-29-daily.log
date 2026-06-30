@@ -1,0 +1,1611 @@
+================ run started Mon Jun 29 19:05:58 IST 2026 ================
+python3 -> /Users/anushka/.pyenv/shims/python3
+--- step 1: fetch fresh news (fetch_articles.py) ---
+  (DB) upserted 485 articles into articles table.
+fetched 485 unique articles -> articles_fetched.json
+  ADANIENT.NS   12
+  ADANIPORTS.NS 5
+  APOLLOHOSP.NS 7
+  ASIANPAINT.NS 9
+  AXISBANK.NS   7
+  BAJAJ-AUTO.NS 10
+  BAJAJFINSV.NS 2
+  BAJFINANCE.NS 8
+  BHARTIARTL.NS 8
+  BPCL.NS       10
+  BRITANNIA.NS  8
+  CIPLA.NS      7
+  COALINDIA.NS  8
+  DIVISLAB.NS   8
+  DRREDDY.NS    9
+  EICHERMOT.NS  6
+  GRASIM.NS     7
+  HCLTECH.NS    14
+  HDFCBANK.NS   17
+  HDFCLIFE.NS   7
+  HEROMOTOCO.NS 6
+  HINDALCO.NS   9
+  HINDUNILVR.NS 9
+  ICICIBANK.NS  7
+  INDUSINDBK.NS 5
+  INFY.NS       16
+  ITC.NS        10
+  JSWSTEEL.NS   4
+  KOTAKBANK.NS  10
+  LT.NS         8
+  LTIM.NS       8
+  M&M.NS        9
+  MACRO         30
+  MARUTI.NS     7
+  NESTLEIND.NS  7
+  NTPC.NS       8
+  ONGC.NS       10
+  POWERGRID.NS  8
+  RELIANCE.NS   16
+  SBILIFE.NS    7
+  SBIN.NS       15
+  SECTOR_IT     19
+  SHRIRAMFIN.NS 6
+  SUNPHARMA.NS  10
+  TATACONSUM.NS 9
+  TATAMOTORS.NS 10
+  TATASTEEL.NS  8
+  TCS.NS        15
+  TECHM.NS      3
+  TITAN.NS      6
+  ULTRACEMCO.NS 7
+  WIPRO.NS      14
+--- step 2: score + snapshot + DB write (pipeline_nifty.py) ---
+W0629 19:08:34.752000 55101 site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+W0629 19:08:34.784000 55101 site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W0629 19:08:34.809000 55101 site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Using live news file: articles_fetched.json
+Loading FinBERT model and tokenizer...
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 11349.54it/s]
+ID         Scope        Date          Sent  w_sent cut_s  News  w_news cut_n  Impact
+--------------------------------------------------------------------------------------------------------------
+2c28c031fb HDFCBANK.NS  2026-06-29   -0.92   0.500        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.94, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+8ad648cdda INFY.NS      2026-06-29    0.72   0.360         0.00   0.360        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.74, neg: 0.02, neu: 0.25).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1547058382 HINDUNILVR.NS2026-06-29    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f567b62243 ITC.NS       2026-06-29   -0.95   0.800         1.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+ae718b1507 KOTAKBANK.NS 2026-06-29   -0.19   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.24, neu: 0.72).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ece5fb89f0 KOTAKBANK.NS 2026-06-29   -0.95   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+99b031dd62 KOTAKBANK.NS 2026-06-29   -0.96   0.500         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+55f7efb247 KOTAKBANK.NS 2026-06-29   -0.96   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+22a42a27dd KOTAKBANK.NS 2026-06-29   -0.96   0.700         0.00   0.700        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ccbe505415 LT.NS        2026-06-29   -0.96   0.800        -1.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+d05172c25d AXISBANK.NS  2026-06-29   -0.84   0.540        -1.00   0.540        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.85, neu: 0.14).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+99f47f09f2 AXISBANK.NS  2026-06-29   -0.55   0.210        -1.00   0.210        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.57, neu: 0.41).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+0f598568aa ASIANPAINT.NS2026-06-29   -0.96   0.800        -1.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+6c94dcba8b MARUTI.NS    2026-06-29   -0.91   0.800        -1.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.92, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+aaf3993219 ULTRACEMCO.NS2026-06-29    0.51   0.420        -1.00   0.420        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.67, neg: 0.16, neu: 0.17).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+ada26e7937 ONGC.NS      2026-06-29   -0.96   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c27c0a77c8 M&M.NS       2026-06-29    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+dba485187a COALINDIA.NS 2026-06-29    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+98330207fe HINDALCO.NS  2026-06-29    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6799964a01 DRREDDY.NS   2026-06-29    0.85   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.87, neg: 0.02, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3b5a4e3ef1 DRREDDY.NS   2026-06-29    0.91   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a2dab507b0 DRREDDY.NS   2026-06-29   -0.95   0.500         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e065aeac59 DRREDDY.NS   2026-06-29    0.93   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6dbd6effb8 DRREDDY.NS   2026-06-29    0.71   0.480         0.00   0.480        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.83, neg: 0.13, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+db01b08a18 CIPLA.NS     2026-06-29    0.91   0.800         0.00   0.800        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.01, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+869cc09fe6 BAJAJ-AUTO.NS2026-06-29    0.04   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+21cef744de BAJAJ-AUTO.NS2026-06-29    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d85f1056af TECHM.NS     2026-06-29    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+e53c633931 BPCL.NS      2026-06-29   -0.95   0.700         0.00   0.700        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7f5e550961 BPCL.NS      2026-06-29    0.10   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.11, neg: 0.01, neu: 0.88).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b643c41007 SECTOR_IT    2026-06-29    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.02, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+61a93d8ece TCS.NS       2026-06-28   -0.93   0.714        -1.00   0.840        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.94, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 3).
+54fd5e4438 KOTAKBANK.NS 2026-06-28    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+55ac813c50 KOTAKBANK.NS 2026-06-28    0.03   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+16b6ede95d TATASTEEL.NS 2026-06-28    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4c3631461b MACRO        2026-06-28   -0.07   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.16, neu: 0.75).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+b0bc8ccc41 MACRO        2026-06-28    0.72   0.238        -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.74, neg: 0.02, neu: 0.24).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+3f9385b205 TCS.NS       2026-06-27    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a2ad19fc38 ITC.NS       2026-06-27   -0.94   0.378         0.00   0.522        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.95, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c19d23db13 KOTAKBANK.NS 2026-06-27   -0.41   0.170         0.00   0.235        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.43, neu: 0.55).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+81f185237c DRREDDY.NS   2026-06-27   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+14613e532a TECHM.NS     2026-06-27   -0.92   0.315        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.94, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+74d0a80555 SECTOR_IT    2026-06-27    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+707bf03e7c MACRO        2026-06-27    0.92   0.504         0.00   0.696        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0119ded678 MACRO        2026-06-27    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cbd9097f74 TCS.NS       2026-06-26    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4f9ceb623f HDFCBANK.NS  2026-06-26   -0.86   0.450        -1.00   0.731        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.90, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 3).
+e955e2445c INFY.NS      2026-06-26   -0.33   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.39, neu: 0.55).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+dbb209ba5a ITC.NS       2026-06-26    0.93   0.250         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3cb5bf8741 SBIN.NS      2026-06-26    0.11   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.12, neg: 0.01, neu: 0.87).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e5da056772 BHARTIARTL.NS2026-06-26    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d46ab0f9c1 LT.NS        2026-06-26   -0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+3bb25a678e HCLTECH.NS   2026-06-26    0.10   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.17, neg: 0.07, neu: 0.76).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a3c9b095a4 SUNPHARMA.NS 2026-06-26    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+985758f254 SUNPHARMA.NS 2026-06-26    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+db21e28383 ULTRACEMCO.NS2026-06-26    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+38b72be7a2 NESTLEIND.NS 2026-06-26    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3095afc629 NESTLEIND.NS 2026-06-26    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.03, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d7f8f2793e NESTLEIND.NS 2026-06-26    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7f59b9de16 ONGC.NS      2026-06-26    0.59   0.150         0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.60, neg: 0.01, neu: 0.39).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f2b5fba492 POWERGRID.NS 2026-06-26   -0.20   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.22, neu: 0.76).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+d4d862ed6c M&M.NS       2026-06-26    0.21   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.22, neg: 0.01, neu: 0.77).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+2e4acf1404 ADANIENT.NS  2026-06-26    0.07   0.135        -1.00   0.219        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.51, neg: 0.43, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 7).
+560a9f3395 BAJAJFINSV.NS2026-06-26    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+d779477c5b GRASIM.NS    2026-06-26   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9d197a4343 HINDALCO.NS  2026-06-26    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7b4d596de7 HINDALCO.NS  2026-06-26   -0.11   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.12, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+4ac90f014e DRREDDY.NS   2026-06-26    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.96).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+831015a9ab EICHERMOT.NS 2026-06-26    0.04   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+9b98438538 HEROMOTOCO.NS2026-06-26    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+e1311f1949 INDUSINDBK.NS2026-06-26   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0cd98ec43c TATACONSUM.NS2026-06-26    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f1b2d17edb LTIM.NS      2026-06-26   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1a6e7785e8 LTIM.NS      2026-06-26    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e5823b252d BPCL.NS      2026-06-26   -0.20   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.22, neu: 0.76).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+88ec07ce04 MACRO        2026-06-26    0.21   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.24, neg: 0.02, neu: 0.74).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5b4608abd1 RELIANCE.NS  2026-06-25    0.50   0.071         0.00   0.136        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.52, neg: 0.03, neu: 0.45).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+618826d086 HDFCBANK.NS  2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+142efaf39d HDFCBANK.NS  2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9039dd6a98 ICICIBANK.NS 2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+34e83204f0 HINDUNILVR.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+afa7990cf2 HINDUNILVR.NS2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+64dc6879c9 ITC.NS       2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e087743606 ITC.NS       2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+10000abf23 ITC.NS       2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+13cfdf1af0 SBIN.NS      2026-06-25    0.90   0.198         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.01, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+52de060dae SBIN.NS      2026-06-25    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.03, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+989685e994 BHARTIARTL.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+2b07db9130 BHARTIARTL.NS2026-06-25    0.88   0.198         1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.03, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+0e24a18081 LT.NS        2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+577c325316 LT.NS        2026-06-25    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bbfcb85d9f AXISBANK.NS  2026-06-25    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+2c5b9a260c BAJFINANCE.NS2026-06-25    0.19   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.20, neg: 0.01, neu: 0.78).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+552582d2a8 BAJFINANCE.NS2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+905c7caf00 ASIANPAINT.NS2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+58de587fec MARUTI.NS    2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9fcadbb9c6 HCLTECH.NS   2026-06-25    0.43   0.060         0.00   0.000   CUT  LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.44, neg: 0.02, neu: 0.54).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cb985dca26 HCLTECH.NS   2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+41147ab513 SUNPHARMA.NS 2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+f8899d6045 TITAN.NS     2026-06-25    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+de19e7751a TITAN.NS     2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5196910907 WIPRO.NS     2026-06-25   -0.88   0.238        -1.00   0.455        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.90, neu: 0.09).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+34356bf584 WIPRO.NS     2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5251b214f0 ULTRACEMCO.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+762227b7db ONGC.NS      2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+49b673ea74 ONGC.NS      2026-06-25    0.92   0.198         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0ec5eed393 ONGC.NS      2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+215c5440dc NTPC.NS      2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3f068ede12 M&M.NS       2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+05b454de4b M&M.NS       2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+105d0ecd7b TATAMOTORS.NS2026-06-25    0.91   0.317         0.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e893b456a3 TATASTEEL.NS 2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+732981439a TATASTEEL.NS 2026-06-25   -0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.06, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d5b05f0e1b TATASTEEL.NS 2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+92c6f70179 JSWSTEEL.NS  2026-06-25   -0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.11, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+755ac0c886 JSWSTEEL.NS  2026-06-25    0.65   0.119         0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.67, neg: 0.02, neu: 0.31).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+69e93e68d6 ADANIPORTS.NS2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d4a17626de COALINDIA.NS 2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+af658149f9 GRASIM.NS    2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+504e35d1bb GRASIM.NS    2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e03d6a8132 GRASIM.NS    2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+3b142993f3 DRREDDY.NS   2026-06-25    0.90   0.317         0.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.03, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7a72f14bc0 CIPLA.NS     2026-06-25   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d64b444e94 BRITANNIA.NS 2026-06-25    0.90   0.317         1.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.02, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+247041eaab BRITANNIA.NS 2026-06-25    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+ebc28105ed BRITANNIA.NS 2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+456d708a28 EICHERMOT.NS 2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a03d3f0743 EICHERMOT.NS 2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cc9ae44c42 HEROMOTOCO.NS2026-06-25    0.88   0.198        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.04, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+906b2aeb78 HEROMOTOCO.NS2026-06-25    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+01937e72ef HEROMOTOCO.NS2026-06-25    0.92   0.317         0.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+a595ef6ce6 DIVISLAB.NS  2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+63764b6aa2 DIVISLAB.NS  2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4333bb71de DIVISLAB.NS  2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c88f270d9b DIVISLAB.NS  2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bc48af210c DIVISLAB.NS  2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+26cefc8519 INDUSINDBK.NS2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.01, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+eac7b92592 APOLLOHOSP.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+9b2bf863ca APOLLOHOSP.NS2026-06-25    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+a881d063c1 APOLLOHOSP.NS2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2865896904 TATACONSUM.NS2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c7a8c02d2c SBILIFE.NS   2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+667a1efe94 HDFCLIFE.NS  2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+19ae4f0a38 HDFCLIFE.NS  2026-06-25    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+25bc70935f HDFCLIFE.NS  2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.03, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+43fd6cbf96 HDFCLIFE.NS  2026-06-25   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.96).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a676686b1c LTIM.NS      2026-06-25    0.03   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+74bf7d6a28 LTIM.NS      2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5ee743889a SHRIRAMFIN.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+6889ad06a0 SHRIRAMFIN.NS2026-06-25    0.91   0.317         0.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+696b94c725 SHRIRAMFIN.NS2026-06-25    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+d00fba6383 SHRIRAMFIN.NS2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+64486a52ee BPCL.NS      2026-06-25    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1c5822f225 BPCL.NS      2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2ecd7bdd81 BPCL.NS      2026-06-25    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+34b5482f95 SECTOR_IT    2026-06-25    0.69   0.119        -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.71, neg: 0.03, neu: 0.26).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+db51286c33 MACRO        2026-06-25    0.77   0.143         1.00   0.273        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.80, neg: 0.02, neu: 0.18).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+8561751b51 MACRO        2026-06-25    0.91   0.317         0.00   0.606        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c8d70af103 MACRO        2026-06-25    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.01, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+69a6edf6a9 MACRO        2026-06-25    0.28   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.31, neg: 0.03, neu: 0.67).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+c63c1202c1 HDFCBANK.NS  2026-06-24    0.90   0.157         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.04, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8ceb14d085 HDFCBANK.NS  2026-06-24    0.82   0.151         1.00   0.339        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.84, neg: 0.02, neu: 0.14).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+fcdc2e91db HDFCBANK.NS  2026-06-24    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1b822f4919 HDFCBANK.NS  2026-06-24    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b338d9c3ab INFY.NS      2026-06-24    0.34   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.35, neg: 0.01, neu: 0.64).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+4078628c97 INFY.NS      2026-06-24    0.85   0.157         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.86, neg: 0.01, neu: 0.13).
+     └─ News:      LM Lexicon (pos words: 3, neg words: 3).
+b1ce722ae7 INFY.NS      2026-06-24    0.14   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.16, neg: 0.02, neu: 0.82).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+4b1eb0295c INFY.NS      2026-06-24    0.88   0.220         0.00   0.495        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.02, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+84a926ce91 INFY.NS      2026-06-24   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9ac61b784b ICICIBANK.NS 2026-06-24    0.85   0.252         0.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.87, neg: 0.02, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+eff1aae454 ICICIBANK.NS 2026-06-24    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1fcecb2319 ITC.NS       2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3e2b97ba8f ITC.NS       2026-06-24    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+183788192c BHARTIARTL.NS2026-06-24   -0.18   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.20, neu: 0.77).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2d1eba99e4 BHARTIARTL.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5fa3cbd694 AXISBANK.NS  2026-06-24    0.92   0.252         0.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c5ead0e68d AXISBANK.NS  2026-06-24    0.06   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 4, neg words: 0).
+9a8e528e50 BAJFINANCE.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6619823a10 BAJFINANCE.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8634783cbb ASIANPAINT.NS2026-06-24    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+21de7ccd0e MARUTI.NS    2026-06-24    0.91   0.157         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+571dcb9e2f MARUTI.NS    2026-06-24   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.04, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+326bb8f76c HCLTECH.NS   2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a4be6516d7 SUNPHARMA.NS 2026-06-24    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bb30008ba1 WIPRO.NS     2026-06-24    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+695443dbc5 ULTRACEMCO.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+07080c7116 NTPC.NS      2026-06-24    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+18f9b4f307 POWERGRID.NS 2026-06-24    0.87   0.220         0.00   0.495        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.04, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fcd8d5a7a7 TATAMOTORS.NS2026-06-24    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+8927d00d3f TATAMOTORS.NS2026-06-24    0.89   0.157         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.02, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fd5f1167d6 TATASTEEL.NS 2026-06-24    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+49ebcccc47 ADANIENT.NS  2026-06-24    0.92   0.252         0.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5b2c48b83a ADANIENT.NS  2026-06-24    0.81   0.132         0.00   0.297        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.85, neg: 0.04, neu: 0.12).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+aa066501a9 ADANIENT.NS  2026-06-24    0.92   0.157         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.01, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3990f405bd ADANIENT.NS  2026-06-24    0.92   0.252         1.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+c5779abafb ADANIPORTS.NS2026-06-24    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.02, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+75d1c972ff COALINDIA.NS 2026-06-24    0.81   0.252        -1.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.87, neg: 0.06, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+e5c0b495d0 EICHERMOT.NS 2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a99c9d784a HEROMOTOCO.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+19dbae8f99 BAJAJ-AUTO.NS2026-06-24   -0.50   0.076         0.00   0.170        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.56, neu: 0.38).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+426dbab6d4 BAJAJ-AUTO.NS2026-06-24   -0.87   0.252        -1.00   0.566        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.88, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+1d7b505ec6 DIVISLAB.NS  2026-06-24    0.26   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.28, neg: 0.01, neu: 0.71).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1775701e94 DIVISLAB.NS  2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2bbf8d08a2 TECHM.NS     2026-06-24    0.85   0.220         0.00   0.495        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.89, neg: 0.03, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b3dc1b535b INDUSINDBK.NS2026-06-24    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a3baddff12 APOLLOHOSP.NS2026-06-24    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d9e0e8b999 TATACONSUM.NS2026-06-24    0.61   0.094         1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.63, neg: 0.01, neu: 0.36).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+4fc9af4428 TATACONSUM.NS2026-06-24    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2568566f73 LTIM.NS      2026-06-24    0.88   0.220         0.00   0.495        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.89, neg: 0.01, neu: 0.10).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8465b92cea MACRO        2026-06-24    0.46   0.057         0.00   0.127        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.50, neg: 0.04, neu: 0.46).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b113432b8d MACRO        2026-06-24    0.59   0.094         0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.61, neg: 0.02, neu: 0.37).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fc5a46a5c5 MACRO        2026-06-24    0.61   0.151         1.00   0.339        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.64, neg: 0.03, neu: 0.34).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+b74a622c70 MACRO        2026-06-24    0.81   0.151         1.00   0.339        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.82, neg: 0.02, neu: 0.16).
+     └─ News:      LM Lexicon (pos words: 4, neg words: 0).
+f4f53a3597 RELIANCE.NS  2026-06-23    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4b3dde4efc TCS.NS       2026-06-23   -0.95   0.125         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c6e81e5bdb TCS.NS       2026-06-23   -0.96   0.200         0.00   0.528        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7752d8ba35 HDFCBANK.NS  2026-06-23    0.89   0.225         0.00   0.594        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.01, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+600a2cdb38 INFY.NS      2026-06-23   -0.96   0.125         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.98, neu: 0.01).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+963d7f0fc8 INFY.NS      2026-06-23   -0.89   0.125        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.91, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+46910ad1c8 HINDUNILVR.NS2026-06-23   -0.61   0.105         0.00   0.277        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.64, neu: 0.34).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f09c3cdd7c LT.NS        2026-06-23   -0.87   0.125        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.90, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+95698fe7ff AXISBANK.NS  2026-06-23    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4454a701a9 ASIANPAINT.NS2026-06-23    0.02   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+96526f59ae MARUTI.NS    2026-06-23   -0.89   0.125        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.92, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+82b91775ea SUNPHARMA.NS 2026-06-23    0.84   0.200         1.00   0.528        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.86, neg: 0.02, neu: 0.12).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+8545fc5583 SUNPHARMA.NS 2026-06-23    0.88   0.200         0.00   0.528        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.02, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6fd9bd4a36 SUNPHARMA.NS 2026-06-23    0.28   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.31, neg: 0.02, neu: 0.67).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3a6a387e54 SUNPHARMA.NS 2026-06-23    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+79027faaa5 WIPRO.NS     2026-06-23    0.12   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.13, neg: 0.01, neu: 0.85).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9e4d68e83b WIPRO.NS     2026-06-23    0.88   0.200        -1.00   0.528        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.89, neg: 0.01, neu: 0.10).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+44ed7169cf NTPC.NS      2026-06-23   -0.09   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.11, neu: 0.87).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ac6aa800d5 POWERGRID.NS 2026-06-23   -0.96   0.125         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b2e31d9154 M&M.NS       2026-06-23   -0.69   0.075        -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.72, neu: 0.24).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+da534294d7 M&M.NS       2026-06-23    0.93   0.225         0.00   0.594        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+18c9a0e443 M&M.NS       2026-06-23    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ddde15d89c ADANIENT.NS  2026-06-23    0.49   0.037   CUT   1.00   0.000   CUT  LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.51, neg: 0.02, neu: 0.47).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+abfc7d09f8 COALINDIA.NS 2026-06-23    0.18   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.20, neg: 0.02, neu: 0.78).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+821aee4eb2 BAJAJFINSV.NS2026-06-23    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e08a752fd9 CIPLA.NS     2026-06-23    0.66   0.105         0.00   0.277        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.76, neg: 0.10, neu: 0.14).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+db903fd10c BAJAJ-AUTO.NS2026-06-23    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+30eee51df1 HDFCLIFE.NS  2026-06-23    0.90   0.200         0.00   0.528        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.02, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4243b55389 SECTOR_IT    2026-06-23    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ba93699313 MACRO        2026-06-23    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+05b4c809ac MACRO        2026-06-23    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+27701c9ba7 RELIANCE.NS  2026-06-22    0.84   0.060         1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.85, neg: 0.01, neu: 0.15).
+     └─ News:      LM Lexicon (pos words: 3, neg words: 0).
+511f2a1794 RELIANCE.NS  2026-06-22    0.88   0.159         0.00   0.492        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.02, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+01d5e23310 ICICIBANK.NS 2026-06-22    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e300d05cff ITC.NS       2026-06-22   -0.10   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.12, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+b0f9aacb0b KOTAKBANK.NS 2026-06-22    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d247d5569f ASIANPAINT.NS2026-06-22   -0.16   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.18, neu: 0.80).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bb58adbe0e ASIANPAINT.NS2026-06-22    0.92   0.099         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5b1c27e361 SUNPHARMA.NS 2026-06-22   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1756d80d56 SUNPHARMA.NS 2026-06-22    0.13   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.14, neg: 0.01, neu: 0.85).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d07f5fdb8c TITAN.NS     2026-06-22    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fbf0839f1d ULTRACEMCO.NS2026-06-22    0.62   0.060         0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.64, neg: 0.02, neu: 0.35).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6b2dcf28b5 NESTLEIND.NS 2026-06-22   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+513a3ad099 ONGC.NS      2026-06-22    0.92   0.159         0.00   0.492        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fc2b6dbccf ONGC.NS      2026-06-22    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6224b58a67 TATAMOTORS.NS2026-06-22    0.92   0.139         0.00   0.431        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7573ba41b7 TATASTEEL.NS 2026-06-22    0.06   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.02, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+f6bb818a25 ADANIPORTS.NS2026-06-22    0.49   0.095         0.00   0.295        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.73, neg: 0.24, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+f50fb7cd73 GRASIM.NS    2026-06-22    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6c1771ba3f HINDALCO.NS  2026-06-22   -0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.05, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+ed8160e3d0 DRREDDY.NS   2026-06-22    0.92   0.159         0.00   0.492        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bd3d99f78a CIPLA.NS     2026-06-22    0.92   0.159         1.00   0.492        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.03, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+131589f583 CIPLA.NS     2026-06-22    0.92   0.099         1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 4, neg words: 0).
+2aa4683f2f CIPLA.NS     2026-06-22    0.27   0.042   CUT   0.00   0.129        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.59, neg: 0.32, neu: 0.09).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c9c1ec47c0 CIPLA.NS     2026-06-22    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.01, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+1ac9af27b7 BRITANNIA.NS 2026-06-22    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.02, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0d49ccd3ba BRITANNIA.NS 2026-06-22    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.01, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9577636fd1 EICHERMOT.NS 2026-06-22    0.90   0.159         0.00   0.492        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.02, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6a758225d2 INDUSINDBK.NS2026-06-22    0.92   0.099         0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+95244a5441 APOLLOHOSP.NS2026-06-22    0.75   0.060         0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.77, neg: 0.02, neu: 0.21).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+37b0f56b45 TATACONSUM.NS2026-06-22   -0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.09, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+53feb04d64 BPCL.NS      2026-06-22    0.04   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.03, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+426a3c47e7 MACRO        2026-06-22    0.83   0.099         1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.85, neg: 0.02, neu: 0.13).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+0a37d08b6a MACRO        2026-06-22    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.02, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fa222a0491 INFY.NS      2026-06-21    0.89   0.079         1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.91, neg: 0.02, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+f72029d7a6 ASIANPAINT.NS2026-06-21    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+65ff8f9361 NESTLEIND.NS 2026-06-21    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a5a1acafac BRITANNIA.NS 2026-06-21    0.11   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.13, neg: 0.02, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+97c00d3a36 DIVISLAB.NS  2026-06-21    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+4b65d4e855 MACRO        2026-06-21    0.14   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.15, neg: 0.02, neu: 0.83).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+382ebb11d6 INFY.NS      2026-06-20   -0.95   0.062        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.96, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+ffe669f994 WIPRO.NS     2026-06-20    0.94   0.062        -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.01, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 3).
+e8c47fa10d BRITANNIA.NS 2026-06-20    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8b553ff150 LTIM.NS      2026-06-20   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+47c75840d7 RELIANCE.NS  2026-06-19    0.08   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4e9f4dcdb8 RELIANCE.NS  2026-06-19    0.12   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.13, neg: 0.01, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d162f16db6 RELIANCE.NS  2026-06-19    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+14e8ff2649 RELIANCE.NS  2026-06-19   -0.96   0.079         0.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+29a53f69b6 RELIANCE.NS  2026-06-19   -0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d87183a7c6 RELIANCE.NS  2026-06-19    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f35ab957fb RELIANCE.NS  2026-06-19    0.23   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.24, neg: 0.01, neu: 0.74).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cff1369589 TCS.NS       2026-06-19   -0.97   0.089        -1.00   0.450        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 7).
+9badb35bab TCS.NS       2026-06-19   -0.97   0.089        -1.00   0.450        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+b50421f2df TCS.NS       2026-06-19   -0.87   0.079        -1.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.90, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+08ab8df71c HDFCBANK.NS  2026-06-19    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fccbf19c2b INFY.NS      2026-06-19   -0.36   0.015   CUT  -1.00   0.000   CUT  LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.45, neu: 0.46).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+ebd24dade8 INFY.NS      2026-06-19    0.19   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.20, neg: 0.01, neu: 0.79).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+05ff83b868 ICICIBANK.NS 2026-06-19    0.09   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.10, neg: 0.01, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d14f5fcdfb HINDUNILVR.NS2026-06-19    0.03   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+8738200b52 HINDUNILVR.NS2026-06-19   -0.67   0.030   CUT  -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.71, neu: 0.26).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+aed9d1abaf SBIN.NS      2026-06-19    0.04   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+cd7068e231 SBIN.NS      2026-06-19    0.06   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.02, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+1d52ce6361 BHARTIARTL.NS2026-06-19    0.52   0.042   CUT   0.00   0.210        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.65, neg: 0.13, neu: 0.22).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+79a034c3de ASIANPAINT.NS2026-06-19    0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.96).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+f5114700ec ASIANPAINT.NS2026-06-19    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+97352d5d07 MARUTI.NS    2026-06-19   -0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.06, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+151e95bf15 HCLTECH.NS   2026-06-19    0.03   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.30, neg: 0.28, neu: 0.42).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+8a24db470a TITAN.NS     2026-06-19   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fc29d333cf WIPRO.NS     2026-06-19    0.26   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.28, neg: 0.02, neu: 0.71).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f0d933e4fc ULTRACEMCO.NS2026-06-19    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e7239a52a2 NESTLEIND.NS 2026-06-19    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.01, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a9db9a02c0 ONGC.NS      2026-06-19    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.96).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+be59a93395 NTPC.NS      2026-06-19   -0.95   0.069        -1.00   0.350        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+da3d4ba868 NTPC.NS      2026-06-19    0.08   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+31623338f4 POWERGRID.NS 2026-06-19    0.83   0.048   CUT   0.00   0.240        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.84, neg: 0.01, neu: 0.15).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+341de233b4 TATAMOTORS.NS2026-06-19    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+76ad24dfd2 COALINDIA.NS 2026-06-19    0.24   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.25, neg: 0.01, neu: 0.73).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b7bd7e5d6a GRASIM.NS    2026-06-19    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+45d4e9f27c HINDALCO.NS  2026-06-19    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+eca2dbd174 BRITANNIA.NS 2026-06-19    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8494ac2794 SBILIFE.NS   2026-06-19    0.33   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.35, neg: 0.01, neu: 0.64).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4864f427db BPCL.NS      2026-06-19   -0.96   0.079        -0.50   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 6).
+bbae0aa4fe SECTOR_IT    2026-06-19    0.81   0.079         0.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.88, neg: 0.07, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+004727ff3a SECTOR_IT    2026-06-19   -0.96   0.060        -1.00   0.300        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+bfe5b459b9 SECTOR_IT    2026-06-19   -0.96   0.079         0.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+58e380a8cc SECTOR_IT    2026-06-19   -0.96   0.079        -1.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+1694aadfa8 SECTOR_IT    2026-06-19   -0.54   0.021   CUT  -1.00   0.105        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.58, neu: 0.38).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+20aa81d415 SECTOR_IT    2026-06-19   -0.92   0.079        -1.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.93, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+dad50092cc SECTOR_IT    2026-06-19   -0.89   0.050   CUT  -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.91, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+cb0304ae90 SECTOR_IT    2026-06-19   -0.89   0.060        -1.00   0.300        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.93, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+1731d879de SECTOR_IT    2026-06-19   -0.87   0.079         0.00   0.400        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.91, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+3ca8a93905 RELIANCE.NS  2026-06-18    0.83   0.024   CUT   0.33   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.84, neg: 0.01, neu: 0.15).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 1).
+f195db77cc RELIANCE.NS  2026-06-18    0.92   0.039   CUT   0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.03, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8539253aa4 RELIANCE.NS  2026-06-18   -0.84   0.055         0.00   0.327        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.87, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7c4a53660c TCS.NS       2026-06-18   -0.96   0.063         0.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+ce3a864c96 HDFCBANK.NS  2026-06-18    0.23   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.28, neg: 0.05, neu: 0.68).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+99dc8df6fe HDFCBANK.NS  2026-06-18    0.75   0.038   CUT   0.00   0.224        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.77, neg: 0.02, neu: 0.21).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+fb3c104372 HDFCBANK.NS  2026-06-18    0.08   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.10, neg: 0.02, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e14ecbfbd8 HDFCBANK.NS  2026-06-18    0.13   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.14, neg: 0.01, neu: 0.84).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+640868a943 INFY.NS      2026-06-18   -0.95   0.063        -1.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+f2e3e147e9 INFY.NS      2026-06-18   -0.90   0.063         0.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.91, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+d40e5575b6 INFY.NS      2026-06-18   -0.95   0.055        -1.00   0.327        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+363ed4dc16 ICICIBANK.NS 2026-06-18    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+af74f55547 HINDUNILVR.NS2026-06-18    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a2a8292a11 SBIN.NS      2026-06-18    0.84   0.071         0.00   0.420        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.86, neg: 0.02, neu: 0.12).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+19733d7245 SBIN.NS      2026-06-18    0.64   0.028   CUT   0.00   0.168        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.70, neg: 0.06, neu: 0.24).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7a95b8a32a SBIN.NS      2026-06-18    0.56   0.019   CUT   0.00   0.112        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.57, neg: 0.01, neu: 0.42).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+6421a4fd4a SBIN.NS      2026-06-18    0.06   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.02, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+81d573e681 SBIN.NS      2026-06-18    0.03   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+5b4f739536 SBIN.NS      2026-06-18    0.58   0.038   CUT   0.00   0.224        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.60, neg: 0.02, neu: 0.38).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+08d5ee3a8a SBIN.NS      2026-06-18    0.15   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.17, neg: 0.02, neu: 0.81).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+453ec3afb4 SBIN.NS      2026-06-18    0.62   0.024   CUT   0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.63, neg: 0.01, neu: 0.36).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+220ccc67f3 KOTAKBANK.NS 2026-06-18    0.87   0.055        -1.00   0.327        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.05, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+7e56b32ee3 LT.NS        2026-06-18    0.86   0.063        -1.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.04, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+0d8b001575 MARUTI.NS    2026-06-18    0.48   0.012   CUT   0.00   0.000   CUT  LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.50, neg: 0.02, neu: 0.48).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9e7e3b8542 HCLTECH.NS   2026-06-18    0.82   0.024   CUT   1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.83, neg: 0.01, neu: 0.16).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+71597a888c TITAN.NS     2026-06-18    0.90   0.039   CUT  -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.04, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 4).
+062e5c97a2 WIPRO.NS     2026-06-18    0.73   0.024   CUT   1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.74, neg: 0.01, neu: 0.25).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+8fcb35bfaf WIPRO.NS     2026-06-18    0.82   0.024   CUT   0.33   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.82, neg: 0.01, neu: 0.17).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 1).
+268310c636 WIPRO.NS     2026-06-18    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d2a7e4d232 NTPC.NS      2026-06-18    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7243dffa8e NTPC.NS      2026-06-18    0.24   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.26, neg: 0.01, neu: 0.73).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e1f40c592c POWERGRID.NS 2026-06-18   -0.52   0.024   CUT   1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.19, neg: 0.71, neu: 0.10).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+47f835d7d7 M&M.NS       2026-06-18    0.37   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.39, neg: 0.01, neu: 0.60).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+4aa1b1f209 TATAMOTORS.NS2026-06-18    0.87   0.063         0.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.88, neg: 0.01, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8cddf6a645 TATAMOTORS.NS2026-06-18    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7c876864d6 JSWSTEEL.NS  2026-06-18    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+da69850d35 ADANIENT.NS  2026-06-18    0.91   0.063         0.00   0.373        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a6034adae6 ADANIENT.NS  2026-06-18   -0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.07, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+82f10f951c COALINDIA.NS 2026-06-18    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+67da706854 COALINDIA.NS 2026-06-18    0.13   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.14, neg: 0.01, neu: 0.85).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+da9fc083fc EICHERMOT.NS 2026-06-18   -0.00   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+9eb87d25fa BAJAJ-AUTO.NS2026-06-18    0.75   0.043   CUT   0.00   0.252        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.77, neg: 0.02, neu: 0.21).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a8463d08ff BAJAJ-AUTO.NS2026-06-18    0.25   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.27, neg: 0.02, neu: 0.71).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+011806f820 BAJAJ-AUTO.NS2026-06-18    0.13   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.15, neg: 0.02, neu: 0.83).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e2f1a72a04 BAJAJ-AUTO.NS2026-06-18    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a3c6d4318c BAJAJ-AUTO.NS2026-06-18    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+54cdda9ca4 APOLLOHOSP.NS2026-06-18    0.07   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.08, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8d7779edd4 TATACONSUM.NS2026-06-18    0.93   0.039   CUT   0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2a1cb1ca69 SBILIFE.NS   2026-06-18    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b25c7e8785 SBILIFE.NS   2026-06-18    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+386e8eb72a LTIM.NS      2026-06-18   -0.34   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.37, neu: 0.60).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a06e14ca01 SHRIRAMFIN.NS2026-06-18    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f410c4ae1e BPCL.NS      2026-06-18    0.09   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.11, neg: 0.01, neu: 0.88).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+dbd2010948 SECTOR_IT    2026-06-18   -0.92   0.071        -1.00   0.420        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.93, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+340d89575c SECTOR_IT    2026-06-18   -0.95   0.055        -1.00   0.327        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.96, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+fcc21bccea SECTOR_IT    2026-06-18   -0.94   0.071        -1.00   0.420        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.95, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 6).
+d6bfb1df19 SECTOR_IT    2026-06-18   -0.93   0.039   CUT   0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.94, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f2029e7117 MACRO        2026-06-18    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0d0163148e TCS.NS       2026-06-17   -0.87   0.044   CUT  -1.00   0.305        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.92, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+59814b101b HDFCBANK.NS  2026-06-17   -0.95   0.031   CUT  -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+efcac35a57 ICICIBANK.NS 2026-06-17    0.89   0.044   CUT   0.00   0.305        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.04, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+abefa04d4f HINDUNILVR.NS2026-06-17    0.03   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+1b546001e0 HINDUNILVR.NS2026-06-17    0.06   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.07, neg: 0.02, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+4e0fb85116 SBIN.NS      2026-06-17    0.38   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.40, neg: 0.02, neu: 0.58).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+dbbfc719f6 SBIN.NS      2026-06-17    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0e75d358a0 BHARTIARTL.NS2026-06-17    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+0649bbea20 HCLTECH.NS   2026-06-17    0.38   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.39, neg: 0.01, neu: 0.60).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+9ac2aa1dbb TITAN.NS     2026-06-17    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.01, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+dc2dadfb11 WIPRO.NS     2026-06-17   -0.96   0.031   CUT  -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 3).
+c1ff76c411 WIPRO.NS     2026-06-17   -0.96   0.031   CUT  -1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 3).
+db948e57f5 WIPRO.NS     2026-06-17    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f2ead2cd6c ONGC.NS      2026-06-17    0.08   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7f9cfc271d NTPC.NS      2026-06-17    0.08   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.01, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+897f95fa24 POWERGRID.NS 2026-06-17    0.78   0.030   CUT   0.00   0.209        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.79, neg: 0.01, neu: 0.20).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+68678e88c4 M&M.NS       2026-06-17    0.76   0.019   CUT  -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.78, neg: 0.02, neu: 0.21).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+02c979a323 TATAMOTORS.NS2026-06-17   -0.26   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.10, neg: 0.36, neu: 0.54).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f6c3e532cd TATAMOTORS.NS2026-06-17   -0.92   0.050         0.00   0.348        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.93, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+68754e2868 TATAMOTORS.NS2026-06-17    0.53   0.009   CUT   0.00   0.000   CUT  LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.56, neg: 0.02, neu: 0.42).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+2df834a1ce TATASTEEL.NS 2026-06-17    0.39   0.015   CUT  -1.00   0.104        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.41, neg: 0.02, neu: 0.57).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+eecbf29b86 JSWSTEEL.NS  2026-06-17    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bd129dcf93 ADANIENT.NS  2026-06-17    0.94   0.056         1.00   0.392        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.01, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+693e8d7551 COALINDIA.NS 2026-06-17    0.18   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.19, neg: 0.01, neu: 0.80).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f31a4f5c5c GRASIM.NS    2026-06-17    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5534a226e4 HEROMOTOCO.NS2026-06-17   -0.01   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.03, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+d1e3ac1385 APOLLOHOSP.NS2026-06-17    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f34908c607 SBILIFE.NS   2026-06-17    0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+b4c920d816 SBILIFE.NS   2026-06-17    0.00   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+7af2e29681 HDFCLIFE.NS  2026-06-17    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+a3780500e9 LTIM.NS      2026-06-17    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+36f324b89a SHRIRAMFIN.NS2026-06-17   -0.80   0.019   CUT  -1.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.83, neu: 0.14).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+b488bf90d5 BPCL.NS      2026-06-17    0.92   0.050         0.00   0.348        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+def50d6e80 SECTOR_IT    2026-06-17    0.90   0.050         0.00   0.348        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.92, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+37afe572bd MACRO        2026-06-17    0.04   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.91).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+986c9c69e4 MACRO        2026-06-17   -0.05   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.09, neu: 0.87).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c296a20c50 MACRO        2026-06-17    0.04   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.02, neu: 0.92).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+68c5080954 MACRO        2026-06-17   -0.04   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.10, neu: 0.85).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+a12b36398b MACRO        2026-06-17    0.05   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.09, neg: 0.04, neu: 0.88).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+ef5318455c MACRO        2026-06-17    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+9b62da9256 MACRO        2026-06-17   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.04, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+02c39d99cc MACRO        2026-06-17   -0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.04, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+32dafe9889 RELIANCE.NS  2026-06-16    0.63   0.015   CUT   0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.64, neg: 0.01, neu: 0.34).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+517dbf6156 RELIANCE.NS  2026-06-16    0.59   0.024   CUT   0.00   0.195        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.61, neg: 0.03, neu: 0.36).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+000b031cc8 TCS.NS       2026-06-16    0.09   0.013   CUT  -1.00   0.110        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.52, neg: 0.43, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 1).
+1bb937e3ae TCS.NS       2026-06-16    0.93   0.035   CUT   0.00   0.284        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+d26b683cc7 TCS.NS       2026-06-16    0.91   0.040   CUT   1.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+70e82e59d6 TCS.NS       2026-06-16   -0.15   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.18, neu: 0.80).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+92942e4392 HDFCBANK.NS  2026-06-16    0.91   0.045   CUT   0.00   0.366        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+dae33d76ac HDFCBANK.NS  2026-06-16    0.87   0.035   CUT   0.00   0.284        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.02, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+37847cd3b2 ITC.NS       2026-06-16    0.02   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.01, neu: 0.95).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+adf44d86ac BHARTIARTL.NS2026-06-16    0.92   0.030   CUT   0.00   0.244        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cf6493aa59 LT.NS        2026-06-16    0.88   0.040   CUT   0.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.90, neg: 0.02, neu: 0.08).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5021996373 LT.NS        2026-06-16    0.02   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+caf367a341 AXISBANK.NS  2026-06-16    0.03   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.05, neg: 0.02, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+53efe40aab BAJFINANCE.NS2026-06-16    0.11   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.12, neg: 0.01, neu: 0.86).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+f1ace69d5e BAJFINANCE.NS2026-06-16    0.91   0.040   CUT   0.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+de49f93596 BAJFINANCE.NS2026-06-16    0.92   0.025   CUT   1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+497839e09f BAJFINANCE.NS2026-06-16    0.92   0.040   CUT   0.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.01, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bb97504d47 HCLTECH.NS   2026-06-16    0.93   0.025   CUT   1.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.01, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+884f0dc787 HCLTECH.NS   2026-06-16   -0.84   0.040   CUT   0.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.88, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+e14540cf9a HCLTECH.NS   2026-06-16    0.76   0.015   CUT   0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.82, neg: 0.06, neu: 0.13).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 2).
+0e6b043576 HCLTECH.NS   2026-06-16    0.64   0.021   CUT  -1.00   0.171        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.79, neg: 0.15, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+b2b1102253 HCLTECH.NS   2026-06-16    0.58   0.010   CUT   0.00   0.085        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.59, neg: 0.02, neu: 0.39).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+218b3bc068 WIPRO.NS     2026-06-16    0.87   0.045   CUT   1.00   0.366        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.88, neg: 0.01, neu: 0.11).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+fa9cc80f4c ULTRACEMCO.NS2026-06-16    0.34   0.012   CUT  -1.00   0.097        LOW  
+     ├─ Sentiment: FinBERT mood (pos: 0.59, neg: 0.25, neu: 0.17).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+2f22f7542a NESTLEIND.NS 2026-06-16    0.08   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.10, neg: 0.02, neu: 0.89).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+c7288f8bbc ONGC.NS      2026-06-16   -0.83   0.025   CUT   0.00   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.87, neu: 0.09).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+15aa467f92 POWERGRID.NS 2026-06-16   -0.96   0.035   CUT   1.00   0.284        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.01, neg: 0.97, neu: 0.02).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+9b90320139 POWERGRID.NS 2026-06-16    0.20   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.21, neg: 0.01, neu: 0.78).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+7fe612787e TATASTEEL.NS 2026-06-16    0.81   0.040   CUT  -1.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.87, neg: 0.06, neu: 0.07).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+047a425850 ADANIENT.NS  2026-06-16    0.00   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.02, neu: 0.96).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+bb0ec1e207 ADANIENT.NS  2026-06-16   -0.06   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.02, neg: 0.08, neu: 0.90).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+eab8a619dd ADANIPORTS.NS2026-06-16    0.93   0.035   CUT   0.00   0.284        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.95, neg: 0.02, neu: 0.03).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+c279bced5f HINDALCO.NS  2026-06-16    0.69   0.024   CUT  -1.00   0.195        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.82, neg: 0.13, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+6a835d3841 HINDALCO.NS  2026-06-16    0.00   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.03, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+330ad6669c HINDALCO.NS  2026-06-16    0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.03, neu: 0.94).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+cf62891e5c HINDALCO.NS  2026-06-16   -0.15   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.04, neg: 0.20, neu: 0.76).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+8e7252c1fe INDUSINDBK.NS2026-06-16    0.13   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.18, neg: 0.05, neu: 0.77).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+97010a9655 TATACONSUM.NS2026-06-16    0.91   0.040   CUT   0.00   0.325        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.03, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+31f528845a TATACONSUM.NS2026-06-16   -0.42   0.021   CUT   0.00   0.171        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.26, neg: 0.68, neu: 0.06).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+683ddc80a7 TATACONSUM.NS2026-06-16   -0.01   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.04, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+f1d8e082f1 SBILIFE.NS   2026-06-16    0.05   0.000   CUT  -1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.06, neg: 0.01, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+9545d20beb HDFCLIFE.NS  2026-06-16    0.14   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.14, neg: 0.01, neu: 0.85).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+c8d3696edc SECTOR_IT    2026-06-16    0.14   0.000   CUT   1.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.17, neg: 0.03, neu: 0.79).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+27973a8fdd MACRO        2026-06-16    0.70   0.024   CUT   1.00   0.195        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.71, neg: 0.01, neu: 0.27).
+     └─ News:      LM Lexicon (pos words: 2, neg words: 0).
+0a79c7cb81 MACRO        2026-06-16   -0.01   0.000   CUT   0.00   0.000   CUT  NONE 
+     ├─ Sentiment: FinBERT mood (pos: 0.03, neg: 0.04, neu: 0.93).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5e133aca8e MACRO        2026-06-16    0.71   0.015   CUT   0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.73, neg: 0.02, neu: 0.26).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+5c44b26485 TCS.NS       2026-06-15   -0.61   0.021   CUT  -1.00   0.205        MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.15, neg: 0.76, neu: 0.09).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 2).
+97df6e0d2b HCLTECH.NS   2026-06-15    0.92   0.020   CUT  -0.33   0.000   CUT  HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.94, neg: 0.02, neu: 0.04).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 2).
+c04afec57a HCLTECH.NS   2026-06-15    0.86   0.035   CUT   1.00   0.341        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.87, neg: 0.01, neu: 0.12).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+6abc8a86e1 ADANIENT.NS  2026-06-15    0.91   0.035   CUT   1.00   0.341        HIGH 
+     ├─ Sentiment: FinBERT mood (pos: 0.93, neg: 0.02, neu: 0.05).
+     └─ News:      LM Lexicon (pos words: 1, neg words: 0).
+5bb627521f ADANIPORTS.NS2026-06-15    0.71   0.012   CUT   0.00   0.000   CUT  MED  
+     ├─ Sentiment: FinBERT mood (pos: 0.73, neg: 0.01, neu: 0.26).
+     └─ News:      LM Lexicon (pos words: 0, neg words: 0).
+
+=== PER-TICKER AGGREGATES (Independent Sentiment / News Analysts) ===
+    CI = 95% bootstrap band on the weighted mean; (!) flags low-n cells (< 5 articles).
+RELIANCE.NS   sentiment=+0.50 [+0.01,+0.82] (n=14) | news=+0.24 [+0.06,+0.53] (n=12)
+TCS.NS        sentiment=-0.55 [-0.79,-0.08] (n=28) | news=-0.41 [-0.65,-0.17] (n=30)
+HDFCBANK.NS   sentiment=-0.06 [-0.58,+0.86] (n=14) | news=+0.09 [-0.28,+0.53] (n=13)
+INFY.NS       sentiment=+0.13 [-0.31,+0.45] (n=31) | news=-0.31 [-0.56,-0.07] (n=24)
+ICICIBANK.NS  sentiment=+0.82 [+0.72,+0.86] (n=10) | news=+0.30 [+0.06,+0.71] (n=9 )
+HINDUNILVR.NS sentiment=+0.48 [-0.07,+0.86] (n=10) | news=+0.39 [+0.10,+0.77] (n=8 )
+ITC.NS        sentiment=-0.34 [-0.76,+0.89] (n=12) | news=+0.51 [+0.17,+0.88] (n=9 )
+SBIN.NS       sentiment=+0.84 [+0.74,+0.88] (n=11) | news=+0.29 [+0.07,+0.61] (n=11)
+BHARTIARTL.NS sentiment=+0.83 [+0.72,+0.88] (n=10) | news=+0.36 [+0.09,+0.76] (n=9 )
+KOTAKBANK.NS  sentiment=-0.72 [-0.87,-0.19] (n=15) | news=+0.10 [-0.13,+0.36] (n=12)
+LT.NS         sentiment=-0.40 [-0.78,+0.83] (n=12) | news=-0.11 [-0.55,+0.52] (n=10)
+AXISBANK.NS   sentiment=-0.04 [-0.57,+0.87] (n=12) | news=+0.02 [-0.36,+0.49] (n=10)
+BAJFINANCE.NS sentiment=+0.81 [+0.67,+0.88] (n=9 ) | news=+0.33 [+0.08,+0.71] (n=9 )
+ASIANPAINT.NS sentiment=-0.32 [-0.77,+0.88] (n=11) | news=+0.00 [-0.52,+0.74] (n=8 )
+MARUTI.NS     sentiment=-0.29 [-0.74,+0.87] (n=12) | news=+0.00 [-0.56,+0.80] (n=8 )
+HCLTECH.NS    sentiment=+0.75 [+0.60,+0.86] (n=10) | news=+0.36 [-0.02,+0.74] (n=11)
+SUNPHARMA.NS  sentiment=+0.84 [+0.76,+0.87] (n=11) | news=+0.47 [+0.12,+0.91] (n=9 )
+TITAN.NS      sentiment=+0.81 [+0.69,+0.87] (n=9 ) | news=+0.45 [+0.11,+0.94] (n=7 )
+WIPRO.NS      sentiment=+0.36 [-0.27,+0.88] (n=12) | news=+0.06 [-0.43,+0.66] (n=10)
+ULTRACEMCO.NS sentiment=+0.64 [+0.55,+0.84] (n=11) | news=+0.12 [-0.34,+0.67] (n=9 )
+NESTLEIND.NS  sentiment=+0.81 [+0.69,+0.88] (n=9 ) | news=+0.45 [+0.13,+0.93] (n=7 )
+ONGC.NS       sentiment=-0.04 [-0.64,+0.88] (n=13) | news=+0.26 [+0.06,+0.63] (n=9 )
+NTPC.NS       sentiment=+0.52 [-0.08,+0.86] (n=10) | news=+0.21 [-0.29,+0.75] (n=8 )
+POWERGRID.NS  sentiment=+0.51 [-0.12,+0.87] (n=11) | news=+0.36 [+0.11,+0.72] (n=11)
+M&M.NS        sentiment=+0.68 [+0.24,+0.89] (n=11) | news=+0.33 [+0.07,+0.72] (n=8 )
+TATAMOTORS.NS sentiment=+0.79 [+0.49,+0.89] (n=14) | news=+0.23 [+0.04,+0.54] (n=11)
+TATASTEEL.NS  sentiment=+0.81 [+0.69,+0.88] (n=9 ) | news=+0.17 [-0.30,+0.64] (n=9 )
+JSWSTEEL.NS   sentiment=+0.77 [+0.67,+0.85] (n=10) | news=+0.45 [+0.13,+1.00] (n=7 )
+ADANIENT.NS   sentiment=+0.80 [+0.60,+0.90] (n=16) | news=+0.41 [+0.13,+0.72] (n=14)
+ADANIPORTS.NS sentiment=+0.74 [+0.59,+0.86] (n=10) | news=+0.34 [+0.07,+0.72] (n=9 )
+COALINDIA.NS  sentiment=+0.81 [+0.72,+0.86] (n=10) | news=+0.10 [-0.42,+0.87] (n=8 )
+BAJAJFINSV.NS sentiment=+0.81 [+0.69,+0.88] (n=9 ) | news=+0.45 [+0.11,+0.93] (n=7 )
+GRASIM.NS     sentiment=+0.81 [+0.69,+0.88] (n=9 ) | news=+0.45 [+0.12,+0.94] (n=7 )
+HINDALCO.NS   sentiment=+0.81 [+0.69,+0.88] (n=9 ) | news=+0.30 [-0.08,+0.77] (n=8 )
+DRREDDY.NS    sentiment=+0.65 [+0.08,+0.90] (n=16) | news=+0.14 [+0.03,+0.34] (n=13)
+CIPLA.NS      sentiment=+0.87 [+0.75,+0.90] (n=13) | news=+0.37 [+0.10,+0.74] (n=11)
+BRITANNIA.NS  sentiment=+0.85 [+0.73,+0.89] (n=10) | news=+0.58 [+0.21,+1.00] (n=8 )
+EICHERMOT.NS  sentiment=+0.83 [+0.73,+0.88] (n=10) | news=+0.35 [+0.08,+0.77] (n=8 )
+HEROMOTOCO.NS sentiment=+0.86 [+0.77,+0.90] (n=11) | news=+0.33 [+0.07,+0.78] (n=8 )
+BAJAJ-AUTO.NS sentiment=+0.04 [-0.52,+0.83] (n=11) | news=+0.08 [-0.39,+0.59] (n=10)
+DIVISLAB.NS   sentiment=+0.81 [+0.70,+0.88] (n=9 ) | news=+0.45 [+0.11,+0.94] (n=7 )
+TECHM.NS      sentiment=+0.21 [-0.47,+0.86] (n=11) | news=+0.35 [+0.10,+0.79] (n=8 )
+INDUSINDBK.NS sentiment=+0.83 [+0.72,+0.88] (n=10) | news=+0.45 [+0.09,+0.93] (n=7 )
+APOLLOHOSP.NS sentiment=+0.80 [+0.70,+0.86] (n=10) | news=+0.45 [+0.13,+0.94] (n=7 )
+TATACONSUM.NS sentiment=+0.77 [+0.66,+0.86] (n=10) | news=+0.35 [+0.08,+0.75] (n=9 )
+SBILIFE.NS    sentiment=+0.81 [+0.68,+0.87] (n=9 ) | news=+0.45 [+0.15,+0.94] (n=7 )
+HDFCLIFE.NS   sentiment=+0.84 [+0.73,+0.89] (n=10) | news=+0.34 [+0.08,+0.73] (n=8 )
+LTIM.NS       sentiment=+0.83 [+0.71,+0.87] (n=10) | news=+0.35 [+0.07,+0.76] (n=8 )
+SHRIRAMFIN.NS sentiment=+0.86 [+0.72,+0.90] (n=10) | news=+0.33 [+0.07,+0.79] (n=8 )
+BPCL.NS       sentiment=-0.35 [-0.76,+0.85] (n=12) | news=+0.19 [-0.05,+0.53] (n=10)
+  (DB) upserted 50 rows into snapshots table.
+
+Appended 50 rows to snapshots.csv (panel now 166 rows across 7 day(s)).
+--- step 3: update live backtest record (backtest.py) ---
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+$LTIM.NS: possibly delisted; no timezone found
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no timezone found
+
+2 Failed downloads:
+['LTIM.NS', 'TATAMOTORS.NS']: possibly delisted; no timezone found
+Panel: 216 rows | 8 day(s) | 50 tickers | signal = agg_sent
+
+=== INFORMATION COEFFICIENT (Spearman) & HIT-RATE ===
+  fwd_1d   IC=+0.027 (n=64  )  t=+0.22  p=0.829    hit-rate=45.3% (n=64)
+  fwd_5d   IC=+0.643 (n=8   )  t=+2.06  p=0.086    hit-rate=62.5% (n=8)
+  (* = IC significant at p<0.05, i.e. unlikely to be luck)
+
+=== TOY LONG-SHORT P&L (cost 10 bps round-trip) ===
+  fwd_1d   cum P&L=+1.93%  max drawdown=-1.17%  day win-rate=20.0%  ann.Sharpe=3.72  (5 periods)
+           -> cumulative curve written to pnl_agg_sent_fwd_1d.csv
+  fwd_5d   cum P&L=+5.15%  max drawdown=0.00%  day win-rate=100.0%  ann.Sharpe=90.43  (2 periods)
+           -> cumulative curve written to pnl_agg_sent_fwd_5d.csv
+
+=== BASELINE COMPARISON (does the sentiment signal beat anything?) ===
+  An IC of 0.05 means nothing in a vacuum. The sentiment signal must clear:
+  always-long (free beta), random labels (the null), and price momentum (a real rival).
+  SENTIMENT[agg_sent] fwd_1d   IC=+0.027  (n=64 ) t=+0.22  hit=45.3% (n=64 )  cumP&L=+1.93%
+  SENTIMENT[agg_sent] fwd_5d   IC=+0.643  (n=8  ) t=+2.06  hit=62.5% (n=8  )  cumP&L=+5.15%
+  always-long    fwd_1d   IC=  n/a  (n=64 ) t= n/a  hit=37.5% (n=64 )  cumP&L=-2.62%
+  always-long    fwd_5d   IC=  n/a  (n=8  ) t= n/a  hit=12.5% (n=8  )  cumP&L=-6.59%
+  random-label   fwd_1d   IC=-0.181  (n=64 ) t=-1.45  hit=43.8% (n=64 )  cumP&L=-5.86%
+  random-label   fwd_5d   IC=+0.214  (n=8  ) t=+0.54  hit=50.0% (n=8  )  cumP&L=-0.02%
+  momentum(5d)   fwd_1d   IC=+0.137  (n=56 ) t=+1.02  hit=53.6% (n=56 )  cumP&L=+0.44%
+  momentum(5d)   fwd_5d   IC=  n/a  (n=0  ) t= n/a  hit=  n/a (n=0  )  cumP&L=  n/a
+  (* = IC significant at p<0.05. Watch for the sentiment signal failing to beat random/momentum — that's the honest read.)
+================ run finished Mon Jun 29 19:09:15 IST 2026 ================
