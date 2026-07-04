@@ -7,7 +7,7 @@
 # NOTE: fetch_articles.py refreshes (overwrites) articles_fetched.json by design
 # — that is the "live news of the day" file the pipeline scores.
 
-PROJECT="$HOME/Downloads/sentiment analysis"
+PROJECT="$HOME/Downloads/sentiment analysis scratch"
 cd "$PROJECT" || exit 1
 
 # cron runs with a bare environment, so make pyenv's python (the one with
