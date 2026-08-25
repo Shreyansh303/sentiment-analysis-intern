@@ -3,7 +3,7 @@
 A research pipeline that scores financial news and earnings transcripts for
 Indian large-cap stocks (Nifty 50) and tests, **without lookahead leakage**,
 whether the resulting sentiment signal has any predictive power over forward
-stock returns.
+stock returns. 
 
 The headline finding is honest and negative — see [Results](#results). The point
 of this repo is the *methodology*: a leakage-disciplined way to build, score,
